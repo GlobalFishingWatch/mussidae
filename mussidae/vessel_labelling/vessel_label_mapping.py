@@ -266,54 +266,8 @@ def build_labels(logging, source_path, output_filename):
 
     vessel_list.sort()
 
-    # Count the number of vessels for each label and store away the indices
-    # associated with each label for later use.
-
-    indices_by_label = {}
-    max_count = 0
-    for label, n_label in label_vessel_count_map.iteritems():
-        indices_by_label[label] = np.array(
-            [i for i, (_, _, lbl) in enumerate(vessel_list) if lbl == label])
-        max_count = max(max_count, n_label)
-
-    # Determine count for each MMSI so that sum(count * MMSI) match for 
-    # each label match. Since the number of MMSI for each label doesn't 
-    # typically divide into `max_count` evenly, we assign these extra 
-    # counts randomly.
-
-    counts = np.zeros(len(vessel_list), dtype=int)
-
-    for label, n_label in label_vessel_count_map.iteritems():
-        safe_n_label = max(n_label, 1)  # protect against empty classes
-        # `base_count` is the largest number of times that we can repeat *all*
-        # of the MMSI for this label without exceeding max_count.
-        base_count = max_count // safe_n_label
-        # `extra` is the number of extra counts that are needed to get us up to 
-        # `max_count`. These extra counts are distributed (psuedo)randomly
-        # across the MMSI with no MMSI getting more than one extra count.
-        extra = max_count % safe_n_label
-        indices = indices_by_label[label]
-        # Set all indices for this label to base_count;
-        counts[indices] = base_count
-        # Choose `extra` indices MMSI bashed on the numerical order of hashed MMSI
-        extra_indices = sorted(
-            indices,
-            key=lambda i: _hash_mmsi_to_double(vessel_list[i][0], EXTRA_SALT))[:
-                                                                               extra]
-        counts[extra_indices] += 1
-        # Check that all the counts come out OK and log anything unexpected
-        augmented_count = counts[indices].sum()
-        if augmented_count != max_count:
-            logging.warning(
-                "Augmented count != base count for {0}: {1} vs {2}".format(
-                    label, augmented_count, max_count))
-        for cnt in counts[indices]:
-            if cnt not in (base_count, base_count + 1):
-                logging.warning("Expected cnt in [{0}, {1}] got {2}".format(
-                    base_count, base_count + 1, cnt))
-
     with open(output_filename, 'w') as output_file:
-        output_file.write("mmsi,dataset,label,count\n")
+        output_file.write("mmsi,dataset,label\n")
         for i, (mmsi, dataset, label) in enumerate(vessel_list):
             output_file.write('%d,%s,%s,%s\n' %
-                              (mmsi, dataset, label, counts[i]))
+                              (mmsi, dataset, label))
