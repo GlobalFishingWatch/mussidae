@@ -15,6 +15,8 @@ def _utf_8_encoder(unicode_csv_data):
 
 EXTRA_SALT = "extra_salt"
 
+other = object()
+
 # The minimum number of messages for a vessel track to be usable.
 _MIN_MESSAGES_FOR_USABLE_TRACK = 1000
 
@@ -27,6 +29,8 @@ _SEISMIC = 'Seismic'
 _SQUID_FISHING = 'Squid fishing'
 _TRAWLER = 'Trawler'
 _TUG_PILOT_SUPPLY = 'Tug/Pilot/Supply'
+_OTHER_FISHING = "Other fishing"
+_OTHER_NONFISHING = "Other nonfishing"
 
 _DEFAULT_MAPPING = {
     'Tug': _TUG_PILOT_SUPPLY,
@@ -47,6 +51,8 @@ _CLAV_MAPPING = {
     'Trawlers': _TRAWLER,
     'Longliners': _LONGLINER,
     'Tuna longliners': _LONGLINER,
+    # other : _OTHER_FISHING, # TODO: [bitsofbits] Find out categories and only do this if it doesn't
+    #                                              capture classes we are already using (pots and traps, etc)
 }
 
 _ITU_MAPPING = {
@@ -60,6 +66,7 @@ _ITU_MAPPING = {
     'YAT': _PASSENGER,
     'RAV': _TUG_PILOT_SUPPLY,
     'LAN': _POTS_AND_TRAPS,
+    # TODO: [bitsofbits] More non fishing into _OTHER_NONFISHING
 }
 
 _EU_VESSEL_MAPPING = {
@@ -71,6 +78,9 @@ _EU_VESSEL_MAPPING = {
     'PTB': _TRAWLER,
     'PTM': _TRAWLER,
     'TBB': _TRAWLER,
+    'LLD': _LONGLINER,  # drifting
+    'LLS': _LONGLINER,  # set
+    other: _OTHER_FISHING,  # EU vessels are all fishing
 }
 """The proportion of vessels to assign to training (rather than test) set."""
 _TRAINING_SET_PROPORTION = 0.6
@@ -79,19 +89,19 @@ _TRAINING_SET_PROPORTION = 0.6
 def _hash_mmsi_to_double(mmsi, salt):
     """Take a value and hash it to return a value in the range [0, 1.0).
 
-   To be used as a deterministic probability for vessel dataset
-   assignment: e.g. if we decide vessels should go in the training set at
-   probability 0.2, then we map from mmsi to a probability, then if the value
-   is <= 0.2 we assign this vessel to the training set.
+     To be used as a deterministic probability for vessel dataset
+     assignment: e.g. if we decide vessels should go in the training set at
+     probability 0.2, then we map from mmsi to a probability, then if the value
+     is <= 0.2 we assign this vessel to the training set.
 
-  Args:
-    mmsi: the input MMSI as an integer.
-    salt: a salt concatenated to the mmsi to allow more than one value to be
-          generated per mmsi.
+    Args:
+        mmsi: the input MMSI as an integer.
+        salt: a salt concatenated to the mmsi to allow more than one value to be
+                    generated per mmsi.
 
-  Returns:
-    A value in the range [0, 1.0).
-  """
+    Returns:
+        A value in the range [0, 1.0).
+    """
     hasher = hashlib.md5()
     i = '%s_%s' % (mmsi, salt)
     hasher.update(i)
@@ -110,31 +120,56 @@ def _hash_mmsi_to_double(mmsi, salt):
 class Dataset(object):
     """Represents one possible mapping from MMSI to vessel type.
 
-  Attributes:
-    _filename: the name of the CSV file containing this mapping.
-    _mmsi_column: the column containing vessel MMSIs.
-    _label_column: the column containing the vessel type.
-    _mapping: a dictionary mapping from the vessel types in this file to our
-              canonical labels.
-  """
+    Attributes:
+        _filename: the name of the CSV file containing this mapping.
+        _mmsi_column: the column containing vessel MMSIs.
+        _label_column: the column containing the vessel type.
+        _mapping: a dictionary mapping from the vessel types in this file to our
+                            canonical labels.
+    """
 
     def __init__(self, filename, mmsi_column, label_column, mapping):
         self._filename = filename
         self._mmsi_column = mmsi_column
         self._label_column = label_column
         self._mapping = mapping
+        self._other_label = None
+
+    @property
+    def has_other(self):
+        return (other in self._mapping)
+
+    @property
+    def other_label(self):
+        if self._other_label is None:
+            other_label = None
+            for k, v in self._mapping.items():
+                if k is other:
+                    if other_label is not None:
+                        raise ValueError("multiple other labels")
+                    other_label = v
+            self._other_label = other_label
+        return self._other_label
+
+    @property
+    def logging_name(self):
+        """Return a short name for the database for logging
+
+        Name is the base filename with the extension stripped off.
+        """
+        return os.path.splitext(os.path.basename(self._filename))[0]
 
     def parse(self, logging, vessel_map):
         """Reads and translates the vessel type mapping.
 
-     For the given file, read and translate the vessel type mapping and
-     populate the provided vesselmap dictionary.
+         For the given file, read and translate the vessel type mapping and
+         populate the provided vesselmap dictionary.
 
-    Args:
-      logging: Logging module to report against.
-      vessel_map: A dictionary from mmsi to (dataset, vessel label) updated with
-                  the mappings in the current file.
-    """
+        Args:
+            logging: Logging module to report against.
+            vessel_map: A dictionary from mmsi to (dataset, vessel label) updated with
+                                    the mappings in the current file.
+        """
         with open(self._filename, 'r') as csvfile:
             reader = csv.DictReader(
                 [row for row in csvfile if len(row) and row[0] != '#'])
@@ -142,12 +177,20 @@ class Dataset(object):
             for row in reader:
                 mmsi = int(row[self._mmsi_column])
                 label = row[self._label_column]
-                if label in self._mapping:
+                if self.has_other or label in self._mapping:
                     # Get a random value in the range [0 - 1.0] from hashing the mmsi and
                     # use it to assign this vessel to a dataset.
                     p = _hash_mmsi_to_double(mmsi, '')
                     dataset = 'Training' if p < _TRAINING_SET_PROPORTION else 'Test'
-                    vessel_map[mmsi] = (dataset, self._mapping[label])
+                    mapped_label = self._mapping.get(label, self.other_label)
+                    if mmsi in vessel_map:
+                        _, old_label, old_logname = vessel_map[mmsi]
+                        if mapped_label != old_label:
+                            logging.warning(
+                                "{} overriding class set in {} for {} ({}->{})".
+                                format(self.logging_name, old_logname, mmsi,
+                                       old_label, mapped_label, label))
+                    vessel_map[mmsi] = (dataset, mapped_label, self.logging_name)
                 else:
                     missing_labels[label] += 1
 
@@ -158,15 +201,15 @@ class Dataset(object):
 def get_datasets(destination_path):
     """Create a dictionary of datasets to processes.
 
-  Vessel lists are in ascending priority order. Later lists override earlier if
-  mmsis are duplicated.
+    Vessel lists are in ascending priority order. Later lists override earlier if
+    mmsis are duplicated.
 
-  Args:
-    destination_path: location of the CSV files to load.
+    Args:
+        destination_path: location of the CSV files to load.
 
-  Returns:
-    A list of datasets.
-  """
+    Returns:
+        A list of datasets.
+    """
 
     return [
         Dataset(
@@ -232,14 +275,15 @@ def get_message_counts(mmsi_count_path):
 def build_labels(logging, source_path, output_filename):
     """Consolidate vessel labels from multiple sources and write to one csv.
 
-   For the given source path, read a predefined set of prioritised vessel
-   mappings and consolidate and write to a single file.
+     For the given source path, read a predefined set of prioritised vessel
+     mappings and consolidate and write to a single file.
 
-  Args:
-    logging: Logging module to report against.
-    source_path: Input path to read source label csvs.
-    output_filename: Filename to write consolidated labels.
-  """
+    Args:
+        logging: Logging module to report against.
+        source_path: Input path to read source label csvs.
+        output_filename: Filename to write consolidated labels.
+    """
+
     # Bring in a snapshot of the number of messages per vessel (keyed by mmsi) so
     # that when we make a choice of vessels from the lists, we do not include ones
     # that have no or insufficient data. Note that this source file is generated
@@ -254,7 +298,7 @@ def build_labels(logging, source_path, output_filename):
     vessel_list = []
     dataset_vessel_count_map = collections.Counter()
     label_vessel_count_map = collections.Counter()
-    for mmsi, (dataset, labels) in mapping.items():
+    for mmsi, (dataset, labels, _) in mapping.items():
         if mmsi in message_counts and message_counts[
                 mmsi] >= _MIN_MESSAGES_FOR_USABLE_TRACK:
             vessel_list.append((mmsi, dataset, labels))
@@ -266,54 +310,7 @@ def build_labels(logging, source_path, output_filename):
 
     vessel_list.sort()
 
-    # Count the number of vessels for each label and store away the indices
-    # associated with each label for later use.
-
-    indices_by_label = {}
-    max_count = 0
-    for label, n_label in label_vessel_count_map.iteritems():
-        indices_by_label[label] = np.array(
-            [i for i, (_, _, lbl) in enumerate(vessel_list) if lbl == label])
-        max_count = max(max_count, n_label)
-
-    # Determine count for each MMSI so that sum(count * MMSI) match for 
-    # each label match. Since the number of MMSI for each label doesn't 
-    # typically divide into `max_count` evenly, we assign these extra 
-    # counts randomly.
-
-    counts = np.zeros(len(vessel_list), dtype=int)
-
-    for label, n_label in label_vessel_count_map.iteritems():
-        safe_n_label = max(n_label, 1)  # protect against empty classes
-        # `base_count` is the largest number of times that we can repeat *all*
-        # of the MMSI for this label without exceeding max_count.
-        base_count = max_count // safe_n_label
-        # `extra` is the number of extra counts that are needed to get us up to 
-        # `max_count`. These extra counts are distributed (psuedo)randomly
-        # across the MMSI with no MMSI getting more than one extra count.
-        extra = max_count % safe_n_label
-        indices = indices_by_label[label]
-        # Set all indices for this label to base_count;
-        counts[indices] = base_count
-        # Choose `extra` indices MMSI bashed on the numerical order of hashed MMSI
-        extra_indices = sorted(
-            indices,
-            key=lambda i: _hash_mmsi_to_double(vessel_list[i][0], EXTRA_SALT))[:
-                                                                               extra]
-        counts[extra_indices] += 1
-        # Check that all the counts come out OK and log anything unexpected
-        augmented_count = counts[indices].sum()
-        if augmented_count != max_count:
-            logging.warning(
-                "Augmented count != base count for {0}: {1} vs {2}".format(
-                    label, augmented_count, max_count))
-        for cnt in counts[indices]:
-            if cnt not in (base_count, base_count + 1):
-                logging.warning("Expected cnt in [{0}, {1}] got {2}".format(
-                    base_count, base_count + 1, cnt))
-
     with open(output_filename, 'w') as output_file:
-        output_file.write("mmsi,dataset,label,count\n")
+        output_file.write("mmsi,dataset,label\n")
         for i, (mmsi, dataset, label) in enumerate(vessel_list):
-            output_file.write('%d,%s,%s,%s\n' %
-                              (mmsi, dataset, label, counts[i]))
+            output_file.write('%d,%s,%s\n' % (mmsi, dataset, label))
