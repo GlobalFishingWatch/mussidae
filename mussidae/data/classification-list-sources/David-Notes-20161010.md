@@ -1,4 +1,4 @@
-# Lists Used by the Neural Net
+# Lists Used by the Neural Net for Training and Testing
 As of October 10, 2016, the following lists are used in the Nerual Net Classifier. Below are David's notes on what to change and use instead:
 
 ## ITU_Dec_2015_full_list.csv
