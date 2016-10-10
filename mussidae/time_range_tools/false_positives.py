@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os
 import numpy as np
 from numpy.lib.recfunctions import append_fields
@@ -7,7 +8,7 @@ import csv
 from cStringIO import StringIO
 
 import bqtools
-import merge_ranges_with_tracks as mrwt
+from . import merge_ranges_with_tracks as mrwt
 
 
 
