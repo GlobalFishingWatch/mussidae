@@ -1,7 +1,7 @@
 from __future__ import print_function
 from __future__ import division
 import numpy as np
-import pandas as pd
+import csv
 import datetime
 import pytz
 import logging
@@ -10,6 +10,7 @@ from collections import namedtuple
 Point = namedtuple("Points", "mmsi timestamp is_fishing")
 
 Range = namedtuple("Range", "mmsi start_time stop_time is_fishing")
+
 
 def points_from_path(path, dialect):
     """Read csv at path and convert to series of `Points`
@@ -27,9 +28,9 @@ def points_from_path(path, dialect):
         Point
 
     """
-    df = pd.read_csv(path) # TODO[bitsofbits]: move away from pandas and use explicit types
-    for index, row in df.iterrows():
-        yield Point(dialect.mmsi(row), dialect.timestamp(row), dialect.is_fishing(row))
+    with open(path) as f:
+        for row in csv.DictReader(f):
+            yield Point(dialect.mmsi(row), dialect.timestamp(row), dialect.is_fishing(row))
 
 
 def dedup_and_sort_points(points):
