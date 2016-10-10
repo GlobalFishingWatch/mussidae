@@ -25,8 +25,8 @@ This is very weird because we could be including trawlers here.
 
 ## CLAVRegistryMatchingv5.csv
  - 4803 different vessels
- - I'm skeptical of the shiptype generated in this list because I know that when I concat the geartypes, it isn't always clear what the vessel type is.
- - Bjorn now has newer matcheds
+ - I'm skeptical of the shiptype generated in this list because I know that when I concat the geartypes, it isn't always clear what the vessel type is
+ - Bjorn now has newer matches
 
 ## KnownVesselCargoTanker.csv
  - 2285 vessels
