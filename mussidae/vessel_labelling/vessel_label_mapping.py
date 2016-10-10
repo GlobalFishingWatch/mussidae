@@ -269,5 +269,4 @@ def build_labels(logging, source_path, output_filename):
     with open(output_filename, 'w') as output_file:
         output_file.write("mmsi,dataset,label\n")
         for i, (mmsi, dataset, label) in enumerate(vessel_list):
-            output_file.write('%d,%s,%s\n' %
-                              (mmsi, dataset, label))
+            output_file.write('%d,%s,%s\n' % (mmsi, dataset, label))
