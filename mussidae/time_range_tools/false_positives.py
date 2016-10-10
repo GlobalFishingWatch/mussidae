@@ -10,14 +10,12 @@ from cStringIO import StringIO
 import bqtools
 from . import merge_ranges_with_tracks as mrwt
 
-
-
 proj_id = 'world-fishing-827'
 base_path = 'gs://world-fishing-827/scratch/classification/range_queries/'
 destination_dir = "temp_data"
 
-
 NOT_FISHING = 0
+
 
 def make_ranges(line_iter):
     header = next(line_iter)
@@ -27,7 +25,7 @@ def make_ranges(line_iter):
             _, mmsi, ts1, ts2, _ = (x.strip() for x in line.split(','))
             start = dateutil.parser.parse(ts1)
             end = dateutil.parser.parse(ts2)
-            if end < start: # It happens!
+            if end < start:  # It happens!
                 start, end = end, start
         except StandardError as err:
             logging.warning("Could not interpret line, skipping")
@@ -36,16 +34,17 @@ def make_ranges(line_iter):
             yield mmsi, start, end, NOT_FISHING
 
 
-fields = ["mmsi",
-  "timestamp",
-  # "seg_id",  # TODO[bitsofbits] look into what the best pipeline to pull this stuff from is.
-  # "distance_from_shore", # TODO[bitsofbits]: these fields not present for all dates. investigate
-  # "distance_from_port",
-  "speed",
-  "course",
-  "lat",
-  "lon"]
-
+fields = [
+    "mmsi",
+    "timestamp",
+    # "seg_id",  # TODO[bitsofbits] look into what the best pipeline to pull this stuff from is.
+    # "distance_from_shore", # TODO[bitsofbits]: these fields not present for all dates. investigate
+    # "distance_from_port",
+    "speed",
+    "course",
+    "lat",
+    "lon"
+]
 
 query_template = """
 SELECT
@@ -73,7 +72,6 @@ def parse(x):
     return float(dt.strftime("%s"))
 
 
-
 def download_from_bq(ranges):
     range_map = {}
     queries = []
@@ -81,21 +79,22 @@ def download_from_bq(ranges):
         (mmsi, start, end, _) = rng
         gcs_path = base_path + "range_{}.csv".format(i)
         table = "scratch_{0}".format(i)
-        temp_dest={'dataset': 'scratch_fishing_score', 'table': table}
+        temp_dest = {'dataset': 'scratch_fishing_score', 'table': table}
         query = create_query(mmsi, start, end)
         range_map[gcs_path] = rng
-        queries.append(dict(
-            proj_id=proj_id,
-            query=query,
-            path=gcs_path,
-            temp_dest=temp_dest,
-            compression="NONE"))
+        queries.append(
+            dict(
+                proj_id=proj_id,
+                query=query,
+                path=gcs_path,
+                temp_dest=temp_dest,
+                compression="NONE"))
     bigq = bqtools.BigQuery()
     rows = []
     header = None
     for gcs_path in bigq.parallel_query_and_extract(queries):
         rng = range_map[gcs_path]
-        bqtools.gs_mv(gcs_path, destination_dir) 
+        bqtools.gs_mv(gcs_path, destination_dir)
         local_path = os.path.join(destination_dir, os.path.basename(gcs_path))
         tail = ",{}".format(rng[-1])
         with open(local_path) as f:
@@ -110,8 +109,10 @@ def download_from_bq(ranges):
                 if row:
                     rows.append(row + tail)
     f = StringIO('\n'.join(rows))
-    data = np.recfromcsv(f, delimiter=',', filling_values=np.nan, converters={'timestamp' : parse})
+    data = np.recfromcsv(
+        f,
+        delimiter=',',
+        filling_values=np.nan,
+        converters={'timestamp': parse})
     del f
     return data
-
-

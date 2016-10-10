@@ -33,7 +33,6 @@ def count_problem_duplicates(times, fishing):
     return problem_count
 
 
-
 def test_round_trip(source_paths, range_path):
     ranges = pd.read_csv(range_path)
     for pth in in_paths:
@@ -43,10 +42,15 @@ def test_round_trip(source_paths, range_path):
         for m in mmsi:
             logging.info("testing mmsi: {}".format(m))
             examples = all_examples[all_examples['MMSI'] == m]
-            times = np.array([dialects.get_kristina_timestamp(x) for (_, x) in examples.iterrows()]) 
-            fishing = np.array([dialects.get_kristina_is_fishing(x) for (_, x) in examples.iterrows()], dtype=bool)
+            times = np.array([dialects.get_kristina_timestamp(x)
+                              for (_, x) in examples.iterrows()])
+            fishing = np.array(
+                [dialects.get_kristina_is_fishing(x)
+                 for (_, x) in examples.iterrows()],
+                dtype=bool)
             ndx_map = np.argsort(times)
-            permuted_results = mrwt.create_fishing_series(m, times[ndx_map], ranges)
+            permuted_results = mrwt.create_fishing_series(m, times[ndx_map],
+                                                          ranges)
             #
             results = np.zeros_like(permuted_results)
             results[ndx_map] = permuted_results
@@ -56,10 +60,13 @@ def test_round_trip(source_paths, range_path):
             if not correct:
                 logging.error("{}: {} failed".format(pth, m))
             n_unknowns = unknown_mask.sum()
-            n_problems_dups = count_problem_duplicates(times[ndx_map], fishing[ndx_map])
+            n_problems_dups = count_problem_duplicates(times[ndx_map],
+                                                       fishing[ndx_map])
             if n_unknowns != n_problems_dups:
-                logging.warning("{}%({} - {}) of samples unknown for {}: {}".format(
-                    100 * (n_unknowns - n_problems_dups) / len(unknown_mask), n_unknowns, n_problems_dups, pth, m))
+                logging.warning("{}%({} - {}) of samples unknown for {}: {}".
+                                format(100 * (n_unknowns - n_problems_dups
+                                              ) / len(unknown_mask),
+                                       n_unknowns, n_problems_dups, pth, m))
 
 
 def test_is_sorted():
@@ -72,8 +79,11 @@ if __name__ == "__main__":
     import glob
     import os
     logging.getLogger().setLevel("WARNING")
-    parser = argparse.ArgumentParser(description="extract fishing/nonfishing ranges from Kristina's data")
-    parser.add_argument('--source-dir', help='directory where converted sources were drawn from')
+    parser = argparse.ArgumentParser(
+        description="extract fishing/nonfishing ranges from Kristina's data")
+    parser.add_argument(
+        '--source-dir',
+        help='directory where converted sources were drawn from')
     parser.add_argument('--dest-path', help='path to range file')
     args = parser.parse_args()
     in_paths = glob.glob(os.path.join(args.source_dir, "*.csv"))

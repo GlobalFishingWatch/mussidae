@@ -4,6 +4,7 @@ from .create_fishing_nonfishing_ranges import fuzzy_delta
 from .create_fishing_nonfishing_ranges import ranges_from_points
 from .create_fishing_nonfishing_ranges import ranges_from_paths
 
+
 def write_ranges(ranges, path):
     with open(path, "w") as f:
         f.write("mmsi,start_time,end_time,is_fishing\n")

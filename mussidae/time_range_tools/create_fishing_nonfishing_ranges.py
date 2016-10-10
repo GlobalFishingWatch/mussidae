@@ -30,7 +30,9 @@ def points_from_path(path, dialect):
     """
     with open(path) as f:
         for row in csv.DictReader(f):
-            yield Point(dialect.mmsi(row), dialect.timestamp(row), dialect.is_fishing(row))
+            yield Point(
+                dialect.mmsi(row), dialect.timestamp(row),
+                dialect.is_fishing(row))
 
 
 def dedup_and_sort_points(points):
@@ -64,16 +66,16 @@ def dedup_and_sort_points(points):
             last_fishing = fishing
     yield last_item
 
-
 # Never fuzz range edges more than this amount
 MAX_TIME_DELTA = 10 * 60
+
 
 def fuzzy_delta(t1, t0, in_same_mmsi):
     if in_same_mmsi:
         # Divide the range between this point and the next point by two
         # so that we can use simple, independent fuzzing without having
         # to worry about overlapping ranges.
-        dt = min((t1 - t0).total_seconds() // 2,  MAX_TIME_DELTA)
+        dt = min((t1 - t0).total_seconds() // 2, MAX_TIME_DELTA)
     else:
         dt = MAX_TIME_DELTA
     return datetime.timedelta(seconds=np.random.randint(dt))
@@ -97,14 +99,18 @@ def ranges_from_points(points):
     for mmsi, time, state in points:
         if mmsi != current_mmsi or state != current_state:
             if current_state is not None:
-                range_end = last_time + fuzzy_delta(time, last_time, mmsi == current_mmsi)
-                yield Range(current_mmsi, range_start.isoformat(), range_end.isoformat(), current_state)
+                range_end = last_time + fuzzy_delta(time, last_time, mmsi ==
+                                                    current_mmsi)
+                yield Range(current_mmsi, range_start.isoformat(),
+                            range_end.isoformat(), current_state)
             current_state = state
-            range_start = time - fuzzy_delta(time, last_time, mmsi == current_mmsi)   
+            range_start = time - fuzzy_delta(time, last_time, mmsi ==
+                                             current_mmsi)
             current_mmsi = mmsi
         last_time = time
     if current_state is not None:
-        yield Range(current_mmsi, range_start.isoformat(), last_time.isoformat(), current_state)
+        yield Range(current_mmsi, range_start.isoformat(),
+                    last_time.isoformat(), current_state)
 
 
 def ranges_from_paths(paths, dialect):
@@ -127,7 +133,3 @@ def ranges_from_paths(paths, dialect):
         except StandardError as err:
             logging.warning("conversion failed for {}".format(pth))
             logging.warning(repr(err))
-
-
-
-

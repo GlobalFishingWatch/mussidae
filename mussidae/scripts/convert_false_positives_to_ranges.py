@@ -7,8 +7,7 @@ import logging
 import csv
 from cStringIO import StringIO
 import mussidae.time_range_tools as trtools
-from  mussidae.time_range_tools import false_positives
-
+from mussidae.time_range_tools import false_positives
 
 
 def download_from_bq(ranges):
@@ -18,15 +17,16 @@ def download_from_bq(ranges):
         (mmsi, start, end, _) = rng
         gcs_path = base_path + "range_{}.csv".format(i)
         table = "scratch_{0}".format(i)
-        temp_dest={'dataset': 'scratch_fishing_score', 'table': table}
+        temp_dest = {'dataset': 'scratch_fishing_score', 'table': table}
         query = create_query(mmsi, start, end)
         range_map[gcs_path] = rng
-        queries.append(dict(
-            proj_id=proj_id,
-            query=query,
-            path=gcs_path,
-            temp_dest=temp_dest,
-            compression="NONE"))
+        queries.append(
+            dict(
+                proj_id=proj_id,
+                query=query,
+                path=gcs_path,
+                temp_dest=temp_dest,
+                compression="NONE"))
         # if i > 2:
         #     break # XXX
     bigq = bqtools.BigQuery()
@@ -34,7 +34,7 @@ def download_from_bq(ranges):
     header = None
     for gcs_path in bigq.parallel_query_and_extract(queries):
         rng = range_map[gcs_path]
-        bqtools.gs_mv(gcs_path, destination_dir) 
+        bqtools.gs_mv(gcs_path, destination_dir)
         local_path = os.path.join(destination_dir, os.path.basename(gcs_path))
         tail = ",{}".format(rng[-1])
         with open(local_path) as f:
@@ -49,10 +49,13 @@ def download_from_bq(ranges):
                 if row:
                     rows.append(row + tail)
     f = StringIO('\n'.join(rows))
-    data = np.recfromcsv(f, delimiter=',', filling_values=np.nan, converters={'timestamp' : parse})
+    data = np.recfromcsv(
+        f,
+        delimiter=',',
+        filling_values=np.nan,
+        converters={'timestamp': parse})
     del f
     return data
-
 
 
 if __name__ == "__main__":
@@ -60,11 +63,15 @@ if __name__ == "__main__":
     import glob
     import os
     logging.getLogger().setLevel("WARNING")
-    parser = argparse.ArgumentParser(description="Convert false positive csv file to time ranges")
-    parser.add_argument('--source-path', help='path to source false positive csv file', required=True)
-    parser.add_argument('--dest-path', help='path to dest message file', required=True)
+    parser = argparse.ArgumentParser(
+        description="Convert false positive csv file to time ranges")
+    parser.add_argument(
+        '--source-path',
+        help='path to source false positive csv file',
+        required=True)
+    parser.add_argument(
+        '--dest-path', help='path to dest message file', required=True)
     args = parser.parse_args()
-    with open (args.source_path) as f:
+    with open(args.source_path) as f:
         ranges = false_positives.make_ranges(f)
         trtools.write_ranges(ranges, args.dest_path)
-

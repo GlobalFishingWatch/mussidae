@@ -5,17 +5,16 @@ import dateutil
 
 
 def is_sorted(x):
-	last = x[0]
-	for this in x[1:]:
-		if this < last:
-			return False
-		last = this
-	return True
-
+    last = x[0]
+    for this in x[1:]:
+        if this < last:
+            return False
+        last = this
+    return True
 
 
 def create_fishing_series(mmsi, times, ranges):
-	"""
+    """
 
 	Parameters
 	==========
@@ -37,23 +36,19 @@ def create_fishing_series(mmsi, times, ranges):
 		don't know
 
 	"""
-	if not is_sorted(times):
-		raise ValueError("times must be sorted")
-	# Only look at ranges associated with the current mmsi
-	ranges = ranges[ranges['mmsi'] == mmsi]
-	# Initialize is_fishing to -1 (don't know)
-	is_fishing = np.empty([len(times)], dtype=int) 
-	is_fishing.fill(-1)
-	#
-	for _, (_, startstr, endstr, state) in ranges.iterrows():
-		start = dateutil.parser.parse(startstr)
-		end = dateutil.parser.parse(endstr)
-		i0 = np.searchsorted(times, start, side="left")
-		i1 = np.searchsorted(times, end, side="right")
-		is_fishing[i0: i1] = state
-	#
-	return is_fishing
-
-
-
-
+    if not is_sorted(times):
+        raise ValueError("times must be sorted")
+    # Only look at ranges associated with the current mmsi
+    ranges = ranges[ranges['mmsi'] == mmsi]
+    # Initialize is_fishing to -1 (don't know)
+    is_fishing = np.empty([len(times)], dtype=int)
+    is_fishing.fill(-1)
+    #
+    for _, (_, startstr, endstr, state) in ranges.iterrows():
+        start = dateutil.parser.parse(startstr)
+        end = dateutil.parser.parse(endstr)
+        i0 = np.searchsorted(times, start, side="left")
+        i1 = np.searchsorted(times, end, side="right")
+        is_fishing[i0:i1] = state
+    #
+    return is_fishing
