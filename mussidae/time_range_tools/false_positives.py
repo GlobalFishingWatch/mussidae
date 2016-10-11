@@ -6,6 +6,7 @@ import dateutil.parser
 import logging
 import csv
 from cStringIO import StringIO
+import mussidae.time_range_tools as trtools
 
 import bqtools
 from . import merge_ranges_with_tracks as mrwt
@@ -23,8 +24,8 @@ def make_ranges(line_iter):
     for line in line_iter:
         try:
             _, mmsi, ts1, ts2, _ = (x.strip() for x in line.split(','))
-            start = dateutil.parser.parse(ts1)
-            end = dateutil.parser.parse(ts2)
+            start = trtools.parse_timestamp(ts1)
+            end = trtools.parse_timestamp(ts2)
             if end < start:  # It happens!
                 start, end = end, start
         except StandardError as err:

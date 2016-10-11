@@ -78,7 +78,7 @@ def fuzzy_delta(t1, t0, in_same_mmsi):
         dt = min((t1 - t0).total_seconds() // 2, MAX_TIME_DELTA)
     else:
         dt = MAX_TIME_DELTA
-    return datetime.timedelta(seconds=np.random.randint(dt))
+    return datetime.timedelta(seconds=np.random.randint(dt + 1))
 
 
 def ranges_from_points(points):
@@ -101,16 +101,15 @@ def ranges_from_points(points):
             if current_state is not None:
                 range_end = last_time + fuzzy_delta(time, last_time, mmsi ==
                                                     current_mmsi)
-                yield Range(current_mmsi, range_start.isoformat(),
-                            range_end.isoformat(), current_state)
+                yield Range(current_mmsi, range_start, range_end,
+                            current_state)
             current_state = state
             range_start = time - fuzzy_delta(time, last_time, mmsi ==
                                              current_mmsi)
             current_mmsi = mmsi
         last_time = time
     if current_state is not None:
-        yield Range(current_mmsi, range_start.isoformat(),
-                    last_time.isoformat(), current_state)
+        yield Range(current_mmsi, range_start, last_time, current_state)
 
 
 def ranges_from_paths(paths, dialect):
@@ -131,5 +130,6 @@ def ranges_from_paths(paths, dialect):
             for rng in ranges_from_points(points):
                 yield rng
         except StandardError as err:
+            raise
             logging.warning("conversion failed for {}".format(pth))
             logging.warning(repr(err))

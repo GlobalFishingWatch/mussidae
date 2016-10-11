@@ -14,14 +14,14 @@ from __future__ import division
 import datetime
 import pytz
 from collections import namedtuple
+from .utils import parse_timestamp
 
 Dialect = namedtuple("Dialect", "mmsi timestamp is_fishing")
 
 
 def get_kristina_timestamp(x):
     if 'DATETIME' in x:
-        return datetime.datetime.strptime(
-            x['DATETIME'], "%Y-%m-%d %H:%M:%S").replace(tzinfo=pytz.utc)
+        return parse_timestamp(x['DATETIME'])
     elif 'TIME' in x:
         return datetime.datetime.strptime(x['TIME'], "%Y%m%d_%H%M%S").replace(
             tzinfo=pytz.utc)

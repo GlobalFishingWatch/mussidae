@@ -29,8 +29,5 @@ if __name__ == "__main__":
     parser.add_argument('--dest-path', help='path to write results to')
     args = parser.parse_args()
     in_paths = glob.glob(os.path.join(args.source_dir, "*.csv"))
-    results = trtools.ranges_from_paths(in_paths, dialects.kristina)
-    with open(args.dest_path, "w") as f:
-        f.write("mmsi,start_time,end_time,is_fishing\n")
-        for row in results:
-            f.write("{}\n".format(','.join(str(x) for x in row)))
+    ranges = trtools.ranges_from_paths(in_paths, dialects.kristina)
+    trtools.write_ranges(ranges, args.dest_path)

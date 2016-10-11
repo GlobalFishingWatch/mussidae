@@ -190,7 +190,8 @@ class Dataset(object):
                                 "{} overriding class set in {} for {} ({}->{})".
                                 format(self.logging_name, old_logname, mmsi,
                                        old_label, mapped_label, label))
-                    vessel_map[mmsi] = (dataset, mapped_label, self.logging_name)
+                    vessel_map[mmsi] = (dataset, mapped_label,
+                                        self.logging_name)
                 else:
                     missing_labels[label] += 1
 
