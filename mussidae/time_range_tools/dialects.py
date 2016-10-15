@@ -31,10 +31,10 @@ def get_kristina_timestamp(x):
 
 def get_kristina_is_fishing(x):
     if 'COARSE_FIS' in x:
-        return x['COARSE_FIS']
+        return float(x['COARSE_FIS'])
     else:
-        return x['COARSE-FIS']
+        return float(x['COARSE-FIS'])
 
 
-kristina = Dialect(lambda x: x['MMSI'], get_kristina_timestamp,
+kristina = Dialect(lambda x: int(x['MMSI']), get_kristina_timestamp,
                    get_kristina_is_fishing)
