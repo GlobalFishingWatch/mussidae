@@ -3,7 +3,6 @@ from __future__ import division
 import numpy as np
 import dateutil
 
-
 def is_sorted(x):
     last = x[0]
     for this in x[1:]:

@@ -6,10 +6,8 @@ import datetime
 import pytz
 import logging
 from collections import namedtuple
-
-Point = namedtuple("Points", "mmsi timestamp is_fishing")
-
-Range = namedtuple("Range", "mmsi start_time stop_time is_fishing")
+from .utils import Point
+from .utils import Range
 
 
 def points_from_path(path, dialect):
