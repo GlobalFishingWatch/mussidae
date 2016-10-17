@@ -9,7 +9,6 @@ from cStringIO import StringIO
 import mussidae.time_range_tools as trtools
 
 import bqtools
-from . import merge_ranges_with_tracks as mrwt
 
 proj_id = 'world-fishing-827'
 base_path = 'gs://world-fishing-827/scratch/classification/range_queries/'

@@ -1,4 +1,4 @@
-"""Extract fishing / non fishing ranges from Alex's crowd sourced data
+"""Conver Alex's crowd sourced data to fishing / nonfishing Ranges
 
 
 """
@@ -28,7 +28,6 @@ def extract_points(path):
             assert not is_fishing or row['classification'].strip() in ["Longliner", "Purse seine"] 
             yield trtools.Point(mmsi, start_time, is_fishing)
             yield trtools.Point(mmsi, stop_time, is_fishing)
-
 
 
 

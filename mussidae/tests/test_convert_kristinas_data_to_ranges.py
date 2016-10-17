@@ -4,12 +4,14 @@ import numpy as np
 import pandas as pd
 import datetime
 import logging
+import mussidae.time_range_tools as trtools
 import mussidae.time_range_tools.dialects as dialects
-import mussidae.time_range_tools.merge_ranges_with_tracks as mrwt
+import mussidae.time_range_tools.create_fishing_series as create_fseries
+import tempfile
 
 
 def count_problem_duplicates(times, fishing):
-    assert mrwt.is_sorted(times)
+    assert create_fseries.is_sorted(times)
     last_timestamp = None
     last_fishing = None
     problem_count = 0
@@ -33,8 +35,7 @@ def count_problem_duplicates(times, fishing):
     return problem_count
 
 
-def test_round_trip(source_paths, range_path):
-    ranges = pd.read_csv(range_path)
+def test_round_trip(source_paths, ranges):
     for pth in in_paths:
         logging.info("testing file: {}".format(pth))
         all_examples = pd.read_csv(pth)
@@ -49,8 +50,9 @@ def test_round_trip(source_paths, range_path):
                  for (_, x) in examples.iterrows()],
                 dtype=bool)
             ndx_map = np.argsort(times)
-            permuted_results = mrwt.create_fishing_series(m, times[ndx_map],
-                                                          ranges)
+            ranges_for_mmsi = (x for x in ranges if x.mmsi == m)
+            permuted_results = create_fseries.create_fishing_series(times[ndx_map],
+                                                          ranges_for_mmsi)
             #
             results = np.zeros_like(permuted_results)
             results[ndx_map] = permuted_results
@@ -69,9 +71,6 @@ def test_round_trip(source_paths, range_path):
                                        n_unknowns, n_problems_dups, pth, m))
 
 
-def test_is_sorted():
-    assert mrwt.is_sorted([0, 1, 1, 2, 3, 4, 5, 5])
-    assert not mrwt.is_sorted([0, 1, 2, 1, 3, 4, 5])
 
 
 if __name__ == "__main__":
@@ -83,9 +82,10 @@ if __name__ == "__main__":
         description="extract fishing/nonfishing ranges from Kristina's data")
     parser.add_argument(
         '--source-dir',
-        help='directory where converted sources were drawn from')
-    parser.add_argument('--dest-path', help='path to range file')
+        help='directory where converted sources were drawn from',
+        default="../../vessel-scoring/datasets/kristina_longliner")
     args = parser.parse_args()
     in_paths = glob.glob(os.path.join(args.source_dir, "*.csv"))
-    test_is_sorted()
-    test_round_trip(in_paths, args.dest_path)
+    ranges = list(trtools.ranges_from_paths(in_paths, dialect=dialects.kristina))
+    test_round_trip(in_paths, ranges)
+
