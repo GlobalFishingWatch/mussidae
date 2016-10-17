@@ -47,7 +47,7 @@ def create_fishing_series(times, ranges):
     if not is_sorted(times):
         raise ValueError("times must be sorted")
     # Initialize is_fishing to -1 (don't know)
-    is_fishing = np.empty([len(times)], dtype=int)
+    is_fishing = np.empty([len(times)], dtype=float)
     is_fishing.fill(-1)
     #
     last_mmsi = None

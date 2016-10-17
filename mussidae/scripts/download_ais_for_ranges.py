@@ -44,7 +44,8 @@ if __name__ == "__main__":
                 StringIO('\n'.join(downloaded)),
                 delimiter=',',
                 filling_values=np.nan,
-                converters={'timestamp': parse})
+                converters={'timestamp': parse},
+                dtype='float') # TODO(bitsofbits): smarter dtype
             np.savez(args.dest_path, x=data)
         else:
             raise ValueError("unknown suffix ({})".format(

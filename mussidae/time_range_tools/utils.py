@@ -44,7 +44,7 @@ def write_ranges(ranges, path):
             start = format_date(start)
             stop = format_date(stop)
             f.write("{}\n".format(','.join(
-                str(x) for x in [mmsi, start, stop, float(is_fishing)])))
+                str(x) for x in [mmsi, start, stop, is_fishing])))
 
 
 def write_recarray(recarry, path):
