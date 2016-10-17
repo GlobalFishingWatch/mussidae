@@ -65,7 +65,10 @@ def dedup_and_sort_points(points):
     yield last_item
 
 # Never fuzz range edges more than this amount
-MAX_TIME_DELTA = 10 * 60
+MAX_FUZZ_DELTA = 10 * 60
+
+# Make separate ranges if gaps are larger than this
+MAX_TIME_GAP = 1 * 60 * 60
 
 
 def fuzzy_delta(t1, t0, in_same_mmsi):
@@ -73,9 +76,9 @@ def fuzzy_delta(t1, t0, in_same_mmsi):
         # Divide the range between this point and the next point by two
         # so that we can use simple, independent fuzzing without having
         # to worry about overlapping ranges.
-        dt = min((t1 - t0).total_seconds() // 2, MAX_TIME_DELTA)
+        dt = min((t1 - t0).total_seconds() // 2, MAX_FUZZ_DELTA)
     else:
-        dt = MAX_TIME_DELTA
+        dt = MAX_FUZZ_DELTA
     return datetime.timedelta(seconds=np.random.randint(dt + 1))
 
 
@@ -95,7 +98,8 @@ def ranges_from_points(points):
     last_time = None
     ranges = []
     for mmsi, time, state in points:
-        if mmsi != current_mmsi or state != current_state:
+        delta_time = 0 if (last_time) is None else (time - last_time).total_seconds()
+        if mmsi != current_mmsi or state != current_state or delta_time > MAX_TIME_GAP:
             if current_state is not None:
                 range_end = last_time + fuzzy_delta(time, last_time, mmsi ==
                                                     current_mmsi)
