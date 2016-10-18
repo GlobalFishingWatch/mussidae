@@ -165,6 +165,9 @@ def download_ais_and_join_ranges(ranges, gcs_temp_dir, local_temp_path):
     grouped_ranges = group_ranges_by_mmsi(ranges)
     consolidated_ranges = consolidate_ranges(grouped_ranges)
     split_ranges = split_ranges_by_year(consolidated_ranges)
+    # `mmsi_map` maps the GCS paths where BQ data is extracted to
+    # onto the range they were extracted for. This is used later
+    # process the range when the extraction is complete.
     mmsi_map = {}
     queries = []
     # Setup all of the queries to run in parallel
@@ -186,8 +189,14 @@ def download_ais_and_join_ranges(ranges, gcs_temp_dir, local_temp_path):
         #
     bigq = bqtools.BigQuery()
     header = None
+    # This runs all of the BQ queries in parallel. As each
+    # query finishes, this yields the location that query
+    # was written to. The order of finishing is not
+    # deterministic.
     for gcs_path in bigq.parallel_query_and_extract(queries):
-        # As each query finishes join it with the ranges for that MMSI
+        # As each query finishes join it with the ranges for that MMSI.
+        # We determine the MMSI by looking it up in `mmsi_map` that
+        # was constructed when setting up the queries.
         mmsi = mmsi_map[gcs_path]
         bqtools.gs_mv(gcs_path, local_temp_path)
         # Read in the time points for this mmsi from AIS data (first pass)

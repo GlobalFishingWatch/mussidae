@@ -17,7 +17,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--source_csv_dir',
         help='Path to directory containing input vessel lists.',
-        default='data/classification-list-sources')
+        default='data-precursors/classification-list-sources')
     parser.add_argument(
         '--log',
         help='Set the logging level.',

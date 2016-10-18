@@ -72,47 +72,4 @@ def parse(x):
     return float(dt.strftime("%s"))
 
 
-def download_from_bq(ranges):
-    range_map = {}
-    queries = []
-    for i, rng in enumerate(ranges):
-        (mmsi, start, end, _) = rng
-        gcs_path = base_path + "range_{}.csv".format(i)
-        table = "scratch_{0}".format(i)
-        temp_dest = {'dataset': 'scratch_fishing_score', 'table': table}
-        query = create_query(mmsi, start, end)
-        range_map[gcs_path] = rng
-        queries.append(
-            dict(
-                proj_id=proj_id,
-                query=query,
-                path=gcs_path,
-                temp_dest=temp_dest,
-                compression="NONE"))
-    bigq = bqtools.BigQuery()
-    rows = []
-    header = None
-    for gcs_path in bigq.parallel_query_and_extract(queries):
-        rng = range_map[gcs_path]
-        bqtools.gs_mv(gcs_path, destination_dir)
-        local_path = os.path.join(destination_dir, os.path.basename(gcs_path))
-        tail = ",{}".format(rng[-1])
-        with open(local_path) as f:
-            f_iter = iter(f)
-            this_header = next(f_iter).strip() + ",classification"
-            if header is None:
-                header = this_header
-                rows.insert(0, header)
-            assert this_header == header
-            for row in f_iter:
-                row = row.strip()
-                if row:
-                    rows.append(row + tail)
-    f = StringIO('\n'.join(rows))
-    data = np.recfromcsv(
-        f,
-        delimiter=',',
-        filling_values=np.nan,
-        converters={'timestamp': parse})
-    del f
-    return data
+

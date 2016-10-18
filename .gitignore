@@ -1,4 +1,5 @@
-mussidae/data/time-range-sources/
+.DS_Store
+mussidae/data-precursors/time-range-sources/non-public
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
