@@ -162,6 +162,7 @@ def download_ais_and_join_ranges(ranges, gcs_temp_dir, local_temp_path):
     # We can't have excessively large queries (BigQuery blows up if more than 1000 tables (==days)
     # queeried at once). Nor do we want too many small queries. Here we group all of the ranges for
     # a given MMSI into a single range, then break apart by years.
+    raise NotImplementedError("need to fix so that we don't hit BQ so hard")
     grouped_ranges = group_ranges_by_mmsi(ranges)
     consolidated_ranges = consolidate_ranges(grouped_ranges)
     split_ranges = split_ranges_by_year(consolidated_ranges)
