@@ -51,4 +51,5 @@ if __name__ == "__main__":
             raise ValueError("unknown suffix ({})".format(
                 os.splitext(dest_path)[1]))
     finally:
-        os.unlink(local_temp_path)
+        if os.path.exists(local_temp_path):
+            os.unlink(local_temp_path)

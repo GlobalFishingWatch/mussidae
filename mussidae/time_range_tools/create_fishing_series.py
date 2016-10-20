@@ -16,11 +16,12 @@ import itertools as it
 
 
 def is_sorted(x):
-    last = x[0]
-    for this in x[1:]:
-        if this < last:
-            return False
-        last = this
+    if len(x):
+        last = x[0]
+        for this in x[1:]:
+            if this < last:
+                return False
+            last = this
     return True
 
 
