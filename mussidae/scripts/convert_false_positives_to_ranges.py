@@ -1,3 +1,9 @@
+"""
+
+python scripts/convert_false_positives_to_ranges.py  \\
+    --source-path data-precursors/time-range-sources/GFW\\ Fishing\\ Detection\\ False\\ Positives\\ -\\ false\\ positives.csv \
+    --dest-path data/time-ranges/false_positives.csv
+"""
 from __future__ import absolute_import
 import os
 import numpy as np
@@ -14,6 +20,9 @@ if __name__ == "__main__":
     import argparse
     import glob
     import os
+    with open("data-precursors/time-range-sources/non-public-sources/SALT") as f:
+        salt = f.read().strip()
+    np.random.seed(hash(salt) % 4294967295)
     logging.getLogger().setLevel("WARNING")
     parser = argparse.ArgumentParser(
         description="Convert false positive csv file to time ranges")
@@ -25,5 +34,6 @@ if __name__ == "__main__":
         '--dest-path', help='path to dest message file', required=True)
     args = parser.parse_args()
     with open(args.source_path) as f:
-        ranges = false_positives.make_ranges(f)
+        ranges_by_mmsi = false_positives.make_ranges(f)
+        ranges = trtools.anonymize_ranges(ranges_by_mmsi, salt)
         trtools.write_ranges(ranges, args.dest_path)

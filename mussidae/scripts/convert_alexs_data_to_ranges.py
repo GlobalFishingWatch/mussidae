@@ -7,11 +7,12 @@ import datetime
 import csv
 import pytz
 from mussidae import time_range_tools as trtools
+import numpy as np
 
 
 # Using a full hour for the time range would result in duplicate point issues at 
 # at the boundaries
-almost_one_hour = atetime.timedelta(hours=1) - datetime.timedelta(millis=1)
+almost_one_hour = datetime.timedelta(hours=1) - datetime.timedelta(milliseconds=1)
 
 fishing_map = {
     "" : False,
@@ -39,7 +40,11 @@ def extract_points(path):
 
 
 if __name__ == "__main__":
-    raw_points = extract_points("data/time-range-sources/alexCrowdSourcedResults.csv")
+    with open("data-precursors/time-range-sources/non-public-sources/SALT") as f:
+        salt = f.read().strip()
+    np.random.seed(hash(salt) % 4294967295)
+    raw_points = extract_points("data-precursors/time-range-sources/alexCrowdSourcedResults.csv")
     points = trtools.dedup_and_sort_points(raw_points)
-    ranges = trtools.ranges_from_points(points)
-    trtools.write_ranges(ranges, "data/time-ranges/alex_crowd_sourced.csv")
+    ranges_by_mmsi = trtools.ranges_from_points(points)
+    ranges = trtools.anonymize_ranges(ranges_by_mmsi, salt)
+    trtools.write_ranges(sorted(ranges), "data/time-ranges/alex_crowd_sourced.csv")
