@@ -1,36 +1,4 @@
 mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_geartypes
-255500118,Fishing vessel,Pole and line,Pole and line,27.0,121.0,1
-367138310,Fishing vessel,Trollers,Trollers,18.26,32.0,1
-271072420,Fishing vessel,Trollers,Trollers,25.92,111.0,1
-367561420,Fishing vessel,Trollers,Trollers,31.45,177.0,1
-247100040,Fishing vessel,Trawlers,Trawlers,26.2,115.0,1
-250000546,Fishing vessel,Trawlers,Trawlers,22.4,141.0,1
-247151950,Fishing vessel,Trawlers,Trawlers,28.45,168.0,1
-247142580,Fishing vessel,Trawlers,Trawlers,27.72,158.0,1
-512300107,Fishing vessel,Trawlers,Trawlers,42.7,335.0,1
-601240000,Fishing vessel,Pole and line,Pole and line,21.96,96.4,1
-232806000,Fishing vessel,Trawlers,Trawlers,26.21,,1
-247121920,Fishing vessel,Trawlers,Trawlers,27.52,99.0,1
-367548870,Fishing vessel,Pole and line,Pole and line,19.76,49.0,1
-224064850,Fishing vessel,Pole and line,Pole and line,27.19,154.0,1
-224004680,Fishing vessel,Pole and line,Pole and line,28.0,139.0,1
-250165000,Fishing vessel,Trawlers,Trawlers,41.3,644.0,1
-226267000,Fishing vessel,Trawlers,Trawlers,24.96,188.49,1
-224134520,Fishing vessel,Pole and line,Pole and line,33.0,186.0,1
-204826000,Fishing vessel,Pole and line,Pole and line,31.14,166.0,1
-247122020,Fishing vessel,Trawlers,Trawlers,26.76,127.0,1
-227144400,Fishing vessel,Trawlers,Trawlers,24.9,154.23,1
-247146110,Fishing vessel,Trawlers,Trawlers,23.95,82.0,1
-247121730,Fishing vessel,Trawlers,Trawlers,24.72,66.0,1
-234341000,Fishing vessel,Trawlers,Trawlers,64.4,,1
-227317980,Fishing vessel,Trawlers,Trawlers,21.1,55.95,1
-367159840,Fishing vessel,Pole and line,Pole and line,23.5,106.0,1
-367171320,Fishing vessel,Pole and line,Pole and line,22.4,154.0,1
-235005640,Fishing vessel,Trawlers,Trawlers,32.1,,1
-237216000,Fishing vessel,Trawlers,Trawlers,24.95,27.86,1
-366794430,Fishing vessel,Pole and line,Pole and line,22.6,113.0,1
-235003170,Fishing vessel,Trawlers,Trawlers,36.6,,1
-233659000,Fishing vessel,Trawlers,Trawlers,60.82,,1
 224085260,Fishing vessel,Pole and line,Pole and line,37.0,206.0,1
 224033380,Fishing vessel,Pole and line,Pole and line,28.5,128.0,1
 250440000,Fishing vessel,Trawlers,Trawlers,33.4,304.0,1
@@ -49,6 +17,118 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 247300220,Fishing vessel,Trawlers,Trawlers,24.83,115.0,1
 224086550,Fishing vessel,Trawlers,Trawlers,27.5,198.0,1
 512002262,Fishing vessel,Trawlers,Trawlers,19.2,80.0,1
+247121420,Fishing vessel,Trawlers,Trawlers,26.1,108.0,1
+367559610,Fishing vessel,Pole and line,Pole and line,23.8,123.0,1
+224098930,Fishing vessel,Pole and line,Pole and line,35.6,241.0,1
+234896000,Fishing vessel,Trawlers,Trawlers,24.26,,1
+247145720,Fishing vessel,Trawlers,Trawlers,29.8,158.0,1
+247143660,Fishing vessel,Trawlers,Trawlers,24.32,107.0,1
+431006099,Fishing vessel,Pole and line,Pole and line,22.35,51.0,1
+247082580,Fishing vessel,Trawlers,Trawlers,27.2,120.0,1
+224147740,Fishing vessel,Pole and line,Pole and line,29.72,148.0,1
+235007300,Fishing vessel,Fixed gear,Set gillnets,39.82,,1
+227513000,Fishing vessel,Fixed gear,Set gillnets,21.4,131.32,1
+367401480,Fishing vessel,Pole and line,Pole and line,20.01,148.0,1
+224271000,Fishing vessel,Pole and line,Pole and line,30.5,163.0,1
+228263000,Fishing vessel,Trawlers,Trawlers,20.79,121.12,1
+250001656,Fishing vessel,Trawlers,Trawlers,23.4,163.0,1
+224099320,Fishing vessel,Pole and line,Pole and line,34.2,175.0,1
+227913000,Fishing vessel,Trawlers,Trawlers,24.9,85.0,1
+246429000,Fishing vessel,Trawlers,Trawlers,142.5,9494.0,1
+247083260,Fishing vessel,Trawlers,Trawlers,25.3,131.0,1
+250512000,Fishing vessel,Trawlers,Trawlers,64.6,1499.0,1
+245084000,Fishing vessel,Trawlers,Trawlers,119.65,6512.0,1
+224052360,Fishing vessel,Pole and line,Pole and line,31.6,156.0,1
+224156290,Fishing vessel,Pole and line,Pole and line,24.5,93.57,1
+512000015,Fishing vessel,Trawlers,Trawlers,42.5,1048.0,1
+247053120,Fishing vessel,Trawlers,Trawlers,24.27,95.0,1
+250513000,Fishing vessel,Trawlers,Trawlers,64.6,1499.0,1
+224216220,Fishing vessel,Trawlers,Trawlers,29.62,252.0,1
+228854000,Fishing vessel,Trawlers,Trawlers,20.4,134.65,1
+244309000,Fishing vessel,Trawlers,Trawlers,99.94,3274.0,1
+224104820,Fishing vessel,Pole and line,Pole and line,32.5,177.0,1
+245811000,Fishing vessel,Trawlers,Trawlers,126.22,7005.0,1
+247144220,Fishing vessel,Trawlers,Trawlers,26.76,108.0,1
+247100930,Fishing vessel,Trawlers,Trawlers,27.4,124.0,1
+247122110,Fishing vessel,Trawlers,Trawlers,24.0,68.0,1
+431700150,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
+316001125,Fishing vessel,Trollers,Trollers,28.95,444.115,1
+316001649,Fishing vessel,Trollers,Trollers,22.66,80.16,1
+247121010,Fishing vessel,Trawlers,Trawlers,25.9,95.0,1
+367103350,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
+431722000,Fishing vessel,Pole and line,Pole and line,58.065,483.0,1
+228904000,Fishing vessel,Trawlers,Trawlers,24.44,119.43,1
+204858000,Fishing vessel,Pole and line,Pole and line,29.46,171.0,1
+247083860,Fishing vessel,Trawlers,Trawlers,27.62,84.13,1
+224291000,Fishing vessel,Pole and line,Pole and line,31.5,175.0,1
+244563000,Fishing vessel,Trawlers,Trawlers,144.6,14055.0,1
+228124000,Fishing vessel,Trawlers,Trawlers,20.79,118.0,1
+247059800,Fishing vessel,Trawlers,Trawlers,43.85,665.0,1
+224022170,Fishing vessel,Trawlers,Trawlers,28.0,225.9,1
+431487000,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
+250000957,Fishing vessel,Trawlers,Trawlers,23.2,224.0,1
+247121120,Fishing vessel,Trawlers,Trawlers,26.6,83.0,1
+247252970,Fishing vessel,Trawlers,Trawlers,24.8,109.0,1
+227143900,Fishing vessel,Trawlers,Trawlers,23.5,144.35,1
+512000192,Fishing vessel,Trawlers,Trawlers,58.9,1386.0,1
+247146450,Fishing vessel,Trawlers,Trawlers,26.4,165.0,1
+233345000,Fishing vessel,Trawlers,Trawlers,26.23,,1
+224086790,Fishing vessel,Pole and line,Pole and line,36.0,247.0,1
+247121180,Fishing vessel,Trawlers,Trawlers,24.84,79.0,1
+367466000,Fishing vessel,Trollers,Trollers,22.46,89.5,1
+512002681,Fishing vessel,Trawlers,Trawlers,32.1,498.0,1
+247083420,Fishing vessel,Trawlers,Trawlers,27.3,120.0,1
+601160100,Fishing vessel,Pole and line,Pole and line,19.96,79.06,1
+250165000,Fishing vessel,Trawlers,Trawlers,41.3,644.0,1
+226267000,Fishing vessel,Trawlers,Trawlers,24.96,188.49,1
+224134520,Fishing vessel,Pole and line,Pole and line,33.0,186.0,1
+204826000,Fishing vessel,Pole and line,Pole and line,31.14,166.0,1
+247122020,Fishing vessel,Trawlers,Trawlers,26.76,127.0,1
+227144400,Fishing vessel,Trawlers,Trawlers,24.9,154.23,1
+247146110,Fishing vessel,Trawlers,Trawlers,23.95,82.0,1
+247121730,Fishing vessel,Trawlers,Trawlers,24.72,66.0,1
+234341000,Fishing vessel,Trawlers,Trawlers,64.4,,1
+227317980,Fishing vessel,Trawlers,Trawlers,21.1,55.95,1
+367159840,Fishing vessel,Pole and line,Pole and line,23.5,106.0,1
+367171320,Fishing vessel,Pole and line,Pole and line,22.4,154.0,1
+235005640,Fishing vessel,Trawlers,Trawlers,32.1,,1
+237216000,Fishing vessel,Trawlers,Trawlers,24.95,27.86,1
+366794430,Fishing vessel,Pole and line,Pole and line,22.6,113.0,1
+235003170,Fishing vessel,Trawlers,Trawlers,36.6,,1
+233659000,Fishing vessel,Trawlers,Trawlers,60.82,,1
+255500118,Fishing vessel,Pole and line,Pole and line,27.0,121.0,1
+367138310,Fishing vessel,Trollers,Trollers,18.26,32.0,1
+271072420,Fishing vessel,Trollers,Trollers,25.92,111.0,1
+367561420,Fishing vessel,Trollers,Trollers,31.45,177.0,1
+247100040,Fishing vessel,Trawlers,Trawlers,26.2,115.0,1
+250000546,Fishing vessel,Trawlers,Trawlers,22.4,141.0,1
+247151950,Fishing vessel,Trawlers,Trawlers,28.45,168.0,1
+247142580,Fishing vessel,Trawlers,Trawlers,27.72,158.0,1
+512300107,Fishing vessel,Trawlers,Trawlers,42.7,335.0,1
+601240000,Fishing vessel,Pole and line,Pole and line,21.96,96.4,1
+232806000,Fishing vessel,Trawlers,Trawlers,26.21,,1
+247121920,Fishing vessel,Trawlers,Trawlers,27.52,99.0,1
+367548870,Fishing vessel,Pole and line,Pole and line,19.76,49.0,1
+224064850,Fishing vessel,Pole and line,Pole and line,27.19,154.0,1
+224004680,Fishing vessel,Pole and line,Pole and line,28.0,139.0,1
+247083480,Fishing vessel,Trawlers,Trawlers,24.8,106.0,1
+277047000,Fishing vessel,Trawlers,Trawlers,117.5,5979.0,1
+247121080,Fishing vessel,Trawlers,Trawlers,24.9,69.0,1
+247052930,Fishing vessel,Trawlers,Trawlers,26.85,134.0,1
+224018260,Fishing vessel,Pole and line,Pole and line,34.4,194.0,1
+227532000,Fishing vessel,Fixed gear,Set gillnets,24.9,180.0,1
+665111120,Fishing vessel,Pole and line,Pole and line,22.0,62.0,1
+247102240,Fishing vessel,Trawlers,Trawlers,24.05,83.0,1
+247053620,Fishing vessel,Trawlers,Trawlers,24.32,124.0,1
+232006810,Fishing vessel,Fixed gear,Set gillnets,31.26,226.0,1
+224050570,Fishing vessel,Pole and line,Pole and line,31.5,177.0,1
+224063680,Fishing vessel,Pole and line,Pole and line,36.0,231.0,1
+250269000,Fishing vessel,Trawlers,Trawlers,26.0,243.0,1
+247100070,Fishing vessel,Trawlers,Trawlers,26.75,113.0,1
+366207630,Fishing vessel,Trollers,Trollers,21.82,89.0,1
+227308000,Fishing vessel,Trawlers,Trawlers,20.79,113.0,1
+367104150,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
+227436000,Fishing vessel,Trawlers,Trawlers,22.8,129.0,1
 227317550,Fishing vessel,Trawlers,Trawlers,20.25,45.68,1
 250261000,Fishing vessel,Trawlers,Trawlers,25.08,190.0,1
 235004700,Fishing vessel,Trawlers,Trawlers,61.5,,1
@@ -70,72 +150,6 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 247083920,Fishing vessel,Trawlers,Trawlers,23.65,90.0,1
 431258000,Fishing vessel,Pole and line,Pole and line,31.0,119.0,1
 228191900,Fishing vessel,Trawlers,Trawlers,24.9,157.0,1
-245084000,Fishing vessel,Trawlers,Trawlers,119.65,6512.0,1
-224052360,Fishing vessel,Pole and line,Pole and line,31.6,156.0,1
-224156290,Fishing vessel,Pole and line,Pole and line,24.5,93.57,1
-512000015,Fishing vessel,Trawlers,Trawlers,42.5,1048.0,1
-247053120,Fishing vessel,Trawlers,Trawlers,24.27,95.0,1
-250513000,Fishing vessel,Trawlers,Trawlers,64.6,1499.0,1
-224216220,Fishing vessel,Trawlers,Trawlers,29.62,252.0,1
-228854000,Fishing vessel,Trawlers,Trawlers,20.4,134.65,1
-244309000,Fishing vessel,Trawlers,Trawlers,99.94,3274.0,1
-224104820,Fishing vessel,Pole and line,Pole and line,32.5,177.0,1
-245811000,Fishing vessel,Trawlers,Trawlers,126.22,7005.0,1
-247144220,Fishing vessel,Trawlers,Trawlers,26.76,108.0,1
-247100930,Fishing vessel,Trawlers,Trawlers,27.4,124.0,1
-247122110,Fishing vessel,Trawlers,Trawlers,24.0,68.0,1
-247121420,Fishing vessel,Trawlers,Trawlers,26.1,108.0,1
-367559610,Fishing vessel,Pole and line,Pole and line,23.8,123.0,1
-224098930,Fishing vessel,Pole and line,Pole and line,35.6,241.0,1
-234896000,Fishing vessel,Trawlers,Trawlers,24.26,,1
-247145720,Fishing vessel,Trawlers,Trawlers,29.8,158.0,1
-247143660,Fishing vessel,Trawlers,Trawlers,24.32,107.0,1
-431006099,Fishing vessel,Pole and line,Pole and line,22.35,51.0,1
-247082580,Fishing vessel,Trawlers,Trawlers,27.2,120.0,1
-224147740,Fishing vessel,Pole and line,Pole and line,29.72,148.0,1
-235007300,Fishing vessel,Set gillnets,Set gillnets,39.82,,1
-227513000,Fishing vessel,Set gillnets,Set gillnets,21.4,131.32,1
-367401480,Fishing vessel,Pole and line,Pole and line,20.01,148.0,1
-224271000,Fishing vessel,Pole and line,Pole and line,30.5,163.0,1
-228263000,Fishing vessel,Trawlers,Trawlers,20.79,121.12,1
-250001656,Fishing vessel,Trawlers,Trawlers,23.4,163.0,1
-224099320,Fishing vessel,Pole and line,Pole and line,34.2,175.0,1
-227913000,Fishing vessel,Trawlers,Trawlers,24.9,85.0,1
-246429000,Fishing vessel,Trawlers,Trawlers,142.5,9494.0,1
-247083260,Fishing vessel,Trawlers,Trawlers,25.3,131.0,1
-250512000,Fishing vessel,Trawlers,Trawlers,64.6,1499.0,1
-247083480,Fishing vessel,Trawlers,Trawlers,24.8,106.0,1
-277047000,Fishing vessel,Trawlers,Trawlers,117.5,5979.0,1
-247121080,Fishing vessel,Trawlers,Trawlers,24.9,69.0,1
-247052930,Fishing vessel,Trawlers,Trawlers,26.85,134.0,1
-224018260,Fishing vessel,Pole and line,Pole and line,34.4,194.0,1
-227532000,Fishing vessel,Set gillnets,Set gillnets,24.9,180.0,1
-665111120,Fishing vessel,Pole and line,Pole and line,22.0,62.0,1
-247102240,Fishing vessel,Trawlers,Trawlers,24.05,83.0,1
-247053620,Fishing vessel,Trawlers,Trawlers,24.32,124.0,1
-232006810,Fishing vessel,Set gillnets,Set gillnets,31.26,226.0,1
-224050570,Fishing vessel,Pole and line,Pole and line,31.5,177.0,1
-224063680,Fishing vessel,Pole and line,Pole and line,36.0,231.0,1
-250269000,Fishing vessel,Trawlers,Trawlers,26.0,243.0,1
-247100070,Fishing vessel,Trawlers,Trawlers,26.75,113.0,1
-366207630,Fishing vessel,Trollers,Trollers,21.82,89.0,1
-227308000,Fishing vessel,Trawlers,Trawlers,20.79,113.0,1
-367104150,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
-227436000,Fishing vessel,Trawlers,Trawlers,22.8,129.0,1
-431700150,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
-316001125,Fishing vessel,Trollers,Trollers,28.95,444.115,1
-316001649,Fishing vessel,Trollers,Trollers,22.66,80.16,1
-247121010,Fishing vessel,Trawlers,Trawlers,25.9,95.0,1
-367103350,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
-431722000,Fishing vessel,Pole and line,Pole and line,58.065,483.0,1
-228904000,Fishing vessel,Trawlers,Trawlers,24.44,119.43,1
-204858000,Fishing vessel,Pole and line,Pole and line,29.46,171.0,1
-247083860,Fishing vessel,Trawlers,Trawlers,27.62,84.13,1
-224291000,Fishing vessel,Pole and line,Pole and line,31.5,175.0,1
-244563000,Fishing vessel,Trawlers,Trawlers,144.6,14055.0,1
-228124000,Fishing vessel,Trawlers,Trawlers,20.79,118.0,1
-247059800,Fishing vessel,Trawlers,Trawlers,43.85,665.0,1
-224022170,Fishing vessel,Trawlers,Trawlers,28.0,225.9,1
 235005510,Fishing vessel,Trawlers,Trawlers,32.2,,1
 247302670,Fishing vessel,Trawlers,Trawlers,25.25,137.0,1
 247082560,Fishing vessel,Trawlers,Trawlers,27.2,120.0,1
@@ -144,76 +158,16 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 367051920,Fishing vessel,Pole and line,Pole and line,23.71,157.0,1
 366980030,Fishing vessel,Trollers,Trollers,12.8,11.0,1
 247146610,Fishing vessel,Trawlers,Trawlers,29.02,148.0,1
-431487000,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
-250000957,Fishing vessel,Trawlers,Trawlers,23.2,224.0,1
-247121120,Fishing vessel,Trawlers,Trawlers,26.6,83.0,1
-247252970,Fishing vessel,Trawlers,Trawlers,24.8,109.0,1
-227143900,Fishing vessel,Trawlers,Trawlers,23.5,144.35,1
-512000192,Fishing vessel,Trawlers,Trawlers,58.9,1386.0,1
-247146450,Fishing vessel,Trawlers,Trawlers,26.4,165.0,1
-233345000,Fishing vessel,Trawlers,Trawlers,26.23,,1
-224086790,Fishing vessel,Pole and line,Pole and line,36.0,247.0,1
-247121180,Fishing vessel,Trawlers,Trawlers,24.84,79.0,1
-367466000,Fishing vessel,Trollers,Trollers,22.46,89.5,1
-512002681,Fishing vessel,Trawlers,Trawlers,32.1,498.0,1
-247083420,Fishing vessel,Trawlers,Trawlers,27.3,120.0,1
-601160100,Fishing vessel,Pole and line,Pole and line,19.96,79.06,1
-367129120,Fishing vessel,Pole and line,Pole and line,22.9,150.0,1
-224079440,Fishing vessel,Pole and line,Pole and line,31.6,160.0,1
-367078130,Fishing vessel,Trollers,Trollers,32.09,180.0,1
-204287000,Fishing vessel,Pole and line,Pole and line,29.9,186.43,1
-247096450,Fishing vessel,Trawlers,Trawlers,25.5,52.0,1
-224004810,Fishing vessel,Pole and line,Pole and line,31.5,186.0,1
-247100320,Fishing vessel,Trawlers,Trawlers,23.09,149.0,1
-273526800,Fishing vessel,Trawlers,Trawlers,120.47,,1
-235025319,Fishing vessel,Trawlers,Trawlers,40.2,,1
-367040420,Fishing vessel,Trollers,Trollers,14.425,41.0,1
-366207650,Fishing vessel,Trollers,Trollers,22.86,59.0,1
-224547000,Fishing vessel,Trawlers,Trawlers,69.25,1454.0,1
-235051022,Fishing vessel,Trawlers,Trawlers,72.0,2411.0,1
-250116400,Fishing vessel,Trawlers,Trawlers,21.65,176.0,1
-247144240,Fishing vessel,Trawlers,Trawlers,26.35,110.0,1
-224181290,Fishing vessel,Trawlers,Trawlers,29.0,234.86,1
-224114650,Fishing vessel,Pole and line,Pole and line,33.3,148.0,1
-235627000,Fishing vessel,Trawlers,Trawlers,35.5,,1
-627848000,Fishing vessel,Pole and line,Pole and line,48.93,434.0,1
-235013871,Fishing vessel,Trawlers,Trawlers,31.73,,1
 250000309,Fishing vessel,Trawlers,Trawlers,21.95,131.0,1
 250001769,Fishing vessel,Trawlers,Trawlers,27.36,268.0,1
 204829000,Fishing vessel,Pole and line,Pole and line,25.41,116.0,1
 601189200,Fishing vessel,Pole and line,Pole and line,24.0,116.0,1
 431680000,Fishing vessel,Pole and line,Pole and line,56.2,498.0,1
-227574000,Fishing vessel,Set gillnets,Set gillnets,22.4,155.49,1
+227574000,Fishing vessel,Fixed gear,Set gillnets,22.4,155.49,1
 235674000,Fishing vessel,Trawlers,Trawlers,70.7,,1
 224075000,Fishing vessel,Trawlers,Trawlers,30.7,286.0,1
 227401000,Fishing vessel,Trawlers,Trawlers,22.82,143.44,1
 367172260,Fishing vessel,Trollers,Trollers,37.97,179.0,1
-601770000,Fishing vessel,Pole and line,Pole and line,29.74,243.0,1
-224050560,Fishing vessel,Pole and line,Pole and line,31.5,177.0,1
-247144390,Fishing vessel,Trawlers,Trawlers,25.24,112.0,1
-367147350,Fishing vessel,Pole and line,Pole and line,23.47,103.0,1
-227317860,Fishing vessel,Trawlers,Trawlers,20.05,48.66,1
-227443000,Fishing vessel,Trawlers,Trawlers,20.6,103.09,1
-224013220,Fishing vessel,Trawlers,Trawlers,30.7,286.0,1
-250105800,Fishing vessel,Trawlers,Trawlers,22.5,190.0,1
-228154900,Fishing vessel,Trawlers,Trawlers,24.95,147.0,1
-227145900,Fishing vessel,Trawlers,Trawlers,24.95,147.0,1
-224065000,Fishing vessel,Trawlers,Trawlers,28.0,219.02,1
-228236800,Fishing vessel,Trawlers,Trawlers,22.65,100.0,1
-367131750,Fishing vessel,Pole and line,Pole and line,25.84,194.0,1
-512410000,Fishing vessel,Trawlers,Trawlers,23.98,202.0,1
-224070000,Fishing vessel,Pole and line,Pole and line,38.3,262.0,1
-367074460,Fishing vessel,Pole and line,Pole and line,26.14,155.0,1
-247100480,Fishing vessel,Trawlers,Trawlers,27.7,159.0,1
-233190000,Fishing vessel,Trawlers,Trawlers,26.7,,1
-512411000,Fishing vessel,Trawlers,Trawlers,104.5,90.4,1
-247071060,Fishing vessel,Trawlers,Trawlers,24.7,110.0,1
-247071050,Fishing vessel,Trawlers,Trawlers,24.3,98.0,1
-227831000,Fishing vessel,Trawlers,Trawlers,22.5,159.6,1
-224134550,Fishing vessel,Trawlers,Trawlers,31.4,277.0,1
-247145660,Fishing vessel,Trawlers,Trawlers,25.1,174.0,1
-247121220,Fishing vessel,Trawlers,Trawlers,25.9,89.0,1
-247143430,Fishing vessel,Trawlers,Trawlers,26.83,92.0,1
 224024480,Fishing vessel,Pole and line,Pole and line,31.5,115.95,1
 431200880,Fishing vessel,Pole and line,Pole and line,53.34,499.0,1
 224157840,Fishing vessel,Pole and line,Pole and line,33.5,197.0,1
@@ -226,25 +180,24 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 246274000,Fishing vessel,Trawlers,Trawlers,126.22,7053.0,1
 224103760,Fishing vessel,Pole and line,Pole and line,29.85,136.0,1
 224136380,Fishing vessel,Trawlers,Trawlers,31.3,254.0,1
-228840000,Fishing vessel,Set gillnets,Set gillnets,23.09,142.89,1
+228840000,Fishing vessel,Fixed gear,Set gillnets,23.09,142.89,1
 271072145,Fishing vessel,Trollers,Trollers,22.73,25.0,1
 247118500,Fishing vessel,Trawlers,Trawlers,41.4,431.0,1
 226150000,Fishing vessel,Trawlers,Trawlers,23.3,165.5,1
 247121440,Fishing vessel,Trawlers,Trawlers,25.11,70.0,1
-232007300,Fishing vessel,Trawlers,Trawlers,26.19,,1
-247121790,Fishing vessel,Trawlers,Trawlers,23.68,65.0,1
-431914000,Fishing vessel,Pole and line,Pole and line,52.65,455.0,1
-250103600,Fishing vessel,Trawlers,Trawlers,22.65,193.0,1
-224081180,Fishing vessel,Set gillnets,Set gillnets,26.5,114.0,1
-247147390,Fishing vessel,Trawlers,Trawlers,27.72,159.0,1
-367551660,Fishing vessel,Pole and line,Pole and line,23.5,138.0,1
-224069850,Fishing vessel,Pole and line,Pole and line,32.0,159.0,1
-224051140,Fishing vessel,Pole and line,Pole and line,24.7,109.0,1
-232006820,Fishing vessel,Set gillnets,Set gillnets,31.12,,1
-224086780,Fishing vessel,Pole and line,Pole and line,33.0,198.0,1
-366218540,Fishing vessel,Pole and line,Pole and line,23.5,124.0,1
-247051980,Fishing vessel,Trawlers,Trawlers,27.45,136.0,1
-228843000,Fishing vessel,Set gillnets,Set gillnets,20.48,104.22,1
+224070000,Fishing vessel,Pole and line,Pole and line,38.3,262.0,1
+367074460,Fishing vessel,Pole and line,Pole and line,26.14,155.0,1
+247100480,Fishing vessel,Trawlers,Trawlers,27.7,159.0,1
+233190000,Fishing vessel,Trawlers,Trawlers,26.7,,1
+512411000,Fishing vessel,Trawlers,Trawlers,104.5,90.4,1
+247071060,Fishing vessel,Trawlers,Trawlers,24.7,110.0,1
+247071050,Fishing vessel,Trawlers,Trawlers,24.3,98.0,1
+227831000,Fishing vessel,Trawlers,Trawlers,22.5,159.6,1
+224134550,Fishing vessel,Trawlers,Trawlers,31.4,277.0,1
+247145660,Fishing vessel,Trawlers,Trawlers,25.1,174.0,1
+247121220,Fishing vessel,Trawlers,Trawlers,25.9,89.0,1
+247143430,Fishing vessel,Trawlers,Trawlers,26.83,92.0,1
+228843000,Fishing vessel,Fixed gear,Set gillnets,20.48,104.22,1
 224089000,Fishing vessel,Pole and line,Pole and line,38.3,262.0,1
 431500911,Fishing vessel,Pole and line,Pole and line,29.12,99.0,1
 228240800,Fishing vessel,Trawlers,Trawlers,20.7,117.6,1
@@ -261,19 +214,9 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 247070600,Fishing vessel,Trawlers,Trawlers,35.6,365.0,1
 247071040,Fishing vessel,Trawlers,Trawlers,22.82,129.0,1
 247099790,Fishing vessel,Trawlers,Trawlers,28.73,135.0,1
-227317000,Fishing vessel,Trawlers,Trawlers,22.8,145.82,1
-367070360,Fishing vessel,Trollers,Trollers,17.065,68.5,1
-250101900,Fishing vessel,Trawlers,Trawlers,26.9,279.0,1
-271072507,Fishing vessel,Trollers,Trollers,25.35,36.0,1
-247100020,Fishing vessel,Trawlers,Trawlers,25.0,96.0,1
-232746000,Fishing vessel,Trawlers,Trawlers,40.0,,1
-228185800,Fishing vessel,Set gillnets,Set gillnets,23.0,150.37,1
-431200990,Fishing vessel,Pole and line,Pole and line,48.76,359.0,1
-255402880,Fishing vessel,Pole and line,Pole and line,26.0,120.3,1
-232007650,Fishing vessel,Trawlers,Trawlers,26.3,,1
 224181230,Fishing vessel,Trawlers,Trawlers,31.9,292.0,1
 277330000,Fishing vessel,Trawlers,Trawlers,139.455,9499.0,1
-224218930,Fishing vessel,Set gillnets,Set gillnets,26.0,107.42,1
+224218930,Fishing vessel,Fixed gear,Set gillnets,26.0,107.42,1
 431200060,Fishing vessel,Pole and line,Pole and line,56.3,499.0,1
 247050790,Fishing vessel,Trawlers,Trawlers,24.84,208.0,1
 224068650,Fishing vessel,Trawlers,Trawlers,28.0,227.0,1
@@ -285,210 +228,70 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 228110800,Fishing vessel,Trawlers,Trawlers,20.55,92.0,1
 224027520,Fishing vessel,Trawlers,Trawlers,32.0,257.0,1
 228218800,Fishing vessel,Trawlers,Trawlers,24.9,95.0,1
-367161930,Fishing vessel,Trollers,Trollers,15.145,222.5,1
-512400000,Fishing vessel,Trawlers,Trawlers,60.47,1899.0,1
-224259220,Fishing vessel,Trawlers,Trawlers,29.5,247.0,1
-232006840,Fishing vessel,Set gillnets,Set gillnets,27.3,,1
-235055004,Fishing vessel,Trawlers,Trawlers,35.0,355.0,1
-601677000,Fishing vessel,Pole and line,Pole and line,21.87,72.31,1
-273528800,Fishing vessel,Trawlers,Trawlers,120.47,,1
-228187700,Fishing vessel,Trawlers,Trawlers,24.7,98.0,1
-224074890,Fishing vessel,Pole and line,Pole and line,32.0,160.0,1
-247083400,Fishing vessel,Trawlers,Trawlers,44.15,490.0,1
-224104450,Fishing vessel,Pole and line,Pole and line,31.0,162.0,1
-512002694,Fishing vessel,Trawlers,Trawlers,25.0,129.0,1
-228935000,Fishing vessel,Trawlers,Trawlers,23.5,134.0,1
-247125640,Fishing vessel,Trawlers,Trawlers,24.07,63.0,1
-247142750,Fishing vessel,Trawlers,Trawlers,31.06,179.0,1
-366831470,Fishing vessel,Trollers,Trollers,13.56,22.0,1
-247081650,Fishing vessel,Trawlers,Trawlers,27.0,139.0,1
-224075180,Fishing vessel,Pole and line,Pole and line,31.2,194.0,1
-247146750,Fishing vessel,Trawlers,Trawlers,33.3,177.0,1
-367399460,Fishing vessel,Trollers,Trollers,9.75,13.5,1
-250104600,Fishing vessel,Trawlers,Trawlers,27.0,256.0,1
-250001143,Fishing vessel,Trawlers,Trawlers,20.4,110.0,1
-247121240,Fishing vessel,Trawlers,Trawlers,32.58,173.0,1
-228107800,Fishing vessel,Trawlers,Trawlers,24.975,226.63,1
-227409000,Fishing vessel,Trawlers,Trawlers,20.78,109.0,1
-232006620,Fishing vessel,Set gillnets,Set gillnets,37.66,,1
-224082580,Fishing vessel,Pole and line,Pole and line,26.0,87.0,1
-228248700,Fishing vessel,Trawlers,Trawlers,24.95,69.46,1
-601690000,Fishing vessel,Pole and line,Pole and line,19.73,73.17,1
-247142790,Fishing vessel,Trawlers,Trawlers,26.95,138.0,1
-367061930,Fishing vessel,Trollers,Trollers,23.0,64.0,1
-316012074,Fishing vessel,Trollers,Trollers,12.65,24.525,1
-227860000,Fishing vessel,Trawlers,Trawlers,22.8,137.0,1
-367030568,Fishing vessel,Trollers,Trollers,23.6,138.0,1
-367046890,Fishing vessel,Trollers,Trollers,21.67,103.0,1
-247118400,Fishing vessel,Trawlers,Trawlers,41.4,435.0,1
-367134180,Fishing vessel,Pole and line,Pole and line,,53.5,1
-273352910,Fishing vessel,Trawlers,Trawlers,94.0,,1
-204206740,Fishing vessel,Pole and line,Pole and line,20.0,77.39,1
-228888000,Fishing vessel,Trawlers,Trawlers,20.7,103.0,1
-224896000,Fishing vessel,Pole and line,Pole and line,32.5,177.0,1
-235002690,Fishing vessel,Trawlers,Trawlers,28.0,,1
-247051410,Fishing vessel,Trawlers,Trawlers,24.84,208.0,1
-224204520,Fishing vessel,Trawlers,Trawlers,30.0,238.0,1
-247083410,Fishing vessel,Trawlers,Trawlers,27.25,114.0,1
-226183000,Fishing vessel,Trawlers,Trawlers,24.45,202.45,1
-209353000,Fishing vessel,Trawlers,Trawlers,23.8,91.12,1
-367500440,Fishing vessel,Trollers,Trollers,,52.5,1
-367187480,Fishing vessel,Pole and line,Pole and line,22.6,35.0,1
-224004800,Fishing vessel,Pole and line,Pole and line,28.5,161.0,1
-224105920,Fishing vessel,Trawlers,Trawlers,27.9,200.6,1
-512236000,Fishing vessel,Trawlers,Trawlers,65.1,1899.0,1
-224121650,Fishing vessel,Trawlers,Trawlers,28.5,243.0,1
-431698000,Fishing vessel,Pole and line,Pole and line,47.71,385.0,1
-247083210,Fishing vessel,Trawlers,Trawlers,26.75,141.0,1
-204851000,Fishing vessel,Pole and line,Pole and line,25.4,138.52,1
-367104170,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
-247147590,Fishing vessel,Trawlers,Trawlers,31.95,215.0,1
-224125140,Fishing vessel,Trawlers,Trawlers,31.4,277.0,1
-235001810,Fishing vessel,Trawlers,Trawlers,26.0,,1
-237918000,Fishing vessel,Trawlers,Trawlers,28.0,41.14,1
-247064760,Fishing vessel,Trawlers,Trawlers,28.04,105.0,1
-367157650,Fishing vessel,Trollers,Trollers,19.1,36.0,1
-627163000,Fishing vessel,Pole and line,Pole and line,57.16,418.0,1
-250428000,Fishing vessel,Trawlers,Trawlers,26.6,335.0,1
-431693000,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
-247120670,Fishing vessel,Trawlers,Trawlers,24.95,69.0,1
-247061610,Fishing vessel,Trawlers,Trawlers,26.28,91.0,1
-247092970,Fishing vessel,Trawlers,Trawlers,24.8,63.0,1
-232007970,Fishing vessel,Trawlers,Trawlers,25.1,,1
-227917000,Fishing vessel,Trawlers,Trawlers,32.8,273.0,1
-247304930,Fishing vessel,Trawlers,Trawlers,29.81,140.0,1
-247083440,Fishing vessel,Trawlers,Trawlers,25.5,132.0,1
-228137900,Fishing vessel,Trawlers,Trawlers,23.3,182.76,1
-247051830,Fishing vessel,Trawlers,Trawlers,26.8,133.0,1
-367575760,Fishing vessel,Trollers,Trollers,17.67,83.0,1
-235002051,Fishing vessel,Trawlers,Trawlers,24.7,,1
-227483000,Fishing vessel,Trawlers,Trawlers,22.0,131.08,1
-367326480,Fishing vessel,Pole and line,Pole and line,32.22,198.0,1
-247120440,Fishing vessel,Trawlers,Trawlers,24.63,88.0,1
-247083540,Fishing vessel,Trawlers,Trawlers,28.1,108.0,1
-224123720,Fishing vessel,Trawlers,Trawlers,30.9,263.0,1
-227309000,Fishing vessel,Trawlers,Trawlers,24.9,178.91,1
-247120470,Fishing vessel,Trawlers,Trawlers,28.7,157.0,1
-235011319,Fishing vessel,Trawlers,Trawlers,43.51,,1
-224057830,Fishing vessel,Set gillnets,Set gillnets,27.0,106.74,1
-233651000,Fishing vessel,Trawlers,Trawlers,27.4,,1
-250117400,Fishing vessel,Trawlers,Trawlers,24.5,230.0,1
-237885000,Fishing vessel,Trawlers,Trawlers,28.15,63.22,1
-224040260,Fishing vessel,Pole and line,Pole and line,36.0,236.0,1
-225353000,Fishing vessel,Trawlers,Trawlers,30.5,278.0,1
-211238930,Fishing vessel,Trawlers,Trawlers,116.7,7278.0,1
-247083070,Fishing vessel,Trawlers,Trawlers,25.6,118.0,1
-232006590,Fishing vessel,Set gillnets,Set gillnets,38.2,,1
-224061430,Fishing vessel,Pole and line,Pole and line,35.6,206.0,1
-247070850,Fishing vessel,Trawlers,Trawlers,25.1,121.0,1
-247121190,Fishing vessel,Trawlers,Trawlers,25.84,89.0,1
-227145300,Fishing vessel,Trawlers,Trawlers,24.95,146.0,1
-224148740,Fishing vessel,Set gillnets,Set gillnets,24.0,150.27,1
-227393000,Fishing vessel,Trawlers,Trawlers,24.9,157.89,1
-224067670,Fishing vessel,Trawlers,Trawlers,27.9,210.8,1
-224208650,Fishing vessel,Trawlers,Trawlers,29.0,239.0,1
-273350650,Fishing vessel,Trawlers,Trawlers,104.5,,1
-204201560,Fishing vessel,Pole and line,Pole and line,25.4,138.66,1
-247051550,Fishing vessel,Trawlers,Trawlers,26.74,111.0,1
-232006050,Fishing vessel,Trawlers,Trawlers,40.0,,1
-366738920,Fishing vessel,Trollers,Trollers,24.1,167.0,1
-224030940,Fishing vessel,Set gillnets,Set gillnets,25.0,166.37,1
-224209000,Fishing vessel,Trawlers,Trawlers,29.5,241.0,1
-232006310,Fishing vessel,Trawlers,Trawlers,26.1,,1
-224019630,Fishing vessel,Pole and line,Pole and line,36.0,252.0,1
-247051920,Fishing vessel,Trawlers,Trawlers,26.5,101.0,1
-247070670,Fishing vessel,Trawlers,Trawlers,24.0,98.0,1
-224047430,Fishing vessel,Trawlers,Trawlers,31.35,256.48,1
-224460000,Fishing vessel,Pole and line,Pole and line,29.1,138.0,1
-247220130,Fishing vessel,Trawlers,Trawlers,27.6,79.0,1
-247071930,Fishing vessel,Trawlers,Trawlers,26.45,125.0,1
-247101510,Fishing vessel,Trawlers,Trawlers,25.85,120.0,1
-271062093,Fishing vessel,Trollers,Trollers,25.0,114.0,1
-247070970,Fishing vessel,Trawlers,Trawlers,26.68,124.0,1
-204834000,Fishing vessel,Pole and line,Pole and line,29.25,145.0,1
-227143600,Fishing vessel,Trawlers,Trawlers,23.4,177.56,1
-224074180,Fishing vessel,Pole and line,Pole and line,24.7,106.0,1
-235058829,Fishing vessel,Trawlers,Trawlers,26.25,153.0,1
-224895000,Fishing vessel,Pole and line,Pole and line,32.5,177.0,1
-277506000,Fishing vessel,Trawlers,Trawlers,120.0,7765.0,1
-277510000,Fishing vessel,Trawlers,Trawlers,120.0,7765.0,1
-247083550,Fishing vessel,Trawlers,Trawlers,28.45,138.0,1
-247147290,Fishing vessel,Trawlers,Trawlers,28.1,174.0,1
-247147370,Fishing vessel,Trawlers,Trawlers,26.4,165.0,1
-247100640,Fishing vessel,Trawlers,Trawlers,24.02,98.0,1
-247100350,Fishing vessel,Trawlers,Trawlers,26.28,108.0,1
-204208790,Fishing vessel,Pole and line,Pole and line,24.0,98.32,1
-233714000,Fishing vessel,Trawlers,Trawlers,27.41,,1
-228178900,Fishing vessel,Trawlers,Trawlers,24.95,147.0,1
-247145510,Fishing vessel,Trawlers,Trawlers,32.79,181.0,1
-367537080,Fishing vessel,Pole and line,Pole and line,25.0,103.0,1
-247110330,Fishing vessel,Trawlers,Trawlers,55.6,695.0,1
-367332090,Fishing vessel,Trollers,Trollers,23.04,99.5,1
-247111480,Fishing vessel,Trawlers,Trawlers,26.75,39.0,1
-247083320,Fishing vessel,Trawlers,Trawlers,27.02,151.0,1
-367079690,Fishing vessel,Trollers,Trollers,22.34,143.0,1
-224076630,Fishing vessel,Pole and line,Pole and line,33.0,163.0,1
-247126820,Fishing vessel,Trawlers,Trawlers,25.39,81.0,1
-235004390,Fishing vessel,Trawlers,Trawlers,40.2,,1
-227320290,Fishing vessel,Trawlers,Trawlers,24.9,76.0,1
-431200910,Fishing vessel,Pole and line,Pole and line,52.4,463.0,1
-247100680,Fishing vessel,Trawlers,Trawlers,23.02,91.0,1
-255402650,Fishing vessel,Pole and line,Pole and line,32.0,258.0,1
-512235000,Fishing vessel,Trawlers,Trawlers,64.5,1920.0,1
-367019950,Fishing vessel,Trollers,Trollers,,66.0,1
-367402670,Fishing vessel,Trollers,Trollers,18.47,71.0,1
-250101700,Fishing vessel,Trawlers,Trawlers,37.3,447.0,1
-431200970,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
-431769000,Fishing vessel,Pole and line,Pole and line,53.35,495.0,1
-228239000,Fishing vessel,Trawlers,Trawlers,20.4,107.0,1
-247121370,Fishing vessel,Trawlers,Trawlers,24.95,69.0,1
-224060680,Fishing vessel,Pole and line,Pole and line,33.5,162.0,1
-204209570,Fishing vessel,Pole and line,Pole and line,25.0,148.42,1
-224059860,Fishing vessel,Pole and line,Pole and line,33.28,162.0,1
-227989000,Fishing vessel,Set gillnets,Set gillnets,23.0,171.77,1
-367104160,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
-512003817,Fishing vessel,Trawlers,Trawlers,90.4,4407.0,1
-367534310,Fishing vessel,Pole and line,Pole and line,24.715,137.5,1
-431500836,Fishing vessel,Pole and line,Pole and line,32.1,143.0,1
-224049140,Fishing vessel,Trawlers,Trawlers,31.35,256.0,1
-224069840,Fishing vessel,Pole and line,Pole and line,32.0,161.0,1
-234340000,Fishing vessel,Trawlers,Trawlers,64.4,,1
-234122000,Fishing vessel,Trawlers,Trawlers,26.61,,1
-204827000,Fishing vessel,Pole and line,Pole and line,30.8,155.0,1
-247121660,Fishing vessel,Trawlers,Trawlers,24.1,65.0,1
-224049650,Fishing vessel,Pole and line,Pole and line,29.0,133.0,1
-224028250,Fishing vessel,Pole and line,Pole and line,29.85,131.0,1
-247074670,Fishing vessel,Trawlers,Trawlers,25.18,114.0,1
-627691000,Fishing vessel,Pole and line,Pole and line,47.25,417.0,1
-247148120,Fishing vessel,Trawlers,Trawlers,27.9,136.0,1
-250365000,Fishing vessel,Trawlers,Trawlers,24.4,164.0,1
-235005740,Fishing vessel,Trawlers,Trawlers,43.97,,1
-247053420,Fishing vessel,Trawlers,Trawlers,24.17,81.0,1
-224073650,Fishing vessel,Pole and line,Pole and line,30.5,155.085,1
-247151280,Fishing vessel,Trawlers,Trawlers,24.28,130.0,1
-273522400,Fishing vessel,Trawlers,Trawlers,120.47,,1
-367366210,Fishing vessel,Pole and line,Pole and line,,110.5,1
-227879000,Fishing vessel,Trawlers,Trawlers,20.45,106.63,1
-367149920,Fishing vessel,Pole and line,Pole and line,19.76,54.0,1
-432441000,Fishing vessel,Pole and line,Pole and line,34.9,167.0,1
-247121020,Fishing vessel,Trawlers,Trawlers,21.58,83.0,1
-366943720,Fishing vessel,Trollers,Trollers,,31.5,1
-247083890,Fishing vessel,Trawlers,Trawlers,25.29,125.0,1
-512000030,Fishing vessel,Trawlers,Trawlers,43.7,671.0,1
-250103700,Fishing vessel,Trawlers,Trawlers,22.65,201.0,1
-227579000,Fishing vessel,Set gillnets,Set gillnets,31.85,159.59,1
-232008020,Fishing vessel,Trawlers,Trawlers,40.2,,1
-250036000,Fishing vessel,Trawlers,Trawlers,43.2,611.0,1
-224100180,Fishing vessel,Trawlers,Trawlers,31.0,286.0,1
-247084310,Fishing vessel,Trawlers,Trawlers,26.25,138.0,1
-247130320,Fishing vessel,Trawlers,Trawlers,24.94,91.0,1
+367040420,Fishing vessel,Trollers,Trollers,14.425,41.0,1
+366207650,Fishing vessel,Trollers,Trollers,22.86,59.0,1
+224547000,Fishing vessel,Trawlers,Trawlers,69.25,1454.0,1
+235051022,Fishing vessel,Trawlers,Trawlers,72.0,2411.0,1
+250116400,Fishing vessel,Trawlers,Trawlers,21.65,176.0,1
+247144240,Fishing vessel,Trawlers,Trawlers,26.35,110.0,1
+224181290,Fishing vessel,Trawlers,Trawlers,29.0,234.86,1
+224114650,Fishing vessel,Pole and line,Pole and line,33.3,148.0,1
+235627000,Fishing vessel,Trawlers,Trawlers,35.5,,1
+627848000,Fishing vessel,Pole and line,Pole and line,48.93,434.0,1
+235013871,Fishing vessel,Trawlers,Trawlers,31.73,,1
+367129120,Fishing vessel,Pole and line,Pole and line,22.9,150.0,1
+224079440,Fishing vessel,Pole and line,Pole and line,31.6,160.0,1
+367078130,Fishing vessel,Trollers,Trollers,32.09,180.0,1
+204287000,Fishing vessel,Pole and line,Pole and line,29.9,186.43,1
+247096450,Fishing vessel,Trawlers,Trawlers,25.5,52.0,1
+224004810,Fishing vessel,Pole and line,Pole and line,31.5,186.0,1
+247100320,Fishing vessel,Trawlers,Trawlers,23.09,149.0,1
+273526800,Fishing vessel,Trawlers,Trawlers,120.47,,1
+235025319,Fishing vessel,Trawlers,Trawlers,40.2,,1
+232007300,Fishing vessel,Trawlers,Trawlers,26.19,,1
+247121790,Fishing vessel,Trawlers,Trawlers,23.68,65.0,1
+431914000,Fishing vessel,Pole and line,Pole and line,52.65,455.0,1
+250103600,Fishing vessel,Trawlers,Trawlers,22.65,193.0,1
+224081180,Fishing vessel,Fixed gear,Set gillnets,26.5,114.0,1
+247147390,Fishing vessel,Trawlers,Trawlers,27.72,159.0,1
+367551660,Fishing vessel,Pole and line,Pole and line,23.5,138.0,1
+224069850,Fishing vessel,Pole and line,Pole and line,32.0,159.0,1
+224051140,Fishing vessel,Pole and line,Pole and line,24.7,109.0,1
+232006820,Fishing vessel,Fixed gear,Set gillnets,31.12,,1
+224086780,Fishing vessel,Pole and line,Pole and line,33.0,198.0,1
+366218540,Fishing vessel,Pole and line,Pole and line,23.5,124.0,1
+247051980,Fishing vessel,Trawlers,Trawlers,27.45,136.0,1
+601770000,Fishing vessel,Pole and line,Pole and line,29.74,243.0,1
+224050560,Fishing vessel,Pole and line,Pole and line,31.5,177.0,1
+247144390,Fishing vessel,Trawlers,Trawlers,25.24,112.0,1
+367147350,Fishing vessel,Pole and line,Pole and line,23.47,103.0,1
+227317860,Fishing vessel,Trawlers,Trawlers,20.05,48.66,1
+227443000,Fishing vessel,Trawlers,Trawlers,20.6,103.09,1
+224013220,Fishing vessel,Trawlers,Trawlers,30.7,286.0,1
+250105800,Fishing vessel,Trawlers,Trawlers,22.5,190.0,1
+228154900,Fishing vessel,Trawlers,Trawlers,24.95,147.0,1
+227145900,Fishing vessel,Trawlers,Trawlers,24.95,147.0,1
+224065000,Fishing vessel,Trawlers,Trawlers,28.0,219.02,1
+228236800,Fishing vessel,Trawlers,Trawlers,22.65,100.0,1
+367131750,Fishing vessel,Pole and line,Pole and line,25.84,194.0,1
+512410000,Fishing vessel,Trawlers,Trawlers,23.98,202.0,1
+227317000,Fishing vessel,Trawlers,Trawlers,22.8,145.82,1
+367070360,Fishing vessel,Trollers,Trollers,17.065,68.5,1
+250101900,Fishing vessel,Trawlers,Trawlers,26.9,279.0,1
+271072507,Fishing vessel,Trollers,Trollers,25.35,36.0,1
+247100020,Fishing vessel,Trawlers,Trawlers,25.0,96.0,1
+232746000,Fishing vessel,Trawlers,Trawlers,40.0,,1
+228185800,Fishing vessel,Fixed gear,Set gillnets,23.0,150.37,1
+431200990,Fishing vessel,Pole and line,Pole and line,48.76,359.0,1
+255402880,Fishing vessel,Pole and line,Pole and line,26.0,120.3,1
+232007650,Fishing vessel,Trawlers,Trawlers,26.3,,1
 204838000,Fishing vessel,Pole and line,Pole and line,28.1,134.0,1
 224052350,Fishing vessel,Pole and line,Pole and line,31.6,156.0,1
 627720000,Fishing vessel,Pole and line,Pole and line,44.78,298.0,1
 367379720,Fishing vessel,Pole and line,Pole and line,,63.0,1
 224056190,Fishing vessel,Pole and line,Pole and line,36.2,226.0,1
 367073740,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
-232007390,Fishing vessel,Set gillnets,Set gillnets,29.1,215.0,1
+232007390,Fishing vessel,Fixed gear,Set gillnets,29.1,215.0,1
 255502000,Fishing vessel,Pole and line,Pole and line,32.0,245.0,1
 227391000,Fishing vessel,Trawlers,Trawlers,24.9,157.98,1
 247100530,Fishing vessel,Trawlers,Trawlers,23.8,106.0,1
@@ -501,39 +304,6 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 273349130,Fishing vessel,Trawlers,Trawlers,93.9,,1
 227474000,Fishing vessel,Trawlers,Trawlers,23.5,140.23,1
 367040650,Fishing vessel,Pole and line,Pole and line,25.53,157.0,1
-227844000,Fishing vessel,Trawlers,Trawlers,22.0,138.81,1
-366920560,Fishing vessel,Pole and line,Pole and line,24.1,138.0,1
-250444000,Fishing vessel,Trawlers,Trawlers,22.5,153.0,1
-224021460,Fishing vessel,Pole and line,Pole and line,29.85,135.31,1
-512169000,Fishing vessel,Trawlers,Trawlers,58.2,2926.0,1
-204264000,Fishing vessel,Pole and line,Pole and line,25.4,138.66,1
-247131610,Fishing vessel,Trawlers,Trawlers,25.73,77.0,1
-224065290,Fishing vessel,Pole and line,Pole and line,32.0,160.0,1
-247100360,Fishing vessel,Trawlers,Trawlers,25.06,100.0,1
-432525000,Fishing vessel,Pole and line,Pole and line,32.39,119.0,1
-367874400,Fishing vessel,Trollers,Trollers,19.9,110.5,1
-367348005,Fishing vessel,Trollers,Trollers,25.02,163.0,1
-224097970,Fishing vessel,Trawlers,Trawlers,31.62,291.0,1
-224103220,Fishing vessel,Pole and line,Pole and line,27.0,111.0,1
-367331760,Fishing vessel,Trollers,Trollers,21.64,99.0,1
-247083630,Fishing vessel,Trawlers,Trawlers,25.8,108.0,1
-247151940,Fishing vessel,Trawlers,Trawlers,29.3,168.0,1
-235000360,Fishing vessel,Trawlers,Trawlers,30.55,,1
-247082290,Fishing vessel,Trawlers,Trawlers,26.8,130.0,1
-247148950,Fishing vessel,Trawlers,Trawlers,29.81,184.0,1
-247100520,Fishing vessel,Trawlers,Trawlers,25.0,96.0,1
-224272000,Fishing vessel,Pole and line,Pole and line,26.4,200.0,1
-235005820,Fishing vessel,Trawlers,Trawlers,34.6,,1
-601414000,Fishing vessel,Pole and line,Pole and line,19.57,96.89,1
-316005485,Fishing vessel,Trollers,Trollers,15.37,21.0,1
-247101170,Fishing vessel,Trawlers,Trawlers,27.2,119.0,1
-250000884,Fishing vessel,Trawlers,Trawlers,22.4,174.0,1
-227410000,Fishing vessel,Trawlers,Trawlers,20.6,107.75,1
-235001239,Fishing vessel,Trawlers,Trawlers,51.44,,1
-247065610,Fishing vessel,Trawlers,Trawlers,25.9,80.0,1
-227479000,Fishing vessel,Set gillnets,Set gillnets,20.4,121.83,1
-367165240,Fishing vessel,Trollers,Trollers,25.9,139.0,1
-233344000,Fishing vessel,Trawlers,Trawlers,27.0,,1
 775993050,Fishing vessel,Pole and line,Pole and line,32.13,198.36,1
 250106800,Fishing vessel,Trawlers,Trawlers,27.0,252.0,1
 431935000,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
@@ -554,21 +324,23 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 237312000,Fishing vessel,Trawlers,Trawlers,24.88,61.91,1
 204209840,Fishing vessel,Pole and line,Pole and line,20.0,86.77,1
 601089100,Fishing vessel,Pole and line,Pole and line,22.76,188.0,1
-227139900,Fishing vessel,Trawlers,Trawlers,24.97,106.26,1
-227355000,Fishing vessel,Trawlers,Trawlers,20.2,97.82,1
-224012870,Fishing vessel,Trawlers,Trawlers,25.12,180.33,1
-250102700,Fishing vessel,Trawlers,Trawlers,40.4,624.0,1
-247121850,Fishing vessel,Trawlers,Trawlers,27.2,106.0,1
-512000041,Fishing vessel,Trawlers,Trawlers,24.9,156.7,1
-235673000,Fishing vessel,Trawlers,Trawlers,61.9,,1
-247084320,Fishing vessel,Trawlers,Trawlers,27.6,120.0,1
-235002022,Fishing vessel,Trawlers,Trawlers,39.15,,1
-227146400,Fishing vessel,Trawlers,Trawlers,21.0,136.18,1
-233308000,Fishing vessel,Trawlers,Trawlers,26.54,,1
-227321890,Fishing vessel,Trawlers,Trawlers,21.0,56.48,1
-224093750,Fishing vessel,Trawlers,Trawlers,29.7,259.0,1
-367482960,Fishing vessel,Pole and line,Pole and line,21.9,96.0,1
-367092720,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
+247151940,Fishing vessel,Trawlers,Trawlers,29.3,168.0,1
+235000360,Fishing vessel,Trawlers,Trawlers,30.55,,1
+247082290,Fishing vessel,Trawlers,Trawlers,26.8,130.0,1
+247148950,Fishing vessel,Trawlers,Trawlers,29.81,184.0,1
+247100520,Fishing vessel,Trawlers,Trawlers,25.0,96.0,1
+224272000,Fishing vessel,Pole and line,Pole and line,26.4,200.0,1
+235005820,Fishing vessel,Trawlers,Trawlers,34.6,,1
+601414000,Fishing vessel,Pole and line,Pole and line,19.57,96.89,1
+316005485,Fishing vessel,Trollers,Trollers,15.37,21.0,1
+247101170,Fishing vessel,Trawlers,Trawlers,27.2,119.0,1
+250000884,Fishing vessel,Trawlers,Trawlers,22.4,174.0,1
+227410000,Fishing vessel,Trawlers,Trawlers,20.6,107.75,1
+235001239,Fishing vessel,Trawlers,Trawlers,51.44,,1
+247065610,Fishing vessel,Trawlers,Trawlers,25.9,80.0,1
+227479000,Fishing vessel,Fixed gear,Set gillnets,20.4,121.83,1
+367165240,Fishing vessel,Trollers,Trollers,25.9,139.0,1
+233344000,Fishing vessel,Trawlers,Trawlers,27.0,,1
 228190600,Fishing vessel,Trawlers,Trawlers,23.96,150.54,1
 431801000,Fishing vessel,Pole and line,Pole and line,56.2,499.0,1
 247131080,Fishing vessel,Trawlers,Trawlers,25.16,86.0,1
@@ -588,19 +360,6 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 227320710,Fishing vessel,Trawlers,Trawlers,26.0,97.58,1
 250102660,Fishing vessel,Trawlers,Trawlers,21.7,183.0,1
 247148110,Fishing vessel,Trawlers,Trawlers,26.13,116.0,1
-227926000,Fishing vessel,Set gillnets,Set gillnets,26.095,159.525,1
-247120430,Fishing vessel,Trawlers,Trawlers,26.88,90.0,1
-235672000,Fishing vessel,Trawlers,Trawlers,70.7,,1
-601272000,Fishing vessel,Pole and line,Pole and line,22.62,116.2,1
-247121250,Fishing vessel,Trawlers,Trawlers,27.24,100.0,1
-247070700,Fishing vessel,Trawlers,Trawlers,35.6,365.0,1
-247101490,Fishing vessel,Trawlers,Trawlers,27.97,164.0,1
-367176750,Fishing vessel,Trollers,Trollers,20.42,75.5,1
-247121260,Fishing vessel,Trawlers,Trawlers,23.92,115.0,1
-235000820,Fishing vessel,Set gillnets,Set gillnets,35.7,,1
-250190000,Fishing vessel,Trawlers,Trawlers,71.0,1988.0,1
-247084610,Fishing vessel,Trawlers,Trawlers,26.2,106.0,1
-247083530,Fishing vessel,Trawlers,Trawlers,24.6,101.0,1
 250000897,Fishing vessel,Trawlers,Trawlers,22.0,174.0,1
 368578000,Fishing vessel,Trollers,Trollers,26.54,113.0,1
 227311010,Fishing vessel,Trawlers,Trawlers,24.9,158.0,1
@@ -619,3 +378,244 @@ mmsi,clav_fishing,clav_label,clav_sublabel,clav_length,clav_tonnage,num_clav_gea
 227897000,Fishing vessel,Trawlers,Trawlers,20.6,112.0,1
 250126460,Fishing vessel,Trawlers,Trawlers,22.1,159.0,1
 227317720,Fishing vessel,Trawlers,Trawlers,24.95,92.0,1
+247053420,Fishing vessel,Trawlers,Trawlers,24.17,81.0,1
+224073650,Fishing vessel,Pole and line,Pole and line,30.5,155.085,1
+247151280,Fishing vessel,Trawlers,Trawlers,24.28,130.0,1
+273522400,Fishing vessel,Trawlers,Trawlers,120.47,,1
+367366210,Fishing vessel,Pole and line,Pole and line,,110.5,1
+227879000,Fishing vessel,Trawlers,Trawlers,20.45,106.63,1
+367149920,Fishing vessel,Pole and line,Pole and line,19.76,54.0,1
+432441000,Fishing vessel,Pole and line,Pole and line,34.9,167.0,1
+247121020,Fishing vessel,Trawlers,Trawlers,21.58,83.0,1
+366943720,Fishing vessel,Trollers,Trollers,,31.5,1
+247083890,Fishing vessel,Trawlers,Trawlers,25.29,125.0,1
+512000030,Fishing vessel,Trawlers,Trawlers,43.7,671.0,1
+250103700,Fishing vessel,Trawlers,Trawlers,22.65,201.0,1
+227579000,Fishing vessel,Fixed gear,Set gillnets,31.85,159.59,1
+232008020,Fishing vessel,Trawlers,Trawlers,40.2,,1
+250036000,Fishing vessel,Trawlers,Trawlers,43.2,611.0,1
+224100180,Fishing vessel,Trawlers,Trawlers,31.0,286.0,1
+247084310,Fishing vessel,Trawlers,Trawlers,26.25,138.0,1
+247130320,Fishing vessel,Trawlers,Trawlers,24.94,91.0,1
+367104160,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
+512003817,Fishing vessel,Trawlers,Trawlers,90.4,4407.0,1
+367534310,Fishing vessel,Pole and line,Pole and line,24.715,137.5,1
+431500836,Fishing vessel,Pole and line,Pole and line,32.1,143.0,1
+224049140,Fishing vessel,Trawlers,Trawlers,31.35,256.0,1
+224069840,Fishing vessel,Pole and line,Pole and line,32.0,161.0,1
+234340000,Fishing vessel,Trawlers,Trawlers,64.4,,1
+234122000,Fishing vessel,Trawlers,Trawlers,26.61,,1
+204827000,Fishing vessel,Pole and line,Pole and line,30.8,155.0,1
+247121660,Fishing vessel,Trawlers,Trawlers,24.1,65.0,1
+224049650,Fishing vessel,Pole and line,Pole and line,29.0,133.0,1
+224028250,Fishing vessel,Pole and line,Pole and line,29.85,131.0,1
+247074670,Fishing vessel,Trawlers,Trawlers,25.18,114.0,1
+627691000,Fishing vessel,Pole and line,Pole and line,47.25,417.0,1
+247148120,Fishing vessel,Trawlers,Trawlers,27.9,136.0,1
+250365000,Fishing vessel,Trawlers,Trawlers,24.4,164.0,1
+235005740,Fishing vessel,Trawlers,Trawlers,43.97,,1
+227139900,Fishing vessel,Trawlers,Trawlers,24.97,106.26,1
+227355000,Fishing vessel,Trawlers,Trawlers,20.2,97.82,1
+224012870,Fishing vessel,Trawlers,Trawlers,25.12,180.33,1
+250102700,Fishing vessel,Trawlers,Trawlers,40.4,624.0,1
+247121850,Fishing vessel,Trawlers,Trawlers,27.2,106.0,1
+512000041,Fishing vessel,Trawlers,Trawlers,24.9,156.7,1
+235673000,Fishing vessel,Trawlers,Trawlers,61.9,,1
+247084320,Fishing vessel,Trawlers,Trawlers,27.6,120.0,1
+235002022,Fishing vessel,Trawlers,Trawlers,39.15,,1
+227146400,Fishing vessel,Trawlers,Trawlers,21.0,136.18,1
+233308000,Fishing vessel,Trawlers,Trawlers,26.54,,1
+227321890,Fishing vessel,Trawlers,Trawlers,21.0,56.48,1
+224093750,Fishing vessel,Trawlers,Trawlers,29.7,259.0,1
+367482960,Fishing vessel,Pole and line,Pole and line,21.9,96.0,1
+367092720,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
+227844000,Fishing vessel,Trawlers,Trawlers,22.0,138.81,1
+366920560,Fishing vessel,Pole and line,Pole and line,24.1,138.0,1
+250444000,Fishing vessel,Trawlers,Trawlers,22.5,153.0,1
+224021460,Fishing vessel,Pole and line,Pole and line,29.85,135.31,1
+512169000,Fishing vessel,Trawlers,Trawlers,58.2,2926.0,1
+204264000,Fishing vessel,Pole and line,Pole and line,25.4,138.66,1
+247131610,Fishing vessel,Trawlers,Trawlers,25.73,77.0,1
+224065290,Fishing vessel,Pole and line,Pole and line,32.0,160.0,1
+247100360,Fishing vessel,Trawlers,Trawlers,25.06,100.0,1
+432525000,Fishing vessel,Pole and line,Pole and line,32.39,119.0,1
+367874400,Fishing vessel,Trollers,Trollers,19.9,110.5,1
+367348005,Fishing vessel,Trollers,Trollers,25.02,163.0,1
+224097970,Fishing vessel,Trawlers,Trawlers,31.62,291.0,1
+224103220,Fishing vessel,Pole and line,Pole and line,27.0,111.0,1
+367331760,Fishing vessel,Trollers,Trollers,21.64,99.0,1
+247083630,Fishing vessel,Trawlers,Trawlers,25.8,108.0,1
+227926000,Fishing vessel,Fixed gear,Set gillnets,26.095,159.525,1
+247120430,Fishing vessel,Trawlers,Trawlers,26.88,90.0,1
+235672000,Fishing vessel,Trawlers,Trawlers,70.7,,1
+601272000,Fishing vessel,Pole and line,Pole and line,22.62,116.2,1
+247121250,Fishing vessel,Trawlers,Trawlers,27.24,100.0,1
+247070700,Fishing vessel,Trawlers,Trawlers,35.6,365.0,1
+247101490,Fishing vessel,Trawlers,Trawlers,27.97,164.0,1
+367176750,Fishing vessel,Trollers,Trollers,20.42,75.5,1
+247121260,Fishing vessel,Trawlers,Trawlers,23.92,115.0,1
+235000820,Fishing vessel,Fixed gear,Set gillnets,35.7,,1
+250190000,Fishing vessel,Trawlers,Trawlers,71.0,1988.0,1
+247084610,Fishing vessel,Trawlers,Trawlers,26.2,106.0,1
+247083530,Fishing vessel,Trawlers,Trawlers,24.6,101.0,1
+367046890,Fishing vessel,Trollers,Trollers,21.67,103.0,1
+247118400,Fishing vessel,Trawlers,Trawlers,41.4,435.0,1
+367134180,Fishing vessel,Pole and line,Pole and line,,53.5,1
+273352910,Fishing vessel,Trawlers,Trawlers,94.0,,1
+204206740,Fishing vessel,Pole and line,Pole and line,20.0,77.39,1
+228888000,Fishing vessel,Trawlers,Trawlers,20.7,103.0,1
+224896000,Fishing vessel,Pole and line,Pole and line,32.5,177.0,1
+235002690,Fishing vessel,Trawlers,Trawlers,28.0,,1
+247051410,Fishing vessel,Trawlers,Trawlers,24.84,208.0,1
+224204520,Fishing vessel,Trawlers,Trawlers,30.0,238.0,1
+247083410,Fishing vessel,Trawlers,Trawlers,27.25,114.0,1
+226183000,Fishing vessel,Trawlers,Trawlers,24.45,202.45,1
+209353000,Fishing vessel,Trawlers,Trawlers,23.8,91.12,1
+367500440,Fishing vessel,Trollers,Trollers,,52.5,1
+367187480,Fishing vessel,Pole and line,Pole and line,22.6,35.0,1
+224004800,Fishing vessel,Pole and line,Pole and line,28.5,161.0,1
+224105920,Fishing vessel,Trawlers,Trawlers,27.9,200.6,1
+512236000,Fishing vessel,Trawlers,Trawlers,65.1,1899.0,1
+247120440,Fishing vessel,Trawlers,Trawlers,24.63,88.0,1
+247083540,Fishing vessel,Trawlers,Trawlers,28.1,108.0,1
+224123720,Fishing vessel,Trawlers,Trawlers,30.9,263.0,1
+227309000,Fishing vessel,Trawlers,Trawlers,24.9,178.91,1
+247120470,Fishing vessel,Trawlers,Trawlers,28.7,157.0,1
+235011319,Fishing vessel,Trawlers,Trawlers,43.51,,1
+224057830,Fishing vessel,Fixed gear,Set gillnets,27.0,106.74,1
+233651000,Fishing vessel,Trawlers,Trawlers,27.4,,1
+250117400,Fishing vessel,Trawlers,Trawlers,24.5,230.0,1
+237885000,Fishing vessel,Trawlers,Trawlers,28.15,63.22,1
+224040260,Fishing vessel,Pole and line,Pole and line,36.0,236.0,1
+225353000,Fishing vessel,Trawlers,Trawlers,30.5,278.0,1
+211238930,Fishing vessel,Trawlers,Trawlers,116.7,7278.0,1
+247083070,Fishing vessel,Trawlers,Trawlers,25.6,118.0,1
+232006590,Fishing vessel,Fixed gear,Set gillnets,38.2,,1
+224061430,Fishing vessel,Pole and line,Pole and line,35.6,206.0,1
+247070850,Fishing vessel,Trawlers,Trawlers,25.1,121.0,1
+627163000,Fishing vessel,Pole and line,Pole and line,57.16,418.0,1
+250428000,Fishing vessel,Trawlers,Trawlers,26.6,335.0,1
+431693000,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
+247120670,Fishing vessel,Trawlers,Trawlers,24.95,69.0,1
+247061610,Fishing vessel,Trawlers,Trawlers,26.28,91.0,1
+247092970,Fishing vessel,Trawlers,Trawlers,24.8,63.0,1
+232007970,Fishing vessel,Trawlers,Trawlers,25.1,,1
+227917000,Fishing vessel,Trawlers,Trawlers,32.8,273.0,1
+247304930,Fishing vessel,Trawlers,Trawlers,29.81,140.0,1
+247083440,Fishing vessel,Trawlers,Trawlers,25.5,132.0,1
+228137900,Fishing vessel,Trawlers,Trawlers,23.3,182.76,1
+247051830,Fishing vessel,Trawlers,Trawlers,26.8,133.0,1
+367575760,Fishing vessel,Trollers,Trollers,17.67,83.0,1
+235002051,Fishing vessel,Trawlers,Trawlers,24.7,,1
+227483000,Fishing vessel,Trawlers,Trawlers,22.0,131.08,1
+367326480,Fishing vessel,Pole and line,Pole and line,32.22,198.0,1
+366738920,Fishing vessel,Trollers,Trollers,24.1,167.0,1
+224030940,Fishing vessel,Fixed gear,Set gillnets,25.0,166.37,1
+224209000,Fishing vessel,Trawlers,Trawlers,29.5,241.0,1
+232006310,Fishing vessel,Trawlers,Trawlers,26.1,,1
+224019630,Fishing vessel,Pole and line,Pole and line,36.0,252.0,1
+247051920,Fishing vessel,Trawlers,Trawlers,26.5,101.0,1
+247070670,Fishing vessel,Trawlers,Trawlers,24.0,98.0,1
+224047430,Fishing vessel,Trawlers,Trawlers,31.35,256.48,1
+224460000,Fishing vessel,Pole and line,Pole and line,29.1,138.0,1
+247220130,Fishing vessel,Trawlers,Trawlers,27.6,79.0,1
+247071930,Fishing vessel,Trawlers,Trawlers,26.45,125.0,1
+247101510,Fishing vessel,Trawlers,Trawlers,25.85,120.0,1
+271062093,Fishing vessel,Trollers,Trollers,25.0,114.0,1
+247070970,Fishing vessel,Trawlers,Trawlers,26.68,124.0,1
+204834000,Fishing vessel,Pole and line,Pole and line,29.25,145.0,1
+227143600,Fishing vessel,Trawlers,Trawlers,23.4,177.56,1
+224074180,Fishing vessel,Pole and line,Pole and line,24.7,106.0,1
+235058829,Fishing vessel,Trawlers,Trawlers,26.25,153.0,1
+224895000,Fishing vessel,Pole and line,Pole and line,32.5,177.0,1
+277506000,Fishing vessel,Trawlers,Trawlers,120.0,7765.0,1
+277510000,Fishing vessel,Trawlers,Trawlers,120.0,7765.0,1
+247083550,Fishing vessel,Trawlers,Trawlers,28.45,138.0,1
+227320290,Fishing vessel,Trawlers,Trawlers,24.9,76.0,1
+431200910,Fishing vessel,Pole and line,Pole and line,52.4,463.0,1
+247100680,Fishing vessel,Trawlers,Trawlers,23.02,91.0,1
+255402650,Fishing vessel,Pole and line,Pole and line,32.0,258.0,1
+512235000,Fishing vessel,Trawlers,Trawlers,64.5,1920.0,1
+367019950,Fishing vessel,Trollers,Trollers,,66.0,1
+367402670,Fishing vessel,Trollers,Trollers,18.47,71.0,1
+250101700,Fishing vessel,Trawlers,Trawlers,37.3,447.0,1
+431200970,Fishing vessel,Pole and line,Pole and line,56.87,499.0,1
+431769000,Fishing vessel,Pole and line,Pole and line,53.35,495.0,1
+228239000,Fishing vessel,Trawlers,Trawlers,20.4,107.0,1
+247121370,Fishing vessel,Trawlers,Trawlers,24.95,69.0,1
+224060680,Fishing vessel,Pole and line,Pole and line,33.5,162.0,1
+204209570,Fishing vessel,Pole and line,Pole and line,25.0,148.42,1
+224059860,Fishing vessel,Pole and line,Pole and line,33.28,162.0,1
+227989000,Fishing vessel,Fixed gear,Set gillnets,23.0,171.77,1
+247146750,Fishing vessel,Trawlers,Trawlers,33.3,177.0,1
+367399460,Fishing vessel,Trollers,Trollers,9.75,13.5,1
+250104600,Fishing vessel,Trawlers,Trawlers,27.0,256.0,1
+250001143,Fishing vessel,Trawlers,Trawlers,20.4,110.0,1
+247121240,Fishing vessel,Trawlers,Trawlers,32.58,173.0,1
+228107800,Fishing vessel,Trawlers,Trawlers,24.975,226.63,1
+227409000,Fishing vessel,Trawlers,Trawlers,20.78,109.0,1
+232006620,Fishing vessel,Fixed gear,Set gillnets,37.66,,1
+224082580,Fishing vessel,Pole and line,Pole and line,26.0,87.0,1
+228248700,Fishing vessel,Trawlers,Trawlers,24.95,69.46,1
+601690000,Fishing vessel,Pole and line,Pole and line,19.73,73.17,1
+247142790,Fishing vessel,Trawlers,Trawlers,26.95,138.0,1
+367061930,Fishing vessel,Trollers,Trollers,23.0,64.0,1
+316012074,Fishing vessel,Trollers,Trollers,12.65,24.525,1
+227860000,Fishing vessel,Trawlers,Trawlers,22.8,137.0,1
+367030568,Fishing vessel,Trollers,Trollers,23.6,138.0,1
+367161930,Fishing vessel,Trollers,Trollers,15.145,222.5,1
+512400000,Fishing vessel,Trawlers,Trawlers,60.47,1899.0,1
+224259220,Fishing vessel,Trawlers,Trawlers,29.5,247.0,1
+232006840,Fishing vessel,Fixed gear,Set gillnets,27.3,,1
+235055004,Fishing vessel,Trawlers,Trawlers,35.0,355.0,1
+601677000,Fishing vessel,Pole and line,Pole and line,21.87,72.31,1
+273528800,Fishing vessel,Trawlers,Trawlers,120.47,,1
+228187700,Fishing vessel,Trawlers,Trawlers,24.7,98.0,1
+224074890,Fishing vessel,Pole and line,Pole and line,32.0,160.0,1
+247083400,Fishing vessel,Trawlers,Trawlers,44.15,490.0,1
+224104450,Fishing vessel,Pole and line,Pole and line,31.0,162.0,1
+512002694,Fishing vessel,Trawlers,Trawlers,25.0,129.0,1
+228935000,Fishing vessel,Trawlers,Trawlers,23.5,134.0,1
+247125640,Fishing vessel,Trawlers,Trawlers,24.07,63.0,1
+247142750,Fishing vessel,Trawlers,Trawlers,31.06,179.0,1
+366831470,Fishing vessel,Trollers,Trollers,13.56,22.0,1
+247081650,Fishing vessel,Trawlers,Trawlers,27.0,139.0,1
+224075180,Fishing vessel,Pole and line,Pole and line,31.2,194.0,1
+247121190,Fishing vessel,Trawlers,Trawlers,25.84,89.0,1
+227145300,Fishing vessel,Trawlers,Trawlers,24.95,146.0,1
+224148740,Fishing vessel,Fixed gear,Set gillnets,24.0,150.27,1
+227393000,Fishing vessel,Trawlers,Trawlers,24.9,157.89,1
+224067670,Fishing vessel,Trawlers,Trawlers,27.9,210.8,1
+224208650,Fishing vessel,Trawlers,Trawlers,29.0,239.0,1
+273350650,Fishing vessel,Trawlers,Trawlers,104.5,,1
+204201560,Fishing vessel,Pole and line,Pole and line,25.4,138.66,1
+247051550,Fishing vessel,Trawlers,Trawlers,26.74,111.0,1
+232006050,Fishing vessel,Trawlers,Trawlers,40.0,,1
+224121650,Fishing vessel,Trawlers,Trawlers,28.5,243.0,1
+431698000,Fishing vessel,Pole and line,Pole and line,47.71,385.0,1
+247083210,Fishing vessel,Trawlers,Trawlers,26.75,141.0,1
+204851000,Fishing vessel,Pole and line,Pole and line,25.4,138.52,1
+367104170,Fishing vessel,Pole and line,Pole and line,25.0,90.0,1
+247147590,Fishing vessel,Trawlers,Trawlers,31.95,215.0,1
+224125140,Fishing vessel,Trawlers,Trawlers,31.4,277.0,1
+235001810,Fishing vessel,Trawlers,Trawlers,26.0,,1
+237918000,Fishing vessel,Trawlers,Trawlers,28.0,41.14,1
+247064760,Fishing vessel,Trawlers,Trawlers,28.04,105.0,1
+367157650,Fishing vessel,Trollers,Trollers,19.1,36.0,1
+247147290,Fishing vessel,Trawlers,Trawlers,28.1,174.0,1
+247147370,Fishing vessel,Trawlers,Trawlers,26.4,165.0,1
+247100640,Fishing vessel,Trawlers,Trawlers,24.02,98.0,1
+247100350,Fishing vessel,Trawlers,Trawlers,26.28,108.0,1
+204208790,Fishing vessel,Pole and line,Pole and line,24.0,98.32,1
+233714000,Fishing vessel,Trawlers,Trawlers,27.41,,1
+228178900,Fishing vessel,Trawlers,Trawlers,24.95,147.0,1
+247145510,Fishing vessel,Trawlers,Trawlers,32.79,181.0,1
+367537080,Fishing vessel,Pole and line,Pole and line,25.0,103.0,1
+247110330,Fishing vessel,Trawlers,Trawlers,55.6,695.0,1
+367332090,Fishing vessel,Trollers,Trollers,23.04,99.5,1
+247111480,Fishing vessel,Trawlers,Trawlers,26.75,39.0,1
+247083320,Fishing vessel,Trawlers,Trawlers,27.02,151.0,1
+367079690,Fishing vessel,Trollers,Trollers,22.34,143.0,1
+224076630,Fishing vessel,Pole and line,Pole and line,33.0,163.0,1
+247126820,Fishing vessel,Trawlers,Trawlers,25.39,81.0,1
+235004390,Fishing vessel,Trawlers,Trawlers,40.2,,1
