@@ -1,0 +1,1 @@
+{"headers": {"engine power": null, "mmsi": "mmsi", "tonnage": null, "length": null, "label": "label"}, "counts": {"Cargo": 1128, "Tanker": 1156}, "mappings": {"Cargo": "Cargo", "Tanker": "Tanker"}}
