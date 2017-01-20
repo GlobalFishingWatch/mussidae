@@ -17,14 +17,11 @@ logging.getLogger().setLevel('INFO')
 #
 
 valid_labels = { 'cargo',
-                 'cargo_tanker',
                  'drifting_longlines',
-                 'fixed_gear',
                  'motor_passenger',
                  'other_fishing',
                  'other_not_fishing',
                  'passenger',
-                 'pilot',
                  'pole_and_line',
                  'pots_and_traps',
                  'purse_seines',
@@ -34,13 +31,10 @@ valid_labels = { 'cargo',
                  'set_gillnets',
                  'set_longlines',
                  'squid_jigger',
-                 'supply',
                  'tanker',
                  'trawlers',
-                 'troller',
                  'trollers',
                  'tug',
-                 'tug_pilot',
                  'unknown_fishing',
                  'unknown_longline',
                  'unknown_not_fishing'}  
@@ -127,10 +121,13 @@ class LabelConverter(object):
                 sub_result = self.mapping.get(sub_result, sub_result)
             if sub_result in null_labels:
                 continue
-            if sub_result not in valid_labels:
-                logging.warning('Ignoring %s: %s (%s)', key, repr(x), sub_result)
-                return ''
-            result.append(sub_result)
+            for sub_sub_result in sub_result.split('|'):
+                if sub_sub_result in null_labels:
+                    continue
+                if sub_sub_result not in valid_labels:
+                    logging.warning('Ignoring %s: %s (%s)', key, repr(x), sub_sub_result)
+                    return ''
+                result.append(sub_sub_result)
         if result:
             return '|'.join(result)
         else:
@@ -180,7 +177,7 @@ def load_lists(directory):
     """
     mapping = defaultdict(lambda : [[] for x in keys])
     csv_paths = sorted(glob(os.path.join(directory, '*.csv')))
-    for csv_pth in csv_paths[:10]:
+    for csv_pth in csv_paths:
         logging.info('Processing: %s', os.path.basename(csv_pth))
         json_pth = os.path.splitext(csv_pth)[0] + '.json'
         with open(json_pth) as f:
@@ -347,7 +344,7 @@ def assign_splits(combined, seed=4321):
     cand_mmsi = [x for x in all_mmsi if combined[x].label in test_labels]
     cand_labels = [combined[x].label for x in all_mmsi if combined[x].label in test_labels]
     #
-    folder = StratifiedKFold(n_splits=2, random_state=0)
+    folder = StratifiedKFold(n_splits=3, random_state=seed)
     #
     test_indices = list(folder.split(cand_mmsi, cand_labels))[0][0]
     test_mmsi = set([cand_mmsi[x] for x in test_indices])

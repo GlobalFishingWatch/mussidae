@@ -1,0 +1,2 @@
+{"headers": {"engine power": null, "mmsi": "mmsi", "tonnage": null, "length": null, "label": "new label"}, "counts": {"Cargo": 1, "unknown_but_not_fishing": 1, "Sailing": 1, "Trawlers": 4, "Reefer": 14, "other_not_fishing": 2, "unknown_fishing": 2, "Seismic_vessel": 2, "Drifting_longlines": 3, "other_fishing": 13, "Tug": 1}, 
+"mappings": {"unknown_but_not_fishing" : "unknown_not_fishing"}}
