@@ -44,7 +44,7 @@ null_labels = set(['unknown', 'none', 'no_idea_what_it_is', '', None])
 keys = ['mmsi', 'label', 'length', 'engine_power', 'tonnage']
 assert keys[0] == 'mmsi', '"mmsi" must appear first in `keys`'
 
-output_keys = keys + ['split']
+output_keys = keys + ['split', 'source']
 
 # TODO: use class instead of namedtuple
 VesselRecord = namedtuple("VesselRecord", output_keys)
@@ -175,10 +175,11 @@ def load_lists(directory):
     using the `to_float` function defined above.
 
     """
-    mapping = defaultdict(lambda : [[] for x in keys])
+    mapping = defaultdict(lambda : [[] for x in output_keys])
     csv_paths = sorted(glob(os.path.join(directory, '*.csv')))
     for csv_pth in csv_paths:
-        logging.info('Processing: %s', os.path.basename(csv_pth))
+        name = os.path.splitext(os.path.basename(csv_pth))[0]
+        logging.info('Processing: %s', name)
         json_pth = os.path.splitext(csv_pth)[0] + '.json'
         with open(json_pth) as f:
             info = json.load(f)
@@ -209,11 +210,13 @@ def load_lists(directory):
                         chunks.append(value)
                     for i in range(len(keys)):
                         mapping[chunks[0]][i].append(chunks[i])
+                    mapping[chunks[0]][-2].append(None)
+                    mapping[chunks[0]][-1].append(name)
         except:
             logging.warning("Failed loading from: %s", csv_pth)
             raise
     for k in mapping:
-        mapping[k] = VesselRecord(*(mapping[k] + [None]))
+        mapping[k] = VesselRecord(*(mapping[k]))
     return mapping
     
         
@@ -276,6 +279,10 @@ def combine_scalars(values, alpha=0.1):
     return mean
 
 
+def combine_names(names):
+    return(';'.join(sorted(set(names))))
+
+
 def combine_mmsi(values):
     """Check that all mmsi are equal"""
     mmsi = values[0]
@@ -293,6 +300,8 @@ def combine_fields(mapping):
                 new_values.append(combine_classes(keyvalues))
             elif key == 'mmsi':
                 new_values.append(combine_mmsi(keyvalues))
+            elif key == 'source':
+                new_values.append(combine_names(keyvalues))
             elif key == 'split':
                 new_values.append(keyvalues)
             else:
@@ -354,7 +363,9 @@ def assign_splits(combined, seed=4321):
             split = None
         else:
             split = 'Test' if (mmsi in test_mmsi) else 'Training'
-        combined[mmsi] = VesselRecord(*(combined[mmsi][:-1] + (split,)))
+        lst = list(combined[mmsi])
+        lst[-2] = split
+        combined[mmsi] = VesselRecord(*lst)
 
 def dump(combined, path):
     with open(path, 'w') as f:
