@@ -76,6 +76,11 @@ non_fishing_classes = {  'cargo',
                          'tanker',
                          'tug'}
 
+missing_classes = valid_labels - (fishing_classes | non_fishing_classes)
+
+if missing_classes:
+    print('Classes missing from fishing/nonfishing:', sorted(missing_classes))
+
 #
 # Functions for converting raw lists to a common format
 #
@@ -147,10 +152,15 @@ def to_float(x, key):
 
     * 'ft' are converted to meters
 
+    * 'NA' is treated as blank
+
     """
-    if not x:
+    if not x or x.strip() == 'NA':
         return None
-    x = x.replace(',', '.')
+    if '.'  in x:
+        # There are '.'s, so commas are placeholders
+        x = x.replace(',', '')
+
     if x.endswith('ft'):
         scale = 0.3048
         x = x[:-2].strip()
