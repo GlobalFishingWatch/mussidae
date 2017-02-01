@@ -16,12 +16,11 @@ logging.getLogger().setLevel('INFO')
 # Data used in loading lists
 #
 
-valid_labels = { 'cargo',
+simple_labels = { 'cargo',
                  'drifting_longlines',
                  'motor_passenger',
                  'other_fishing',
                  'other_not_fishing',
-                 'passenger',
                  'pole_and_line',
                  'pots_and_traps',
                  'purse_seines',
@@ -34,10 +33,14 @@ valid_labels = { 'cargo',
                  'tanker',
                  'trawlers',
                  'trollers',
-                 'tug',
-                 'unknown_fishing',
-                 'unknown_longline',
-                 'unknown_not_fishing'}  
+                 'tug'}  
+
+composite_labels = {'passenger',
+                    'unknown_fishing',
+                    'unknown_longline',
+                    'unknown_not_fishing'}  
+
+valid_labels = simple_labels | composite_labels
 
 null_labels = set(['unknown', 'none', 'no_idea_what_it_is', '', None])
 
@@ -301,6 +304,40 @@ def combine_fields(mapping):
     return new_mapping
             
 
+def apply_corrections(combined, base_path):
+    # Remove incorrect MMSI
+    with open(os.path.join(base_path, 'incorrect_mmsi.csv')) as f:
+        for line in csv.DictReader(f):
+            mmsi = line['mmsi'].strip()
+            if mmsi in combined:
+                logging.info('Removing incorrect MMSI: %s', mmsi)
+                combined.pop(mmsi)
+
+    # Fix lengths
+    with open(os.path.join(base_path, 'corrected_lengths.csv')) as f:
+        for line in csv.DictReader(f):
+            mmsi = line['mmsi'].strip()
+            if mmsi in combined:
+                length = float(line['length'])
+                logging.info('Correcting length for MMSI: %s  (%s -> %s)', mmsi, combined[mmsi].length, length)
+                l = list(combined[mmsi])
+                l[keys.index('length')] = length
+                combined[mmsi] = VesselRecord(*l)
+                assert combined[mmsi].length == length
+
+    # Fix tonnages
+    with open(os.path.join(base_path, 'corrected_tonnages.csv')) as f:
+        for line in csv.DictReader(f):
+            mmsi = line['mmsi'].strip()
+            if mmsi in combined:
+                tonnage = float(line['tonnage'])
+                logging.info('Correcting tonnage for MMSI: %s  (%s -> %s)', mmsi, combined[mmsi].tonnage, tonnage)
+                l = list(combined[mmsi])
+                l[keys.index('tonnage')] = tonnage
+                combined[mmsi] = VesselRecord(*l)
+                assert combined[mmsi].tonnage == tonnage
+
+
 # 
 # Assign to Test / Training splits
 #
@@ -309,19 +346,6 @@ def combine_fields(mapping):
 
 # Don't assign any class with fewer than MIN_COUNT examples to the test split.
 MIN_COUNT = 20
-
-# These labels should not get assigned to the test split.
-excluded = set(['unknown_fishing', 'unknown_longline', 'unknown_not_fishing', None])
-
-
-def is_simple_label(x):
-    if x is None:
-        return False
-    if x in excluded:
-        return False
-    if '|' in x:
-        return False
-    return True
 
 
 def assign_splits(combined, seed=4321):
@@ -336,15 +360,15 @@ def assign_splits(combined, seed=4321):
     #   Not in excluded
 
     counts = Counter(x.label for x in combined.values())
-    test_labels = {x.label for x in combined.values() if is_simple_label(x.label) and 
-                                               counts[x.label] > MIN_COUNT} 
+    test_labels = {x.label for x in combined.values() 
+                     if x.label in simple_labels and counts[x.label] > MIN_COUNT} 
     np.random.seed(seed)
     all_mmsi = combined.keys()
     np.random.shuffle(all_mmsi)
     cand_mmsi = [x for x in all_mmsi if combined[x].label in test_labels]
     cand_labels = [combined[x].label for x in all_mmsi if combined[x].label in test_labels]
     #
-    folder = StratifiedKFold(n_splits=3, random_state=seed)
+    folder = StratifiedKFold(n_splits=2, random_state=seed)
     #
     test_indices = list(folder.split(cand_mmsi, cand_labels))[0][0]
     test_mmsi = set([cand_mmsi[x] for x in test_indices])
@@ -372,5 +396,6 @@ if __name__ == '__main__':
     this_directory = os.path.abspath(os.path.dirname(__file__))
     raw_lists = load_lists(os.path.join(this_directory, "../data-precursors/classification-list-sources"))
     combined_lists = combine_fields(raw_lists)
+    apply_corrections(combined_lists, os.path.join(this_directory, "../data-precursors"))
     assign_splits(combined_lists)
     dump(combined_lists, os.path.join(this_directory, "../data/classification_list.csv"))

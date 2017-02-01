@@ -1,3 +1,3 @@
 {"headers": {"engine power": null, "mmsi": "mmsi", "tonnage": "tonnage", "length": null, "label": "label"}, "counts": {"Cargo": 17250, "None": 9044, "Non-fishing": 5972, "Sailing": 4560, "Passenger": 2684, "Motor passenger": 8218, "Reefer": 326, "Cargo|Tanker": 53, "Fishing": 4197, "Cargo|Passenger": 575, "Trawler": 958, "Pots and traps": 1, "Tanker": 7408, "Tug": 6213}, 
-"mappings": {"Non-fishing": "unknown_not_fishing", "Motor passenger": "motor_passenger", "Fishing": "unknown_fishing",
+"mappings": {"not_fishing": "unknown_not_fishing", "Non-fishing": "unknown_not_fishing", "Motor passenger": "motor_passenger", "Fishing": "unknown_fishing",
 "Trawler": "Trawlers"}}
