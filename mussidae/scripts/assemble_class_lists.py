@@ -338,6 +338,26 @@ def apply_corrections(combined, base_path):
                 assert combined[mmsi].tonnage == tonnage
 
 
+all_fishing_classes = fishing_classes | {'unknown_fishing'}
+
+def is_fishing_class(x):
+    if x is None:
+        return False
+    for x in x.split('|'):
+        if x not in all_fishing_classes:
+            return False
+    return True
+
+def strip_tonnage_from_nonfishing(combined):
+    for mmsi in combined:
+        if is_fishing_class(combined[mmsi].label):
+            continue
+        else:
+            values = list(combined[mmsi])
+            values[keys.index('tonnage')] = ''
+            combined[mmsi] = VesselRecord(*values)
+
+
 # 
 # Assign to Test / Training splits
 #
@@ -397,5 +417,6 @@ if __name__ == '__main__':
     raw_lists = load_lists(os.path.join(this_directory, "../data-precursors/classification-list-sources"))
     combined_lists = combine_fields(raw_lists)
     apply_corrections(combined_lists, os.path.join(this_directory, "../data-precursors"))
+    strip_tonnage_from_nonfishing(combined_lists)
     assign_splits(combined_lists)
     dump(combined_lists, os.path.join(this_directory, "../data/classification_list.csv"))
