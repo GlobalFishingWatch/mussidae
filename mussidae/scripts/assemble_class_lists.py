@@ -355,6 +355,19 @@ def apply_corrections(combined, base_path):
                 assert combined[mmsi].tonnage == tonnage
 
 
+    # Fix powers
+    with open(os.path.join(base_path, 'corrected_engine_powers.csv')) as f:
+        for line in csv.DictReader(f):
+            mmsi = line['mmsi'].strip()
+            if mmsi in combined:
+                power = float(line['engine_power']) if line['engine_power'] else None
+                logging.info('Correcting engine power for MMSI: %s  (%s -> %s)', mmsi, combined[mmsi].engine_power, power)
+                l = list(combined[mmsi])
+                l[keys.index('engine_power')] = power
+                combined[mmsi] = VesselRecord(*l)
+                assert combined[mmsi].engine_power == power, (combined[mmsi].engine_power, power)
+
+
 # 
 # Assign to Test / Training splits
 #
