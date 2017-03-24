@@ -1,1 +1,1 @@
-{"headers": {"engine power": "power", "mmsi": "mmsi", "tonnage": "tonnage", "length": "length", "label": null}, "counts": null, "mappings": null}
+{"headers": {"engine power": "power", "mmsi": "mmsi", "label": null, "length": "length", "tonnage": "tonnage"}}

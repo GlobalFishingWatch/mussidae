@@ -157,7 +157,8 @@ def to_float(x, key):
     * 'ft' are converted to meters
 
     """
-    if not x or x.strip() == 'NA':
+    x = x.strip()
+    if not x or x in ('NA', 'n/a'):
         return None
     if '.'  in x:
         # There are '.'s, so commas are placeholders
@@ -195,7 +196,7 @@ def load_lists(directory):
         with open(json_pth) as f:
             info = json.load(f)
         # Create converters
-        map = info['mappings']
+        map = info.get('mappings', {})
         converters = {}
         converters['label'] = LabelConverter(map)
         for lbl in keys[1:]:
@@ -215,7 +216,11 @@ def load_lists(directory):
                         if hdr is None:
                             value = None
                         else:
-                            value = line[headers[hkey]]
+                            try:
+                                value = line[hdr]
+                            except KeyError:
+                                logging.fatal('could not find key ({}) in {}'.format(hdr, line.keys()))
+                                raise
                             if key in converters:
                                 value = converters[key](value, key)
                         chunks.append(value)
