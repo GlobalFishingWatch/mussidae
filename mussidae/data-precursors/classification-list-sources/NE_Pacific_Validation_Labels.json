@@ -1,1 +1,4 @@
-{"headers": {"engine power": null, "mmsi": "mmsi", "label": "Label Dropdown", "length": null, "tonnage": null}, "mappings": null}
+{"headers": {"engine power": null, "mmsi": "mmsi", "label": "Label Dropdown", "length": null, "tonnage": null}, 
+"mappings": {"unkown" : "unknown", "squid" : "squid_jigger", "troller": "trollers", "jig": "unknown_fishing",
+"fixed_gear" : "set_gillnets|pots_and_traps", "research/fishing" : "unknown_fishing", "cargo_tanker": "cargo|tanker",
+"unkown_fishing" : "unknown_fishing", "pilot": "tug"}}

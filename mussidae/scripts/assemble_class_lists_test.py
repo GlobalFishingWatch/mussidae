@@ -29,7 +29,6 @@ class CheckConverters(unittest.TestCase):
     def test_to_float(self):
         self.assertEqual(assemble_class_lists.to_float('0.3', 'key1'), 0.3)
         self.assertEqual(assemble_class_lists.to_float('1 ft', 'key2'), 0.3048)
-        self.assertEqual(assemble_class_lists.to_float('1,3', 'key3'), 1.3)
         self.assertEqual(assemble_class_lists.to_float('malformed', 'key4'), None)
 
 
@@ -72,11 +71,11 @@ class CheckCombines(unittest.TestCase):
     def test_combine_fields(self):
         mapping = {
             1 : VesselRecord([654, 654, 654], ['drifting_longlines', 'purse_seines', 'unknown_fishing'],
-                [0.48, 0.5, 0.52], [1.9, 2.1], [], None)
+                [0.48, 0.5, 0.52], [1.9, 2.1], [], None, "")
         }
         self.assertEqual(assemble_class_lists.combine_fields(mapping), 
             {1: VesselRecord(mmsi=654, label='drifting_longlines|purse_seines', length=0.5, 
-                engine_power=2.0, tonnage=None, split=None)})
+                engine_power=2.0, tonnage=None, split=None, source="")})
 
 
 if __name__ == '__main__':

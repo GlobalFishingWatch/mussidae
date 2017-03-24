@@ -329,11 +329,14 @@ def combine_fields(mapping):
 def apply_corrections(combined, base_path):
     # Remove incorrect MMSI
     with open(os.path.join(base_path, 'incorrect_mmsi.csv')) as f:
+        removed = []
         for line in csv.DictReader(f):
             mmsi = line['mmsi'].strip()
             if mmsi in combined:
-                logging.info('Removing incorrect MMSI: %s', mmsi)
+                removed.append(mmsi)
                 combined.pop(mmsi)
+        logging.info('Removing incorrect MMSI: %s', ", ".join(removed))
+
 
     # Fix lengths
     with open(os.path.join(base_path, 'corrected_lengths.csv')) as f:

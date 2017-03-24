@@ -1,1 +1,3 @@
-{"headers": {"engine power": null, "mmsi": "mmsi", "label": "General Classification", "length": null, "tonnage": "tonnage"}}
+{"headers": {"engine power": null, "mmsi": "mmsi", "label": "General Classification", "length": null, "tonnage": "tonnage"},
+ "mappings": {"fishing vessel": "unknown_fishing", "PLEASURECRAFT" : "passenger",  "MERCHANT SHIP": "other_not_fishing",
+ "RESCUE VESSEL": "other_not_fishing", "OFFICIAL SERVICE SHIP": "unknown_not_fishing"}}
