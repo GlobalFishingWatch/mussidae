@@ -46,6 +46,7 @@ null_labels = set(['unknown', 'none', 'no_idea_what_it_is', '', None])
 
 keys = ['mmsi', 'label', 'length', 'engine_power', 'tonnage']
 assert keys[0] == 'mmsi', '"mmsi" must appear first in `keys`'
+assert keys[1] == 'label', '"label" must appear second in `keys`'
 
 output_keys = keys + ['split', 'source']
 
@@ -260,7 +261,7 @@ def combine_classes(classes):
     """
     classes = [x for x in classes if x]
     if not classes:
-        return None
+        return 'unknown'
     else:
         class_set = set()
         for class_group in classes:
@@ -317,7 +318,7 @@ def combine_fields(mapping):
             elif key == 'mmsi':
                 new_values.append(combine_mmsi(keyvalues))
             elif key == 'split':
-                new_values.append(keyvalues)
+                new_values.append(None)
             elif key == 'source':
                 new_values.append(combine_names(keyvalues))
             else:
@@ -397,9 +398,11 @@ def assign_splits(combined, seed=4321):
     #   and they must have at least MIN_COUNT examples
     #   Not in excluded
 
+    possible_test_labels = simple_labels | {'unknown'}
+
     counts = Counter(x.label for x in combined.values())
     test_labels = {x.label for x in combined.values() 
-                     if x.label in simple_labels and counts[x.label] > MIN_COUNT} 
+                     if x.label in possible_test_labels and counts[x.label] > MIN_COUNT} 
     np.random.seed(seed)
     all_mmsi = combined.keys()
     np.random.shuffle(all_mmsi)
@@ -408,14 +411,15 @@ def assign_splits(combined, seed=4321):
     #
     folder = StratifiedKFold(n_splits=2, random_state=seed)
     #
+    print(len(cand_mmsi), len(cand_labels))
+
     test_indices = list(folder.split(cand_mmsi, cand_labels))[0][0]
     test_mmsi = set([cand_mmsi[x] for x in test_indices])
     #
     for mmsi in combined:
-        if combined[mmsi].label is None:
-            split = None
-        else:
-            split = 'Test' if (mmsi in test_mmsi) else 'Training'
+        if combined[mmsi].label == 'unknown' and not any(combined[mmsi][2:-2]):
+            continue # Skip if no information
+        split = 'Test' if (mmsi in test_mmsi) else 'Training'
         lst = list(combined[mmsi])
         lst[-2] = split
         combined[mmsi] = VesselRecord(*lst)
@@ -427,7 +431,7 @@ def dump(combined, path):
         writer.writeheader()
         for mmsi in sorted(combined):
             values = combined[mmsi]
-            if any(values[1:-1]):
+            if values.split:
                 d = {k : v for (k, v) in zip(output_keys, values)}
                 writer.writerow(d)
 
