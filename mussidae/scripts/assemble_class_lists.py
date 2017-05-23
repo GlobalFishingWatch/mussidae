@@ -33,7 +33,8 @@ simple_labels = { 'cargo',
                  'tanker',
                  'trawlers',
                  'trollers',
-                 'tug'}  
+                 'tug',
+                 'gear'}  
 
 composite_labels = {'passenger',
                     'unknown_fishing',
@@ -377,6 +378,27 @@ def apply_corrections(combined, base_path):
                 assert combined[mmsi].engine_power == power, (combined[mmsi].engine_power, power)
 
 
+def add_gear(combined, base_path):
+    # Add gear
+    with open(os.path.join(base_path, 'gear.csv')) as f:
+        np.random.seed(24)
+        gear_mmsi = set()
+        for line in csv.DictReader(f):
+            mmsi = line['mmsi'].strip()
+            if mmsi in gear_mmsi:
+                logging.info('duplicate mmsi in gear.csv: {}'.format(mmsi))
+                continue
+            gear_mmsi.add(mmsi)
+            if mmsi in combined:
+                logging.info('Correcting label for MMSI: %s  (%s -> %s)', mmsi, combined[mmsi].label, 'gear')
+                logging.info(str(combined[mmsi]))
+                l = list(combined[mmsi])
+                l[keys.index('label')] = 'gear'
+                combined[mmsi] = VesselRecord(*l)
+            else:
+                split = 'Training' if (np.random.random() < 0.5) else 'Test'
+                combined[mmsi] = VesselRecord(mmsi, 'gear', None, None, None, split, 'gear.csv')
+
 # 
 # Assign to Test / Training splits
 #
@@ -441,6 +463,9 @@ if __name__ == '__main__':
     this_directory = os.path.abspath(os.path.dirname(__file__))
     raw_lists = load_lists(os.path.join(this_directory, "../data-precursors/classification-list-sources"))
     combined_lists = combine_fields(raw_lists)
-    apply_corrections(combined_lists, os.path.join(this_directory, "../data-precursors"))
+    precursor_dir = os.path.join(this_directory, "../data-precursors")
+    apply_corrections(combined_lists, precursor_dir)
     assign_splits(combined_lists)
+    # Adding gear later to not mess up existing split
+    add_gear(combined_lists, precursor_dir)
     dump(combined_lists, os.path.join(this_directory, "../data/classification_list.csv"))
