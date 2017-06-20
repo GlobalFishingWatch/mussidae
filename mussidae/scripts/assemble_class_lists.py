@@ -246,6 +246,7 @@ removable = [
     ('unknown_fishing', fishing_classes),
     ('unknown_not_fishing', non_fishing_classes),
     ('unknown_longline', {'drifting_longlines', 'set_longlines'}),
+    ('passenger', {'motor_passenger', 'sailing'}),
 ]
 
 
@@ -270,7 +271,9 @@ def combine_classes(classes):
                 class_set.add(cls)
         for cls, required in removable:
             if (cls in class_set) and (class_set & required):
-                class_set.remove(cls)       
+                class_set.remove(cls)    
+        if class_set == {'unknown_fishing', 'unknown_not_fishing'} :
+            return 'unknown' 
         return '|'.join(sorted(class_set))
     
     

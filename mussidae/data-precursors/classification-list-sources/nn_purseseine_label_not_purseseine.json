@@ -1,0 +1,4 @@
+{"headers": {"engine power": null, "mmsi": "mmsi", "tonnage": null, "length": null, "label": "known_type"},
+"mappings": {"trawler": "trawlers", "gear/buoy": "gear", "supply vessel": "other_not_fishing",
+"patrol vessel": "other_not_fishing"}
+}
