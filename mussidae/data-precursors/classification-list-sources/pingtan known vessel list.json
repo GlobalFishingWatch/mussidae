@@ -1,0 +1,4 @@
+{"headers": {"engine_power": "power", "mmsi": "mmsi", "label": "known", "length": "length", "tonnage": "tonnage"},
+ "mappings": {"drift_net": "drift_nets", "trawler" : "trawlers",  "lighting_purse_seine": "purse_seines", 
+              "drifting_longline": "drifting_longlines"}}
+

@@ -17,6 +17,7 @@ logging.getLogger().setLevel('INFO')
 #
 
 simple_labels = { 'cargo',
+                 'drift_nets',
                  'drifting_longlines',
                  'motor_passenger',
                  'other_fishing',
@@ -45,7 +46,7 @@ valid_labels = simple_labels | composite_labels
 
 null_labels = set(['unknown', 'none', 'no_idea_what_it_is', '', None])
 
-keys = ['mmsi', 'label', 'length', 'engine_power', 'tonnage']
+keys = ['mmsi', 'label', 'length', 'engine_power', 'tonnage', 'crew_size']
 assert keys[0] == 'mmsi', '"mmsi" must appear first in `keys`'
 assert keys[1] == 'label', '"label" must appear second in `keys`'
 
@@ -59,7 +60,8 @@ VesselRecord = namedtuple("VesselRecord", output_keys)
 # Data used in combining lists
 #
 
-fishing_classes = {  'drifting_longlines',
+fishing_classes = {  'drift_nets',
+                     'drifting_longlines',
                      'other_fishing',
                      'pole_and_line',
                      'pots_and_traps',
@@ -214,7 +216,7 @@ def load_lists(directory):
                     for i, key in enumerate(keys):
                         # TODO: make this less hacky
                         hkey = 'engine power' if (key == 'engine_power') else key
-                        hdr = headers[hkey]
+                        hdr = headers.get(hkey)
                         if hdr is None:
                             value = None
                         else:
@@ -226,6 +228,10 @@ def load_lists(directory):
                             if key in converters:
                                 value = converters[key](value, key)
                         chunks.append(value)
+                    if not chunks[0].strip():
+                        # empty mmsi
+                        print("Skipping", line)
+                        continue
                     for i in range(len(keys)):
                         mapping[chunks[0]][i].append(chunks[i])
                     mapping[chunks[0]][-2].append(None)
@@ -400,7 +406,7 @@ def add_gear(combined, base_path):
                 combined[mmsi] = VesselRecord(*l)
             else:
                 split = 'Training' if (np.random.random() < 0.5) else 'Test'
-                combined[mmsi] = VesselRecord(mmsi, 'gear', None, None, None, split, 'gear.csv')
+                combined[mmsi] = VesselRecord(mmsi, 'gear', None, None, None, None, split, 'gear.csv')
 
 # 
 # Assign to Test / Training splits

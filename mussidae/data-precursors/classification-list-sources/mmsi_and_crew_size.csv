@@ -1,0 +1,782 @@
+mmsi,flag_country_name,known_label,known_length,is_high_seas,crew
+416232900,Taiwan,drifting_longlines,21.36,True,10
+412460279,China,drifting_longlines,42.24,True,19
+416002017,Taiwan,drifting_longlines,17.5,True,7
+416230600,Taiwan,drifting_longlines,23.95,False,15
+416003814,Taiwan,drifting_longlines,23.9,True,14
+416175800,Taiwan,drifting_longlines,28.02,False,15
+416349000,Taiwan,drifting_longlines,58.8,True,32
+416239700,Taiwan,drifting_longlines,35.7,False,14
+416232600,Taiwan,drifting_longlines,33.8,True,15
+576890000,Vanuatu,drifting_longlines,46.7644444444,True,22
+577145000,Vanuatu,drifting_longlines,52.8408,True,25
+441584000,South Korea,drifting_longlines,50.3071428571,True,25
+440549000,South Korea,drifting_longlines,50.2885714286,True,25
+440894000,South Korea,drifting_longlines,50.4235714286,True,25
+440703000,South Korea,drifting_longlines,50.5328571429,True,25
+440936000,South Korea,drifting_longlines,52.84,True,25
+440807000,South Korea,drifting_longlines,50.5328571429,True,25
+440935000,South Korea,drifting_longlines,50.5328571429,True,25
+440992000,South Korea,drifting_longlines,50.5325,True,25
+440885000,South Korea,drifting_longlines,50.5328571429,True,25
+440641000,South Korea,drifting_longlines,49.6194285714,True,25
+440781000,South Korea,drifting_longlines,50.5328571429,True,25
+412689870,China,drifting_longlines,33.6,True,12
+412270001,China,drifting_longlines,50.594,True,32
+412694640,China,drifting_longlines,48.6,True,30
+412209234,China,drifting_longlines,35.75,True,18
+412270059,China,drifting_longlines,53.69,True,30
+412270057,China,drifting_longlines,52.46,True,30
+441201732,South Korea,drifting_longlines,25.8,True,11
+412420891,China,drifting_longlines,41.0,True,20
+412687130,China,drifting_longlines,24.555,True,9
+431702850,Japan,drifting_longlines,43.88,True,23
+431703660,Japan,drifting_longlines,48.4,True,23
+431070000,Japan,drifting_longlines,56.498,True,25
+431704520,Japan,drifting_longlines,49.9,True,22
+440706000,South Korea,drifting_longlines,49.9,True,25
+440504000,South Korea,drifting_longlines,48.08,True,24
+440751000,South Korea,drifting_longlines,52.22,True,25
+440858000,South Korea,drifting_longlines,50.7896428571,True,25
+412370007,China,drifting_longlines,51.364,True,28
+440620000,South Korea,drifting_longlines,50.79,True,25
+440963000,South Korea,drifting_longlines,50.5435714286,True,25
+440645000,South Korea,drifting_longlines,49.6095833333,True,25
+440574000,South Korea,drifting_longlines,50.7896428571,True,25
+440847000,South Korea,drifting_longlines,50.1666666667,True,25
+440944000,South Korea,drifting_longlines,48.1041666667,True,25
+440503000,South Korea,drifting_longlines,50.5457142857,True,25
+440796000,South Korea,drifting_longlines,48.27,True,25
+441090000,South Korea,drifting_longlines,49.91,False,25
+440298000,South Korea,drifting_longlines,52.21875,True,25
+440900000,South Korea,drifting_longlines,50.79,True,25
+520145000,Fiji,drifting_longlines,36.6,True,13
+440933000,South Korea,drifting_longlines,50.7814285714,True,25
+412420435,China,drifting_longlines,40.5,True,18
+412679240,China,drifting_longlines,59.2,True,30
+412420582,China,drifting_longlines,42.465,True,15
+431200910,Japan,pole_and_line,52.4,True,30
+431903000,Japan,pole_and_line,57.0875,True,32
+431935000,Japan,pole_and_line,59.7333333333,True,32
+431693000,Japan,pole_and_line,59.7333333333,True,30
+431769000,Japan,pole_and_line,56.5033333333,True,28
+431487000,Japan,pole_and_line,59.78,True,32
+431200880,Japan,pole_and_line,56.31,True,29
+432507000,Japan,pole_and_line,57.055,True,32
+366827000,United States,purse_seines,61.95,True,25
+366827000,United States,purse_seines,61.95,True,24
+367179000,United States,purse_seines,68.7915,False,35
+533111749,Malaysia,purse_seines,71.23,True,35
+576905000,Vanuatu,purse_seines,85.415,True,35
+538060008,Marshall Islands,purse_seines,67.11,True,29
+538060005,Marshall Islands,purse_seines,65.97,False,28
+510057000,Federated States of Micronesia,purse_seines,79.61,False,34
+529687000,Kiribati,purse_seines,60.56,True,25
+529676000,Kiribati,purse_seines,66.9333333333,True,25
+529440000,Kiribati,purse_seines,68.1,True,25
+441675000,South Korea,purse_seines,70.59,True,32
+412371194,China,purse_seines,75.34,True,38
+440226000,South Korea,purse_seines,79.6,True,29
+440053000,South Korea,purse_seines,79.56,True,29
+441807000,South Korea,purse_seines,79.9,True,29
+441853000,South Korea,purse_seines,78.46,True,29
+548927000,Philippines,purse_seines,71.79,False,37
+416532000,Taiwan,purse_seines,64.76,False,40
+416899000,Taiwan,purse_seines,70.26,False,30
+431310000,Japan,purse_seines,60.52,True,24
+412370006,China,drifting_longlines,48.48,False,28
+412460288,China,drifting_longlines,38.85,True,18
+416004582,Taiwan,drifting_longlines,23.95,True,17
+416004662,Taiwan,drifting_longlines,23.9,True,12
+416237700,Taiwan,drifting_longlines,23.95,True,17
+416004044,Taiwan,drifting_longlines,23.8,True,14
+416221900,Taiwan,drifting_longlines,29.7,True,14
+416002681,Taiwan,drifting_longlines,29.88,True,15
+416000358,Taiwan,drifting_longlines,26.15,False,9
+416164600,Taiwan,drifting_longlines,56.0,True,30
+416120500,Taiwan,drifting_longlines,57.78,True,30
+416003955,Taiwan,drifting_longlines,34.0,False,16
+577146000,Vanuatu,drifting_longlines,55.462,True,25
+576699000,Vanuatu,drifting_longlines,54.248,True,30
+416233500,Taiwan,drifting_longlines,21.5,True,14
+441536000,South Korea,drifting_longlines,47.54,True,25
+440517000,South Korea,drifting_longlines,50.28,True,25
+441018000,South Korea,drifting_longlines,47.8228571429,True,25
+441251000,South Korea,drifting_longlines,49.77,True,25
+413342000,China,drifting_longlines,34.65,True,13
+413270220,China,drifting_longlines,51.4688888889,True,30
+441201183,South Korea,drifting_longlines,33.74,False,12
+412200079,China,drifting_longlines,49.2,True,31
+441201729,South Korea,drifting_longlines,25.8,False,11
+441201728,South Korea,drifting_longlines,25.8,False,11
+412420905,China,drifting_longlines,44.0,True,20
+412420985,China,drifting_longlines,48.7,True,30
+412420851,China,drifting_longlines,43.1966666667,True,25
+412420901,China,drifting_longlines,41.0,True,17
+440886000,South Korea,drifting_longlines,50.5328571429,True,25
+431700200,Japan,drifting_longlines,44.8,True,23
+431500990,Japan,drifting_longlines,48.19,False,25
+431206000,Japan,drifting_longlines,52.685,True,22
+431725000,Japan,drifting_longlines,54.8,True,25
+431298000,Japan,drifting_longlines,49.99,True,24
+431253000,Japan,drifting_longlines,49.2,True,23
+440820000,South Korea,drifting_longlines,48.08,True,25
+440733000,South Korea,drifting_longlines,48.08,True,25
+440612000,South Korea,drifting_longlines,49.0257142857,True,25
+440628000,South Korea,drifting_longlines,50.5467857143,True,25
+440966000,South Korea,drifting_longlines,50.1666666667,True,25
+440045000,South Korea,drifting_longlines,48.08,True,25
+440986000,South Korea,drifting_longlines,48.08,True,25
+440809000,South Korea,drifting_longlines,49.91,True,25
+520271000,Fiji,drifting_longlines,30.03,True,14
+520241000,Fiji,drifting_longlines,41.5,True,18
+412420876,China,drifting_longlines,48.7514705883,True,28
+431700150,Japan,pole_and_line,59.7333333333,True,33
+431801000,Japan,pole_and_line,59.1566666667,True,32
+338622000,United States,purse_seines,57.878,False,25
+366020000,United States,purse_seines,67.801375,True,39
+367333000,United States,purse_seines,69.4975,True,25
+368489000,United States,purse_seines,63.402125,True,25
+553111788,Papua New Guinea,purse_seines,64.7,False,25
+553111771,Papua New Guinea,purse_seines,71.79,True,40
+735058003,Ecuador,purse_seines,115.706,False,27
+416238800,Taiwan,purse_seines,71.79,True,40
+416233600,Taiwan,purse_seines,71.79,False,40
+538060015,Marshall Islands,purse_seines,73.7066666667,False,32
+510054000,Federated States of Micronesia,purse_seines,79.35,True,30
+510057000,Federated States of Micronesia,purse_seines,79.61,True,34
+529695000,Kiribati,purse_seines,63.4666666667,True,25
+440990000,South Korea,purse_seines,68.1,True,25
+441166000,South Korea,purse_seines,78.0933333333,True,29
+413298000,China,purse_seines,75.225,False,25
+529004000,Kiribati,purse_seines,56.5966666667,False,24
+431310000,Japan,purse_seines,60.52,False,24
+431671000,Japan,purse_seines,60.68,False,24
+432438000,Japan,purse_seines,61.145,False,24
+548905000,Philippines,purse_seines,68.4766666667,False,35
+548831000,Philippines,purse_seines,68.4766666667,False,37
+416043800,Taiwan,purse_seines,64.7,False,40
+416574000,Taiwan,purse_seines,69.22,False,28
+416574000,Taiwan,purse_seines,69.22,True,28
+413032000,China,purse_seines,64.7,True,30
+431501404,Japan,purse_seines,60.68,False,22
+432726000,Japan,purse_seines,76.75,False,30
+432685000,Japan,purse_seines,76.75,False,27
+440542000,South Korea,purse_seines,77.075,True,25
+440644000,South Korea,purse_seines,68.17,True,22
+224523000,Spain,purse_seines,84.1,True,27
+529417000,Kiribati,purse_seines,72.455,True,25
+367179000,United States,purse_seines,68.7915,True,39
+441446000,South Korea,purse_seines,74.51,True,22
+412440032,China,drifting_longlines,54.2,True,30
+440648000,South Korea,drifting_longlines,50.66475,True,25
+440920000,South Korea,drifting_longlines,48.08375,True,25
+441226015,South Korea,drifting_longlines,22.85,True,9
+441660000,South Korea,drifting_longlines,49.3043333333,True,25
+412371197,China,drifting_longlines,47.716,True,19
+441483000,South Korea,drifting_longlines,47.51,True,25
+412687110,China,drifting_longlines,24.555,True,10
+412371181,China,purse_seines,69.2766666667,False,34
+440780000,South Korea,drifting_longlines,49.6185714286,True,25
+553111765,Papua New Guinea,purse_seines,70.8,False,41
+412460115,China,drifting_longlines,38.15,True,18
+412694590,China,drifting_longlines,27.085,False,12
+416003472,Taiwan,drifting_longlines,23.9,True,15
+416199800,Taiwan,drifting_longlines,26.76,False,15
+416102500,Taiwan,drifting_longlines,27.3066666667,True,12
+416004246,Taiwan,drifting_longlines,35.7,False,20
+577289000,Vanuatu,drifting_longlines,49.7033333333,True,28
+576754000,Vanuatu,drifting_longlines,23.8,True,12
+441680000,South Korea,drifting_longlines,50.6966666667,True,25
+440704000,South Korea,drifting_longlines,50.7089285714,True,25
+441084000,South Korea,drifting_longlines,47.8228571429,True,25
+413343000,China,drifting_longlines,34.65,True,13
+412320026,China,drifting_longlines,35.68,True,12
+412420915,China,drifting_longlines,41.0,True,20
+441225915,South Korea,drifting_longlines,22.85,True,9
+520188000,Fiji,drifting_longlines,28.95,False,12
+412320026,China,drifting_longlines,35.68,False,12
+431702990,Japan,drifting_longlines,52.1666666667,True,25
+431380000,Japan,drifting_longlines,51.2,True,25
+412689850,China,drifting_longlines,33.6,True,12
+440604000,South Korea,drifting_longlines,49.0257142857,True,25
+520076000,Fiji,drifting_longlines,31.6333333333,False,15
+412371192,China,drifting_longlines,53.51,True,30
+452005511,Federated States of Micronesia,purse_seines,61.88,True,21
+553111643,Papua New Guinea,purse_seines,61.75,False,25
+510060000,Federated States of Micronesia,purse_seines,65.02,False,25
+440104000,South Korea,purse_seines,73.6933333333,True,28
+412328729,China,purse_seines,60.31,False,35
+416500000,Taiwan,purse_seines,65.7,False,30
+431308000,Japan,purse_seines,60.68,False,24
+432487000,Japan,purse_seines,63.24,False,24
+440822000,South Korea,purse_seines,75.33375,False,22
+440450000,South Korea,purse_seines,74.9833333333,True,25
+440823000,South Korea,purse_seines,78.33,True,22
+440671000,South Korea,purse_seines,72.1705555556,True,25
+367666000,United States,purse_seines,79.288875,True,21
+553111743,Papua New Guinea,purse_seines,75.66,False,29
+416631000,Taiwan,drifting_longlines,52.6482142857,True,32
+431796000,Japan,purse_seines,64.21,True,23
+416004158,Taiwan,drifting_longlines,23.9,True,14
+735058003,Ecuador,purse_seines,115.706,True,27
+413322620,China,drifting_longlines,32.74,True,16
+431680000,Japan,pole_and_line,59.1566666667,True,35
+412331029,China,drifting_longlines,51.2,True,31
+359001000,El Salvador,purse_seines,91.9,True,29
+36764000,United States,purse_seines,59.4206481481,True,25
+557005500,Solomon Islands,purse_seines,70.8,False,35
+431159000,Japan,purse_seines,60.68,False,24
+412460285,China,drifting_longlines,41.015,True,18
+440952000,South Korea,drifting_longlines,50.79,True,25
+440584000,South Korea,drifting_longlines,50.7896428571,True,25
+441219253,South Korea,drifting_longlines,33.76,True,12
+416004299,Taiwan,drifting_longlines,23.9,False,14
+538060019,Marshall Islands,purse_seines,71.79,True,32
+444080710,South Korea,purse_seines,79.9,True,29
+451004112,Kyrgyz Republic,purse_seines,61.51,False,20
+441219875,South Korea,drifting_longlines,35.5,True,13
+432549000,Japan,purse_seines,65.735,False,24
+412694570,China,drifting_longlines,27.085,False,13
+440552000,South Korea,purse_seines,64.4625,True,22
+441226315,South Korea,drifting_longlines,22.85,True,10
+553111756,Papua New Guinea,purse_seines,89.21,True,25
+441247715,South Korea,drifting_longlines,22.85,True,9
+338873000,United States,purse_seines,72.436,True,25
+538060004,Marshall Islands,purse_seines,60.71,True,28
+735057638,Ecuador,purse_seines,77.3625,True,30
+412371182,China,purse_seines,70.825,True,34
+416004583,Taiwan,drifting_longlines,23.9,True,17
+416101900,Taiwan,drifting_longlines,27.3066666667,True,12
+416000817,Taiwan,drifting_longlines,21.5,True,8
+416003505,Taiwan,drifting_longlines,19.23,False,8
+441825000,South Korea,drifting_longlines,48.038,True,25
+416004043,Taiwan,drifting_longlines,23.9,True,15
+416230600,Taiwan,drifting_longlines,23.95,True,15
+416002768,Taiwan,drifting_longlines,27.2,True,14
+416199800,Taiwan,drifting_longlines,26.76,True,15
+416220800,Taiwan,drifting_longlines,35.808,True,20
+510033000,Federated States of Micronesia,drifting_longlines,26.26,False,10
+441241000,South Korea,drifting_longlines,47.61,True,25
+440617000,South Korea,drifting_longlines,50.2728571429,True,25
+440522000,South Korea,drifting_longlines,50.2885714286,True,25
+432626000,Japan,drifting_longlines,53.39,True,25
+412326904,China,drifting_longlines,33.74,True,12
+412674190,China,drifting_longlines,52.7,True,26
+412270058,China,drifting_longlines,49.3,False,30
+412420583,China,drifting_longlines,42.465,True,15
+412689540,China,drifting_longlines,27.86,True,12
+416232500,Taiwan,drifting_longlines,57.6,True,30
+441811000,South Korea,drifting_longlines,52.9811111111,True,25
+431700060,Japan,drifting_longlines,51.5233333333,True,23
+431701560,Japan,drifting_longlines,49.39,True,23
+431798000,Japan,drifting_longlines,54.8,True,25
+431053000,Japan,drifting_longlines,52.686,True,23
+440654000,South Korea,drifting_longlines,48.225,True,25
+416210600,Taiwan,drifting_longlines,27.3,True,14
+440751000,South Korea,drifting_longlines,52.22,False,25
+412691530,China,drifting_longlines,31.2333333333,False,13
+440055000,South Korea,drifting_longlines,48.78,True,25
+441098000,South Korea,drifting_longlines,50.79,True,25
+440950000,South Korea,drifting_longlines,47.2075,True,25
+440950000,South Korea,drifting_longlines,47.2075,False,25
+441072000,South Korea,drifting_longlines,49.91,True,25
+440782000,South Korea,drifting_longlines,49.91,True,25
+412420435,China,drifting_longlines,40.5,True,15
+416218900,Taiwan,drifting_longlines,22.4,False,12
+416097500,Taiwan,drifting_longlines,57.6,True,30
+412695430,China,drifting_longlines,59.2,True,31
+416017500,Taiwan,purse_seines,66.21,True,28
+359004000,El Salvador,purse_seines,82.8283333333,True,29
+431200970,Japan,pole_and_line,56.87,True,30
+431769000,Japan,pole_and_line,56.5033333333,True,29
+431722000,Japan,pole_and_line,58.065,True,26
+441650000,South Korea,drifting_longlines,49.1171428571,True,25
+303137000,United States,purse_seines,69.9933611111,True,25
+368046000,United States,purse_seines,69.164125,True,39
+533111749,Malaysia,purse_seines,71.23,False,25
+416004831,Taiwan,purse_seines,70.59,True,38
+416501000,Taiwan,purse_seines,69.26,False,30
+416238800,Taiwan,purse_seines,71.79,False,40
+510054000,Federated States of Micronesia,purse_seines,79.35,False,30
+529729000,Kiribati,purse_seines,65.59,True,25
+529469000,Kiribati,purse_seines,75.0633333333,True,25
+413034000,China,purse_seines,66.23,False,30
+412439604,China,purse_seines,65.3566666667,False,30
+512012000,New Zealand,purse_seines,65.0733333333,True,19
+548831000,Philippines,purse_seines,68.4766666667,True,37
+416532000,Taiwan,purse_seines,64.76,True,40
+413032000,China,purse_seines,64.7,False,30
+416004409,Taiwan,drifting_longlines,23.85,True,18
+416016600,Taiwan,purse_seines,69.25,False,40
+440239000,South Korea,drifting_longlines,48.08,True,25
+520183000,Fiji,drifting_longlines,29.43,False,12
+416120600,Taiwan,drifting_longlines,56.0,True,30
+412689860,China,drifting_longlines,33.6,True,12
+416001500,Taiwan,purse_seines,66.2666666667,True,35
+416411000,Taiwan,purse_seines,72.37,False,35
+224782000,Spain,purse_seines,105.0,True,34
+431200060,Japan,pole_and_line,56.3,True,30
+412320024,China,drifting_longlines,35.68,True,12
+416000235,Taiwan,drifting_longlines,29.0,False,15
+510034000,Federated States of Micronesia,drifting_longlines,26.82,False,10
+412201849,China,drifting_longlines,35.75,True,18
+440287000,South Korea,drifting_longlines,49.91,True,25
+413341000,China,drifting_longlines,32.7,False,13
+431167000,Japan,purse_seines,75.455,True,28
+416001500,Taiwan,purse_seines,66.2666666667,False,32
+413341000,China,drifting_longlines,32.7,True,13
+440731000,South Korea,drifting_longlines,48.08,True,25
+416168600,Taiwan,drifting_longlines,59.2,True,31
+735059089,Ecuador,purse_seines,77.3,True,31
+412460013,China,drifting_longlines,37.0,True,13
+538060006,Marshall Islands,purse_seines,61.85,True,28
+413011000,China,drifting_longlines,50.8,True,30
+413501950,China,drifting_longlines,28.16,True,14
+412470430,China,drifting_longlines,33.1333333333,True,15
+412460297,China,drifting_longlines,37.6,True,15
+412687160,China,drifting_longlines,24.19,True,9
+416003676,Taiwan,drifting_longlines,23.93,True,14
+416052600,Taiwan,drifting_longlines,59.24,True,31
+416086600,Taiwan,drifting_longlines,53.15,True,30
+412200115,China,drifting_longlines,37.25,True,14
+576375000,Vanuatu,pole_and_line,42.7,False,13
+576890000,Vanuatu,drifting_longlines,46.7644444444,True,26
+440281000,South Korea,drifting_longlines,42.776,True,25
+440934000,South Korea,drifting_longlines,50.5328571429,True,25
+412326905,China,drifting_longlines,33.74,False,12
+412326902,China,drifting_longlines,35.67,False,12
+201851,China,drifting_longlines,33.9,True,18
+412270059,China,drifting_longlines,53.69,False,30
+412420903,China,drifting_longlines,41.0,True,17
+412420896,China,drifting_longlines,41.0,True,17
+441812000,South Korea,drifting_longlines,52.9811111111,True,25
+431116000,Japan,drifting_longlines,49.2,True,24
+431701780,Japan,drifting_longlines,48.03,True,25
+431500530,Japan,drifting_longlines,50.6533333333,True,22
+431869000,Japan,drifting_longlines,51.5466666667,True,25
+440846000,South Korea,drifting_longlines,48.08,True,25
+440987000,South Korea,drifting_longlines,50.255,True,25
+432984000,Japan,drifting_longlines,54.0,True,24
+416002017,Taiwan,drifting_longlines,17.5,False,7
+440773000,South Korea,drifting_longlines,49.91,True,25
+440946000,South Korea,drifting_longlines,50.79,True,25
+520074000,Fiji,drifting_longlines,30.45,False,15
+520190000,Fiji,drifting_longlines,25.8,True,13
+520179000,Fiji,drifting_longlines,36.6,True,14
+520187000,Fiji,drifting_longlines,28.2,False,13
+366020000,United States,purse_seines,67.801375,False,35
+412694580,China,drifting_longlines,29.98,False,12
+416010900,Taiwan,drifting_longlines,76.0,True,50
+441201730,South Korea,drifting_longlines,25.8,True,11
+510062000,Federated States of Micronesia,purse_seines,62.175,True,24
+412370008,China,drifting_longlines,46.28,True,28
+432845000,Japan,purse_seines,66.93,True,22
+518676000,Cook Islands,drifting_longlines,22.0,False,10
+367463000,United States,purse_seines,64.991375,True,39
+510056000,Federated States of Micronesia,purse_seines,68.83,False,17
+412328731,China,purse_seines,57.3,False,35
+538060016,Marshall Islands,purse_seines,71.79,True,32
+440233000,South Korea,purse_seines,75.79375,True,22
+412439607,China,purse_seines,64.8233333333,True,30
+431503000,Japan,purse_seines,60.5325,False,24
+431817000,Japan,purse_seines,60.52,False,24
+431812000,Japan,purse_seines,60.68,False,25
+431100850,Japan,purse_seines,57.65,True,26
+510060000,Federated States of Micronesia,purse_seines,65.02,True,25
+548905000,Philippines,purse_seines,68.4766666667,False,37
+416001500,Taiwan,purse_seines,66.2666666667,False,35
+416500000,Taiwan,purse_seines,65.7,True,30
+412460029,China,drifting_longlines,49.14,True,25
+440954000,South Korea,drifting_longlines,50.42625,True,25
+441233000,South Korea,drifting_longlines,48.01,True,25
+553111764,Papua New Guinea,purse_seines,70.8,True,41
+431511000,Japan,purse_seines,58.7,False,26
+529223000,Kiribati,purse_seines,61.2,True,21
+510056000,Federated States of Micronesia,purse_seines,68.83,True,17
+440450000,South Korea,purse_seines,74.9833333333,False,25
+367767000,United States,purse_seines,68.79025,True,35
+520218000,Fiji,drifting_longlines,32.0,True,20
+431698000,Japan,pole_and_line,50.5633333333,True,28
+416102500,Taiwan,drifting_longlines,27.3066666667,False,12
+441644000,South Korea,drifting_longlines,49.0902857143,True,25
+416119800,Taiwan,drifting_longlines,57.6,True,30
+431200990,Japan,pole_and_line,48.78,True,24
+413224000,China,purse_seines,70.26,False,28
+367767000,United States,purse_seines,68.79025,False,35
+440772000,South Korea,drifting_longlines,51.9625,True,25
+440788000,South Korea,drifting_longlines,50.7896428571,True,25
+432942000,Japan,drifting_longlines,52.5994444444,True,24
+735059088,Ecuador,purse_seines,77.3,False,31
+367084000,United States,purse_seines,69.164125,True,39
+416501000,Taiwan,purse_seines,69.26,True,30
+440595000,South Korea,drifting_longlines,50.2828571429,True,25
+576574000,Vanuatu,purse_seines,82.4625,True,35
+412371179,China,drifting_longlines,50.0419047619,True,30
+520243000,Fiji,drifting_longlines,40.5,True,16
+416303000,Taiwan,drifting_longlines,57.78,True,35
+441166000,South Korea,purse_seines,78.0933333333,False,29
+440808000,South Korea,drifting_longlines,46.564,False,25
+510061000,Federated States of Micronesia,purse_seines,71.585,False,30
+553111736,Papua New Guinea,purse_seines,70.59,True,40
+452005511,Federated States of Micronesia,purse_seines,61.88,False,21
+441066000,South Korea,purse_seines,78.96,True,25
+416248600,Taiwan,purse_seines,71.79,True,40
+412371181,China,purse_seines,69.2766666667,True,34
+510014000,Federated States of Micronesia,drifting_longlines,25.5,False,10
+412500156,China,drifting_longlines,32.7,True,15
+412470420,China,drifting_longlines,32.7,True,15
+412460296,China,drifting_longlines,37.6,True,13
+416228600,Taiwan,drifting_longlines,23.9,False,14
+416003097,Taiwan,drifting_longlines,29.7,True,14
+416003073,Taiwan,drifting_longlines,27.95,True,20
+416003089,Taiwan,drifting_longlines,27.79,False,14
+416072600,Taiwan,drifting_longlines,55.2,True,30
+440778000,South Korea,drifting_longlines,48.4479166667,True,25
+416232900,Taiwan,drifting_longlines,21.36,True,14
+441374000,South Korea,drifting_longlines,50.49625,True,25
+412463901,China,drifting_longlines,44.19,True,18
+412420911,China,drifting_longlines,41.0,True,20
+431500430,Japan,drifting_longlines,52.67,True,22
+432411000,Japan,drifting_longlines,52.25,False,25
+440636000,South Korea,drifting_longlines,50.79,True,25
+412370006,China,drifting_longlines,48.48,True,28
+412694520,China,drifting_longlines,27.3466666667,False,12
+412691520,China,drifting_longlines,31.2333333333,True,13
+520151000,Fiji,drifting_longlines,37.26,True,15
+412691550,China,drifting_longlines,26.2333333333,False,12
+416003741,Taiwan,drifting_longlines,33.24,False,18
+416122800,Taiwan,drifting_longlines,56.3,True,30
+412420436,China,drifting_longlines,40.5,True,18
+431914000,Japan,pole_and_line,55.6,True,30
+416247900,Taiwan,purse_seines,68.0833333333,False,40
+412926000,China,purse_seines,64.7,True,30
+431866000,Japan,purse_seines,60.68,True,24
+365878412,United States,purse_seines,74.8025,True,25
+553111736,Papua New Guinea,purse_seines,70.59,False,40
+553111735,Papua New Guinea,purse_seines,71.79,True,40
+553111698,Papua New Guinea,purse_seines,71.79,False,38
+553111690,Papua New Guinea,purse_seines,79.5,True,39
+350107000,Nicaragua,purse_seines,61.0915,True,25
+735057564,Ecuador,purse_seines,86.811,True,27
+416411000,Taiwan,purse_seines,72.37,True,35
+412421025,China,drifting_longlines,37.0,True,15
+538060019,Marshall Islands,purse_seines,71.79,False,32
+538060015,Marshall Islands,purse_seines,73.7066666667,True,32
+529469000,Kiribati,purse_seines,75.0633333333,True,24
+412439605,China,purse_seines,64.8233333333,True,32
+431500460,Japan,drifting_longlines,50.3733333333,True,20
+431308000,Japan,purse_seines,60.68,True,24
+431331000,Japan,purse_seines,61.845,False,23
+440410000,South Korea,purse_seines,68.28,True,22
+416091900,Taiwan,drifting_longlines,58.43,True,30
+431882000,Japan,drifting_longlines,49.9,True,23
+529004000,Kiribati,purse_seines,56.5966666667,False,24
+553111756,Papua New Guinea,purse_seines,89.21,False,25
+367170000,United States,purse_seines,66.8701666667,True,39
+413224000,China,purse_seines,70.26,True,28
+538060005,Marshall Islands,purse_seines,65.97,True,28
+431155000,Japan,purse_seines,60.665,False,24
+338074000,United States,purse_seines,68.79025,True,39
+553111771,Papua New Guinea,purse_seines,71.79,False,40
+431251000,Japan,drifting_longlines,51.9333333333,True,25
+431686000,Japan,purse_seines,60.52,True,25
+431100030,Japan,purse_seines,57.8,False,24
+412460299,China,drifting_longlines,46.7033333333,True,26
+338074000,United States,purse_seines,68.79025,False,35
+553111738,Papua New Guinea,purse_seines,71.79,True,35
+432971000,Japan,drifting_longlines,52.8453424658,False,24
+441201728,South Korea,drifting_longlines,25.8,True,11
+412283999,China,drifting_longlines,50.8,True,31
+735057587,Ecuador,purse_seines,76.245,True,25
+431100850,Japan,purse_seines,57.65,False,26
+413340000,China,drifting_longlines,34.65,True,13
+576093000,Vanuatu,drifting_longlines,23.8,False,12
+416003561,Taiwan,drifting_longlines,29.4,True,15
+416002596,Taiwan,drifting_longlines,29.7,True,13
+416118500,Taiwan,drifting_longlines,40.0,True,25
+440787000,South Korea,drifting_longlines,49.91,True,25
+577322000,Vanuatu,drifting_longlines,56.716,True,25
+412371198,China,drifting_longlines,47.716,True,19
+538060006,Marshall Islands,purse_seines,61.85,False,28
+416003561,Taiwan,drifting_longlines,29.4,False,15
+431704420,Japan,drifting_longlines,48.4,False,25
+412460075,China,drifting_longlines,38.15,True,18
+412460073,China,drifting_longlines,38.15,True,18
+416004268,Taiwan,drifting_longlines,23.1666666667,False,14
+576122000,Vanuatu,drifting_longlines,23.8,False,12
+576765000,Vanuatu,drifting_longlines,23.8,False,12
+441600589,South Korea,drifting_longlines,48.64,True,28
+412460001,China,drifting_longlines,46.88,True,27
+412679210,China,drifting_longlines,56.4,True,26
+576695000,Vanuatu,drifting_longlines,23.8,False,12
+440705000,South Korea,drifting_longlines,50.7814285714,True,25
+520083000,Fiji,drifting_longlines,29.43,False,14
+520173000,Fiji,drifting_longlines,39.6,True,14
+412695580,China,drifting_longlines,56.5,True,33
+431602240,Japan,drifting_longlines,43.31,True,20
+412679240,China,drifting_longlines,59.2,True,31
+431722000,Japan,pole_and_line,58.065,True,28
+412695580,China,drifting_longlines,56.5,True,30
+510069000,Federated States of Micronesia,purse_seines,70.59,True,40
+553111761,Papua New Guinea,purse_seines,70.59,True,40
+367463000,United States,purse_seines,64.991375,True,35
+553111751,Papua New Guinea,purse_seines,66.44625,True,35
+735059089,Ecuador,purse_seines,77.3,False,31
+510056000,Federated States of Micronesia,purse_seines,68.83,False,20
+441493000,South Korea,purse_seines,74.51,True,22
+412270024,China,purse_seines,70.59,True,35
+412439605,China,purse_seines,64.8233333333,False,32
+431866000,Japan,purse_seines,60.68,False,24
+431200190,Japan,drifting_longlines,49.9,True,23
+416853000,Taiwan,purse_seines,78.25,False,30
+440492000,South Korea,purse_seines,78.33,True,25
+440770000,South Korea,drifting_longlines,52.0658333333,True,25
+416240900,Taiwan,purse_seines,71.79,False,40
+368046000,United States,purse_seines,69.164125,True,35
+413322770,China,drifting_longlines,36.6,True,11
+431511000,Japan,purse_seines,58.7,True,26
+412329403,China,drifting_longlines,42.0133333333,True,14
+440575000,South Korea,purse_seines,71.4416666667,False,25
+412420906,China,drifting_longlines,43.0,True,20
+441201731,South Korea,drifting_longlines,25.8,True,11
+576660000,Vanuatu,drifting_longlines,23.64,True,12
+416123900,Taiwan,drifting_longlines,55.75,True,29
+520033000,Fiji,drifting_longlines,26.0,False,12
+553111740,Papua New Guinea,purse_seines,67.34625,True,31
+338793000,United States,purse_seines,64.706375,True,35
+440821000,South Korea,drifting_longlines,48.08,True,25
+338622000,United States,purse_seines,57.878,True,25
+412420851,China,drifting_longlines,43.1966666667,True,22
+416003700,Taiwan,drifting_longlines,56.9,True,30
+431702230,Japan,drifting_longlines,49.39,True,23
+440195000,South Korea,purse_seines,79.6,False,29
+416822000,Taiwan,drifting_longlines,54.85,True,24
+359002000,El Salvador,purse_seines,79.0222222222,True,29
+416898000,Taiwan,purse_seines,65.7666666667,False,30
+440801000,South Korea,drifting_longlines,49.765,True,25
+432487000,Japan,purse_seines,63.24,True,24
+440575000,South Korea,purse_seines,71.4416666667,True,25
+412420892,China,drifting_longlines,45.4,True,26
+431686000,Japan,purse_seines,60.52,False,25
+412371178,China,drifting_longlines,54.07,True,30
+553111750,Papua New Guinea,purse_seines,68.074,True,35
+224015550,Spain,purse_seines,84.1,True,27
+538060007,Marshall Islands,purse_seines,72.37,True,29
+416004369,Taiwan,drifting_longlines,35.76,True,23
+548895000,Philippines,purse_seines,71.79,False,37
+440462000,South Korea,purse_seines,65.145,True,25
+416226600,Taiwan,drifting_longlines,27.0,True,15
+553111712,Papua New Guinea,purse_seines,70.59,False,40
+529414000,Kiribati,drifting_longlines,49.1666666667,True,30
+520171000,Fiji,drifting_longlines,36.6,True,14
+369059000,United States,drifting_longlines,29.47,False,7
+412460055,China,drifting_longlines,30.24,False,10
+412420585,China,drifting_longlines,42.465,True,15
+510035000,Federated States of Micronesia,drifting_longlines,26.82,False,10
+431500120,Japan,drifting_longlines,23.0,True,10
+412421026,China,drifting_longlines,37.0,True,15
+413462010,China,drifting_longlines,41.2083333333,True,24
+412460296,China,drifting_longlines,37.6,True,15
+416240800,Taiwan,drifting_longlines,35.7,True,25
+412326904,China,drifting_longlines,33.74,False,12
+412209233,China,drifting_longlines,35.75,True,18
+200008650,China,drifting_longlines,37.08,True,15
+431500990,Japan,drifting_longlines,48.19,True,25
+431869000,Japan,drifting_longlines,51.5466666667,True,24
+440941000,South Korea,drifting_longlines,48.08,True,25
+412691540,China,drifting_longlines,26.2333333333,False,12
+432942000,Japan,drifting_longlines,52.5994444444,False,24
+441090000,South Korea,drifting_longlines,49.91,True,25
+440298000,South Korea,drifting_longlines,52.21875,False,25
+520065000,Fiji,drifting_longlines,30.96,False,13
+553111765,Papua New Guinea,purse_seines,70.8,True,41
+440931000,South Korea,drifting_longlines,50.5328571429,True,25
+553111744,Papua New Guinea,purse_seines,77.6666666667,True,29
+338793000,United States,purse_seines,64.706375,False,35
+576696000,Vanuatu,drifting_longlines,23.8,False,12
+432971000,Japan,drifting_longlines,52.8453424658,True,24
+416230800,Taiwan,drifting_longlines,23.9,True,14
+416004831,Taiwan,purse_seines,70.59,False,38
+416234800,Taiwan,purse_seines,71.79,False,40
+416233600,Taiwan,purse_seines,71.79,True,40
+413501950,China,drifting_longlines,28.16,True,14
+548051500,Philippines,purse_seines,66.82,False,37
+431159000,Japan,purse_seines,60.68,True,24
+440195000,South Korea,purse_seines,79.6,True,29
+576847000,Vanuatu,drifting_longlines,54.4,True,30
+432966000,Japan,purse_seines,70.125,True,26
+432564000,Japan,purse_seines,74.5083333333,False,30
+520020000,Fiji,drifting_longlines,32.0,True,12
+440444000,South Korea,purse_seines,68.277,True,22
+432738000,Japan,purse_seines,79.61,False,34
+412420596,China,drifting_longlines,40.67,False,20
+413322760,China,drifting_longlines,36.6,True,12
+369061000,United States,drifting_longlines,27.065,False,7
+412329402,China,drifting_longlines,45.6,True,14
+441014000,South Korea,drifting_longlines,50.1666666667,True,25
+416623000,Taiwan,drifting_longlines,55.9,True,26
+416176700,Taiwan,drifting_longlines,56.1,True,32
+416220800,Taiwan,drifting_longlines,35.808,False,20
+416898000,Taiwan,purse_seines,65.7666666667,True,30
+412689880,China,drifting_longlines,33.6,True,12
+510061000,Federated States of Micronesia,purse_seines,71.585,True,30
+518072000,Cook Islands,drifting_longlines,29.875,False,10
+413270430,China,drifting_longlines,49.0,True,30
+431331000,Japan,purse_seines,61.845,True,23
+413345000,China,drifting_longlines,34.65,False,13
+548924000,Philippines,purse_seines,71.79,False,37
+576237000,Vanuatu,drifting_longlines,23.8,False,12
+432708000,Japan,purse_seines,67.61,True,29
+367738980,United States,purse_seines,75.0024166666,False,25
+416353000,Taiwan,drifting_longlines,59.2,True,32
+412460043,China,drifting_longlines,51.8466666667,True,25
+432353000,Japan,drifting_longlines,49.39,True,23
+440895000,South Korea,drifting_longlines,50.5325,True,25
+412328757,China,drifting_longlines,36.52,False,12
+431670000,Japan,purse_seines,60.13,False,22
+576664000,Vanuatu,drifting_longlines,23.8,True,14
+441930000,South Korea,purse_seines,79.56,True,29
+416218900,Taiwan,drifting_longlines,22.4,True,12
+413344000,China,drifting_longlines,34.65,False,13
+548051500,Philippines,purse_seines,66.82,False,35
+224651000,Spain,purse_seines,83.5514285714,True,27
+416004073,Taiwan,drifting_longlines,22.8166666667,True,14
+416119900,Taiwan,drifting_longlines,56.0,True,30
+412326972,China,drifting_longlines,37.16,True,16
+553111738,Papua New Guinea,purse_seines,71.79,False,35
+735057565,Ecuador,purse_seines,74.35125,True,27
+431128000,Japan,purse_seines,79.61,True,23
+440792000,South Korea,drifting_longlines,50.7814285714,True,25
+431399000,Japan,purse_seines,60.52,False,24
+416004268,Taiwan,drifting_longlines,23.1666666667,True,14
+412371182,China,purse_seines,70.825,False,34
+431704420,Japan,drifting_longlines,48.4,True,25
+416247600,Taiwan,purse_seines,68.6266666667,False,40
+416004594,Taiwan,drifting_longlines,23.9,True,18
+416003074,Taiwan,drifting_longlines,28.1333333333,False,15
+416193900,Taiwan,drifting_longlines,25.8666666667,True,11
+416338000,Taiwan,drifting_longlines,56.18,True,29
+412420913,China,drifting_longlines,41.0,True,20
+412200116,China,drifting_longlines,37.25,True,12
+553111759,Papua New Guinea,purse_seines,71.79,False,40
+432411000,Japan,drifting_longlines,52.25,True,25
+440656000,South Korea,drifting_longlines,48.08,True,25
+440623000,South Korea,drifting_longlines,50.9366666667,True,25
+432962000,Japan,drifting_longlines,52.36,True,25
+431447000,Japan,pole_and_line,56.87,True,31
+366020000,United States,purse_seines,67.801375,True,35
+553111740,Papua New Guinea,purse_seines,67.34625,True,35
+553111712,Papua New Guinea,purse_seines,70.59,True,40
+367170000,United States,purse_seines,66.8701666667,True,35
+529729000,Kiribati,purse_seines,65.59,True,24
+413344000,China,drifting_longlines,34.65,True,13
+416710000,Taiwan,drifting_longlines,56.3,True,30
+441837000,South Korea,purse_seines,79.9,False,29
+440929000,South Korea,drifting_longlines,47.21,True,25
+413270430,China,drifting_longlines,49.32,False,30
+416368000,Taiwan,drifting_longlines,59.2,True,30
+412691530,China,drifting_longlines,31.2333333333,False,14
+520130000,Fiji,drifting_longlines,36.6,True,13
+416233500,Taiwan,drifting_longlines,21.5,True,10
+431932000,Japan,purse_seines,64.09,False,28
+441043000,South Korea,drifting_longlines,51.9633333333,True,25
+440647000,South Korea,drifting_longlines,47.21,True,25
+412985000,China,drifting_longlines,52.5,True,26
+412500156,China,drifting_longlines,32.7,False,15
+520050000,Fiji,drifting_longlines,29.3,True,17
+412270024,China,purse_seines,70.59,False,35
+412329417,China,drifting_longlines,37.56,True,13
+510062000,Federated States of Micronesia,purse_seines,62.175,True,24
+538060008,Marshall Islands,purse_seines,67.11,False,29
+412201818,China,drifting_longlines,35.75,True,18
+441201181,South Korea,drifting_longlines,33.74,True,12
+416248600,Taiwan,purse_seines,71.79,False,40
+432848000,Japan,drifting_longlines,49.378,True,25
+520190000,Fiji,drifting_longlines,25.8,False,13
+440871000,South Korea,drifting_longlines,50.1666666667,True,25
+416000029,Taiwan,drifting_longlines,27.0,True,12
+533111749,Malaysia,purse_seines,71.23,False,35
+416506000,Taiwan,purse_seines,65.5,False,32
+440786000,South Korea,drifting_longlines,49.9095833333,True,25
+416004582,Taiwan,drifting_longlines,23.95,False,17
+538060007,Marshall Islands,purse_seines,72.37,False,29
+412460001,China,drifting_longlines,46.88,True,25
+416235500,Taiwan,drifting_longlines,35.5,True,20
+553111750,Papua New Guinea,purse_seines,68.074,False,35
+416000804,Taiwan,drifting_longlines,27.6,True,15
+440765000,South Korea,drifting_longlines,48.4753571429,True,25
+510053000,Federated States of Micronesia,drifting_longlines,29.7,True,16
+369060000,United States,drifting_longlines,27.275,False,7
+416248700,Taiwan,purse_seines,71.79,False,40
+413322760,China,drifting_longlines,36.6,True,12
+440280000,South Korea,drifting_longlines,49.61,True,25
+553111790,Papua New Guinea,purse_seines,61.43,False,25
+518156000,Cook Islands,drifting_longlines,20.8,False,9
+440777000,South Korea,drifting_longlines,49.91,True,25
+576696000,Vanuatu,drifting_longlines,23.8,True,12
+510032000,Federated States of Micronesia,drifting_longlines,27.615,False,10
+338539000,United States,purse_seines,75.3,False,20
+416228600,Taiwan,drifting_longlines,23.9,True,14
+441201181,South Korea,drifting_longlines,33.74,False,12
+412200115,China,drifting_longlines,37.25,True,15
+529765000,Kiribati,purse_seines,105.6,True,10
+416168500,Taiwan,drifting_longlines,59.2,True,31
+576754000,Vanuatu,drifting_longlines,23.8,False,12
+416002116,Taiwan,drifting_longlines,29.2,True,13
+412460029,China,drifting_longlines,49.14,True,28
+416240900,Taiwan,purse_seines,71.79,True,40
+548687200,Philippines,purse_seines,56.64,False,25
+529686000,Kiribati,purse_seines,67.2375,True,24
+367084000,United States,purse_seines,69.164125,True,35
+306034000,Bonaire,purse_seines,101.001428571,True,27
+431399000,Japan,purse_seines,60.52,True,24
+431100030,Japan,purse_seines,57.8,True,24
+431155000,Japan,purse_seines,60.665,True,24
+431600275,Japan,drifting_longlines,40.6033333333,True,20
+440089000,South Korea,drifting_longlines,50.1131428571,True,25
+431602240,Japan,drifting_longlines,43.31,False,20
+412421023,China,drifting_longlines,37.0,True,15
+553111759,Papua New Guinea,purse_seines,71.79,True,40
+529415000,Kiribati,drifting_longlines,49.1666666667,True,30
+416004299,Taiwan,drifting_longlines,23.9,True,14
+416004000,Taiwan,purse_seines,68.0833333333,False,40
+412460286,China,drifting_longlines,41.7366666667,True,18
+224680000,Spain,purse_seines,115.0,False,33
+416247900,Taiwan,purse_seines,68.0833333333,True,40
+412460054,China,drifting_longlines,30.24,False,10
+576695000,Vanuatu,drifting_longlines,23.8,True,12
+548895000,Philippines,purse_seines,71.79,False,35
+440167000,South Korea,purse_seines,79.6,True,30
+416239700,Taiwan,drifting_longlines,35.7,True,14
+900200029,China,drifting_longlines,37.0,True,15
+416226700,Taiwan,drifting_longlines,27.3,False,15
+412691520,China,drifting_longlines,31.2333333333,False,14
+440822000,South Korea,purse_seines,75.33375,True,22
+412439604,China,purse_seines,65.3566666667,False,39
+416004246,Taiwan,drifting_longlines,35.7,True,20
+529004000,Kiribati,purse_seines,56.5966666667,False,25
+440104000,South Korea,purse_seines,73.6933333333,False,28
+416234800,Taiwan,purse_seines,71.79,True,40
+440492000,South Korea,purse_seines,78.33,False,25
+412460299,China,drifting_longlines,46.7033333333,True,25
+520020000,Fiji,drifting_longlines,32.0,False,12
+440670000,South Korea,drifting_longlines,49.91,True,25
+553111743,Papua New Guinea,purse_seines,75.66,True,29
+416017500,Taiwan,purse_seines,66.21,False,28
+441201729,South Korea,drifting_longlines,25.8,True,11
+538060016,Marshall Islands,purse_seines,71.79,False,32
+412463905,China,drifting_longlines,44.19,True,18
+553111735,Papua New Guinea,purse_seines,71.79,False,40
+412217989,China,purse_seines,60.4,True,32
+416237600,Taiwan,drifting_longlines,23.95,True,17
+338074000,United States,purse_seines,68.79025,True,35
+440236000,South Korea,drifting_longlines,49.91,True,25
+553111698,Papua New Guinea,purse_seines,71.79,True,38
+416004044,Taiwan,drifting_longlines,23.8,False,14
+576737000,Vanuatu,drifting_longlines,58.7,True,30
+440926000,South Korea,drifting_longlines,49.12625,True,25
+529413000,Kiribati,drifting_longlines,49.1666666667,False,30
+553111751,Papua New Guinea,purse_seines,66.44625,False,35
+412270058,China,drifting_longlines,49.3,True,30
+412926000,China,purse_seines,64.7,False,30
