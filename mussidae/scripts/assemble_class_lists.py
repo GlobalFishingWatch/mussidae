@@ -35,7 +35,8 @@ simple_labels = { 'cargo',
                  'trawlers',
                  'trollers',
                  'tug',
-                 'gear'}  
+                 'gear',
+                 'bunkers'}  
 
 composite_labels = {'passenger',
                     'unknown_fishing',
@@ -81,7 +82,8 @@ non_fishing_classes = {  'cargo',
                          'sailing',
                          'seismic_vessel',
                          'tanker',
-                         'tug'}
+                         'tug',
+                         'bunkers'}
 
 missing_classes = valid_labels - (fishing_classes | non_fishing_classes)
 
@@ -387,26 +389,27 @@ def apply_corrections(combined, base_path):
                 assert combined[mmsi].engine_power == power, (combined[mmsi].engine_power, power)
 
 
-def add_gear(combined, base_path):
-    # Add gear
-    with open(os.path.join(base_path, 'gear.csv')) as f:
+def add_class(combined, base_path, file_name, cls):
+    with open(os.path.join(base_path, file_name)) as f:
         np.random.seed(24)
-        gear_mmsi = set()
+        new_mmsi = set()
         for line in csv.DictReader(f):
             mmsi = line['mmsi'].strip()
-            if mmsi in gear_mmsi:
-                logging.info('duplicate mmsi in gear.csv: {}'.format(mmsi))
+            if mmsi in new_mmsi:
+                logging.info('duplicate mmsi in {}: {}'.format(file_name, mmsi))
                 continue
-            gear_mmsi.add(mmsi)
+            new_mmsi.add(mmsi)
             if mmsi in combined:
-                logging.info('Correcting label for MMSI: %s  (%s -> %s)', mmsi, combined[mmsi].label, 'gear')
+                logging.info('Correcting label for MMSI: %s  (%s -> %s)', mmsi, combined[mmsi].label, cls)
                 logging.info(str(combined[mmsi]))
                 l = list(combined[mmsi])
-                l[keys.index('label')] = 'gear'
+                l[output_keys.index('label')] = cls
+                l[output_keys.index('source')] += ';{}'.format(file_name)
                 combined[mmsi] = VesselRecord(*l)
             else:
                 split = 'Training' if (np.random.random() < 0.5) else 'Test'
-                combined[mmsi] = VesselRecord(mmsi, 'gear', None, None, None, None, split, 'gear.csv')
+                combined[mmsi] = VesselRecord(mmsi, cls, None, None, None, None, split, file_name)
+
 
 # 
 # Assign to Test / Training splits
@@ -475,6 +478,8 @@ if __name__ == '__main__':
     precursor_dir = os.path.join(this_directory, "../data-precursors")
     apply_corrections(combined_lists, precursor_dir)
     assign_splits(combined_lists)
-    # Adding gear later to not mess up existing split
-    add_gear(combined_lists, precursor_dir)
+    # Adding gear and bunkers later to not mess up existing split
+    add_class(combined_lists, precursor_dir, 'gear.csv', 'gear')
+    add_class(combined_lists, precursor_dir, 'bunkers.csv', 'bunkers')
+
     dump(combined_lists, os.path.join(this_directory, "../data/classification_list.csv"))
