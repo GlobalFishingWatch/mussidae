@@ -480,6 +480,6 @@ if __name__ == '__main__':
     assign_splits(combined_lists)
     # Adding gear and bunkers later to not mess up existing split
     add_class(combined_lists, precursor_dir, 'gear.csv', 'gear')
-    add_class(combined_lists, precursor_dir, 'bunkers.csv', 'bunkers')
+    add_class(combined_lists, precursor_dir, 'bunkers.csv', 'bunker')
 
     dump(combined_lists, os.path.join(this_directory, "../data/classification_list.csv"))
